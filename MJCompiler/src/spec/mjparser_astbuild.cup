@@ -76,7 +76,6 @@ nonterminal VarDeclIf VarDeclIf;
 nonterminal ExtendType ExtendType;
 nonterminal MethodDecPar MethodDecPar;
 
-nonterminal MethodTypeName MethodTypeName;
 nonterminal MethodLocal MethodLocal;
 nonterminal FormParListIf FormParListIf;
 nonterminal FormParList FormParList;
@@ -93,6 +92,9 @@ nonterminal Mulop Mulop;
 
 nonterminal DoStart DoStart;
 nonterminal SwitchStart SwitchStart;
+nonterminal ElseStart ElseStart;
+nonterminal ElseStm ElseStm;
+nonterminal IfOnlyStm IfOnlyStm;
 nonterminal  GlobalVarDecl GlobalVarDecl;
 nonterminal GlobalVarList GlobalVarList;
 nonterminal GlobalVarComma GlobalVarComma;
@@ -103,13 +105,18 @@ nonterminal FormParParen FormParParen;
  
 nonterminal ClassVarDeclIf ClassVarDeclIf;
 nonterminal ClassVarDecl ClassVarDecl;
-nonterminal ClassName ClassName;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program;
+nonterminal TernCond TernCond;
+nonterminal TernDoTrue TernDoTrue;
+nonterminal WhileCondStart WhileCondStart;
+nonterminal SwitchExpr SwitchExpr;
+nonterminal CaseColon CaseColon;
+
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, MethodTypeName, ClassName;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, MethodType, ExtendErr, Expr, TermList, Term, Factor, CondFact, CondTerm, Condition, DesAssignIFErr;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct ConditionParen;
 nonterminal rs.ac.bg.etf.pp1.StructList ActPars;
-nonterminal rs.ac.bg.etf.pp1.DesignatorObj Designator;
 nonterminal rs.ac.bg.etf.pp1.CaseNameList CaseList, CaseParam;
 precedence left ELSE;
 
@@ -313,13 +320,13 @@ StatementList ::= (MultStatement) StatementList:S1 Statement:S2 {: RESULT=new Mu
 				  ;		
 Statement	::=(StatementDesignator)	DesignatorStatement:D1 {: RESULT=new StatementDesignator(D1); RESULT.setLine(D1left); :}
 				|
-				(StatementIf)IF LPAREN ConditionParen:C1 Statement:S2 {: RESULT=new StatementIf(C1, S2); RESULT.setLine(C1left); :}
+				(StatementIf)IF LPAREN ConditionParen:C1 IfOnlyStm:I2 {: RESULT=new StatementIf(C1, I2); RESULT.setLine(C1left); :}
 				|
-				(StatementIfElse)IF LPAREN  ConditionParen:C1 Statement:S2 ELSE Statement:S3 {: RESULT=new StatementIfElse(C1, S2, S3); RESULT.setLine(C1left); :}
+				(StatementIfElse)IF LPAREN  ConditionParen:C1 Statement:S2 ElseStart:E3 ElseStm:E4 {: RESULT=new StatementIfElse(C1, S2, E3, E4); RESULT.setLine(C1left); :}
 				|
-				(StatementWhile)DoStart:D1 Statement:S2 WHILE LPAREN Condition:C3 RPAREN SEMI {: RESULT=new StatementWhile(D1, S2, C3); RESULT.setLine(D1left); :}
+				(StatementWhile)DoStart:D1 Statement:S2 WhileCondStart:W3 LPAREN Condition:C4 RPAREN SEMI {: RESULT=new StatementWhile(D1, S2, W3, C4); RESULT.setLine(D1left); :}
 				| 
-				(StatementSwitch)SwitchStart:S1 LPAREN Expr:E2 RPAREN LBRACE CaseList:C3 RBRACE {: RESULT=new StatementSwitch(S1, E2, C3); RESULT.setLine(S1left); :}
+				(StatementSwitch)SwitchStart:S1 LPAREN Expr:E2 SwitchExpr:S3 LBRACE CaseList:C4 RBRACE {: RESULT=new StatementSwitch(S1, E2, S3, C4); RESULT.setLine(S1left); :}
 				|
 				(StatementBreak)BREAK SEMI {: RESULT=new StatementBreak(); :}
 				|
@@ -337,6 +344,11 @@ Statement	::=(StatementDesignator)	DesignatorStatement:D1 {: RESULT=new Statemen
 				|
 				(StatementMult)LBRACE StatementList:S1 RBRACE {: RESULT=new StatementMult(S1); RESULT.setLine(S1left); :}
 				;
+SwitchExpr ::=(SwitchExpr)RPAREN {: RESULT=new SwitchExpr(); :};
+WhileCondStart ::=(WhileCondStart) WHILE {: RESULT=new WhileCondStart(); :};
+ElseStart ::=(ElseStart) ELSE {: RESULT=new ElseStart(); :};	
+ElseStm ::=(ElseStm) Statement:S1 {: RESULT=new ElseStm(S1); RESULT.setLine(S1left); :};	
+IfOnlyStm ::=(IfOnlyStm) Statement:S1 {: RESULT=new IfOnlyStm(S1); RESULT.setLine(S1left); :};		
 DoStart ::=(DoStart) DO {: RESULT=new DoStart(); :};
 
 SwitchStart ::=(SwitchStart) SWITCH {: RESULT=new SwitchStart(); :};
@@ -353,9 +365,9 @@ CaseList ::=(CaseListParam) CaseList:C1 CaseParam:C2 {: RESULT=new CaseListParam
 			(CaseListEmpty) {: RESULT=new CaseListEmpty(); :}/* epsilon */
 			;	
 
-CaseParam ::=(CaseParam) CASE NUM_C:num COLON StatementList:S1 {: RESULT=new CaseParam(num, S1); RESULT.setLine(numleft); :};		
+CaseParam ::=(CaseParam) CASE NUM_C:num CaseColon:C1 StatementList:S2 {: RESULT=new CaseParam(num, C1, S2); RESULT.setLine(numleft); :};		
 				
-
+CaseColon::=(CaseColon)COLON {: RESULT=new CaseColon(); :};
 
 DesignatorStatement ::= (DesStmAssign) Designator:D1 Assignop:A2 DesAssignIFErr:D3 {: RESULT=new DesStmAssign(D1, A2, D3); RESULT.setLine(D1left); :}
 						|
@@ -398,10 +410,11 @@ CondFact ::=(CondFactNoOp) Expr:E1 {: RESULT=new CondFactNoOp(E1); RESULT.setLin
 				
 Expr ::=(ExprTermList) TermList:T1 {: RESULT=new ExprTermList(T1); RESULT.setLine(T1left); :}
 		|	
-		(ExprTern)TermList:condName TERN TermList:exprTrue COLON TermList:exprFalse {: RESULT=new ExprTern(condName, exprTrue, exprFalse); RESULT.setLine(condNameleft); :}
+		(ExprTern)TermList:condName TernCond:T1 TermList:exprTrue TernDoTrue:T2 TermList:exprFalse {: RESULT=new ExprTern(condName, T1, exprTrue, T2, exprFalse); RESULT.setLine(condNameleft); :}
 		;
 
-		
+TernCond ::=(TernCond) TERN {: RESULT=new TernCond(); :};
+TernDoTrue ::=(TernDoTrue)COLON {: RESULT=new TernDoTrue(); :};		
 TermList ::=(TermExpr)TermList:T1 Addop:A2 Term:T3 {: RESULT=new TermExpr(T1, A2, T3); RESULT.setLine(T1left); :}
 			|
 			(TermSinglePos)Term:T1 {: RESULT=new TermSinglePos(T1); RESULT.setLine(T1left); :}

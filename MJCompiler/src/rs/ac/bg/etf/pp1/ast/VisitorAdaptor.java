@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 3/0/2021 22:13:2
+// 10/0/2021 5:13:6
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,8 +9,8 @@ public abstract class VisitorAdaptor implements Visitor {
 
     public void visit(ConstParamComma ConstParamComma) { }
     public void visit(Mulop Mulop) { }
-    public void visit(ExtendType ExtendType) { }
     public void visit(GlobalVarComma GlobalVarComma) { }
+    public void visit(ExtendType ExtendType) { }
     public void visit(FormParList FormParList) { }
     public void visit(Relop Relop) { }
     public void visit(TermList TermList) { }
@@ -77,6 +77,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(TermSingleNeg TermSingleNeg) { visit(); }
     public void visit(TermSinglePos TermSinglePos) { visit(); }
     public void visit(TermExpr TermExpr) { visit(); }
+    public void visit(TernDoTrue TernDoTrue) { visit(); }
+    public void visit(TernCond TernCond) { visit(); }
     public void visit(ExprTern ExprTern) { visit(); }
     public void visit(ExprTermList ExprTermList) { visit(); }
     public void visit(CondFactOp CondFactOp) { visit(); }
@@ -94,6 +96,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(DesStmActPar DesStmActPar) { visit(); }
     public void visit(DesStmNoActPar DesStmNoActPar) { visit(); }
     public void visit(DesStmAssign DesStmAssign) { visit(); }
+    public void visit(CaseColon CaseColon) { visit(); }
     public void visit(CaseParam CaseParam) { visit(); }
     public void visit(CaseListEmpty CaseListEmpty) { visit(); }
     public void visit(CaseListParam CaseListParam) { visit(); }
@@ -101,6 +104,11 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ConditionPar ConditionPar) { visit(); }
     public void visit(SwitchStart SwitchStart) { visit(); }
     public void visit(DoStart DoStart) { visit(); }
+    public void visit(IfOnlyStm IfOnlyStm) { visit(); }
+    public void visit(ElseStm ElseStm) { visit(); }
+    public void visit(ElseStart ElseStart) { visit(); }
+    public void visit(WhileCondStart WhileCondStart) { visit(); }
+    public void visit(SwitchExpr SwitchExpr) { visit(); }
     public void visit(StatementMult StatementMult) { visit(); }
     public void visit(StatementPrint StatementPrint) { visit(); }
     public void visit(StatementPrintLoop StatementPrintLoop) { visit(); }

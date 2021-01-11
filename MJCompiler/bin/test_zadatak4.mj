@@ -1,0 +1,41 @@
+program Mj
+int x,y;
+class TCalc{
+	int tax;
+	{
+		void mia(int i){tax=i;
+		if(false)
+			print('T');
+		else print('F');
+			}
+		void f(int i){}
+	}	
+}
+
+class ATCalc extends TCalc{
+	{
+		void mia(int i){ f(i);print('A');}
+	}
+}
+
+{
+	int test(){
+		if(2==4){
+			return 0;
+		}
+		return 1;
+	}
+	int fun(int arg){
+		return arg * arg;
+	}
+	
+	void main() 
+	TCalc obj;
+	{
+		x=fun(3);
+		obj= new TCalc;
+		obj.mia(4);
+		obj= new ATCalc;
+		obj.mia(4);
+	}
+}

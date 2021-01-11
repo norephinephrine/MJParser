@@ -1,8 +1,69 @@
 program MJProgram
+	const int trial=2;
+	char b;
+	class A{
+		int x;
+		int y;
+	}
 	int x,y;
+	A ast;
 	{
-		void main(){
 		
+		int test(int x)
+		int trial;
+		{
+			x++;
+			trial=5;
+			x=x+y+trial;
+			return x;
+		}
 		
+		void test1(){
+			y--;
+		}
+		void main()
+		int x,z[];
+		{
+		
+		y=10;
+		ast=new A;
+		ast.x=2;
+		ast.x--;
+		x=15;
+		x--;
+		print(x);
+		print(eol);			
+		x++;
+		print(x);
+		print(eol);			
+		y--;
+		z=new int[test(x)];	
+		print(len(z));
+		print(eol);		
+		print(chr(66));
+		print(eol);	
+		b='C';
+		print(ord(b));
+		print(eol);
+		print(b);
+		print(eol);						
+		print(x);
+		print(eol);									
+		test1();				
+		z[1]=20000;
+		z[2]=19995;
+		z[2]++;
+		y=15;
+		print(ast.x);
+		print(eol);		
+		print(z[1]);
+		print(eol);
+		print((ast.x+x)*(z[1]-z[2]));
+		print(eol);
+		print(z[1]%11);
+		print(eol);
+		print(x/y);
+		print(eol);
+		print(true);
 		}
 	}

@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 3/0/2021 22:13:2
+// 10/0/2021 5:13:6
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,8 +9,8 @@ public interface Visitor {
 
     public void visit(ConstParamComma ConstParamComma);
     public void visit(Mulop Mulop);
-    public void visit(ExtendType ExtendType);
     public void visit(GlobalVarComma GlobalVarComma);
+    public void visit(ExtendType ExtendType);
     public void visit(FormParList FormParList);
     public void visit(Relop Relop);
     public void visit(TermList TermList);
@@ -77,6 +77,8 @@ public interface Visitor {
     public void visit(TermSingleNeg TermSingleNeg);
     public void visit(TermSinglePos TermSinglePos);
     public void visit(TermExpr TermExpr);
+    public void visit(TernDoTrue TernDoTrue);
+    public void visit(TernCond TernCond);
     public void visit(ExprTern ExprTern);
     public void visit(ExprTermList ExprTermList);
     public void visit(CondFactOp CondFactOp);
@@ -94,6 +96,7 @@ public interface Visitor {
     public void visit(DesStmActPar DesStmActPar);
     public void visit(DesStmNoActPar DesStmNoActPar);
     public void visit(DesStmAssign DesStmAssign);
+    public void visit(CaseColon CaseColon);
     public void visit(CaseParam CaseParam);
     public void visit(CaseListEmpty CaseListEmpty);
     public void visit(CaseListParam CaseListParam);
@@ -101,6 +104,11 @@ public interface Visitor {
     public void visit(ConditionPar ConditionPar);
     public void visit(SwitchStart SwitchStart);
     public void visit(DoStart DoStart);
+    public void visit(IfOnlyStm IfOnlyStm);
+    public void visit(ElseStm ElseStm);
+    public void visit(ElseStart ElseStart);
+    public void visit(WhileCondStart WhileCondStart);
+    public void visit(SwitchExpr SwitchExpr);
     public void visit(StatementMult StatementMult);
     public void visit(StatementPrint StatementPrint);
     public void visit(StatementPrintLoop StatementPrintLoop);

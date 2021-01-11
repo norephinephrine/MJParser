@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 3/0/2021 22:13:2
+// 10/0/2021 5:13:6
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,13 +8,13 @@ package rs.ac.bg.etf.pp1.ast;
 public class StatementIf extends Statement {
 
     private ConditionParen ConditionParen;
-    private Statement Statement;
+    private IfOnlyStm IfOnlyStm;
 
-    public StatementIf (ConditionParen ConditionParen, Statement Statement) {
+    public StatementIf (ConditionParen ConditionParen, IfOnlyStm IfOnlyStm) {
         this.ConditionParen=ConditionParen;
         if(ConditionParen!=null) ConditionParen.setParent(this);
-        this.Statement=Statement;
-        if(Statement!=null) Statement.setParent(this);
+        this.IfOnlyStm=IfOnlyStm;
+        if(IfOnlyStm!=null) IfOnlyStm.setParent(this);
     }
 
     public ConditionParen getConditionParen() {
@@ -25,12 +25,12 @@ public class StatementIf extends Statement {
         this.ConditionParen=ConditionParen;
     }
 
-    public Statement getStatement() {
-        return Statement;
+    public IfOnlyStm getIfOnlyStm() {
+        return IfOnlyStm;
     }
 
-    public void setStatement(Statement Statement) {
-        this.Statement=Statement;
+    public void setIfOnlyStm(IfOnlyStm IfOnlyStm) {
+        this.IfOnlyStm=IfOnlyStm;
     }
 
     public void accept(Visitor visitor) {
@@ -39,18 +39,18 @@ public class StatementIf extends Statement {
 
     public void childrenAccept(Visitor visitor) {
         if(ConditionParen!=null) ConditionParen.accept(visitor);
-        if(Statement!=null) Statement.accept(visitor);
+        if(IfOnlyStm!=null) IfOnlyStm.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(ConditionParen!=null) ConditionParen.traverseTopDown(visitor);
-        if(Statement!=null) Statement.traverseTopDown(visitor);
+        if(IfOnlyStm!=null) IfOnlyStm.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(ConditionParen!=null) ConditionParen.traverseBottomUp(visitor);
-        if(Statement!=null) Statement.traverseBottomUp(visitor);
+        if(IfOnlyStm!=null) IfOnlyStm.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -65,8 +65,8 @@ public class StatementIf extends Statement {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        if(Statement!=null)
-            buffer.append(Statement.toString("  "+tab));
+        if(IfOnlyStm!=null)
+            buffer.append(IfOnlyStm.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

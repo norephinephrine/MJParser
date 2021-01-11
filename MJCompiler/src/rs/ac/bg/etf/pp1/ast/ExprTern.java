@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 3/0/2021 22:13:2
+// 10/0/2021 5:13:6
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,14 +8,20 @@ package rs.ac.bg.etf.pp1.ast;
 public class ExprTern extends Expr {
 
     private TermList TermList;
+    private TernCond TernCond;
     private TermList TermList1;
+    private TernDoTrue TernDoTrue;
     private TermList TermList2;
 
-    public ExprTern (TermList TermList, TermList TermList1, TermList TermList2) {
+    public ExprTern (TermList TermList, TernCond TernCond, TermList TermList1, TernDoTrue TernDoTrue, TermList TermList2) {
         this.TermList=TermList;
         if(TermList!=null) TermList.setParent(this);
+        this.TernCond=TernCond;
+        if(TernCond!=null) TernCond.setParent(this);
         this.TermList1=TermList1;
         if(TermList1!=null) TermList1.setParent(this);
+        this.TernDoTrue=TernDoTrue;
+        if(TernDoTrue!=null) TernDoTrue.setParent(this);
         this.TermList2=TermList2;
         if(TermList2!=null) TermList2.setParent(this);
     }
@@ -28,12 +34,28 @@ public class ExprTern extends Expr {
         this.TermList=TermList;
     }
 
+    public TernCond getTernCond() {
+        return TernCond;
+    }
+
+    public void setTernCond(TernCond TernCond) {
+        this.TernCond=TernCond;
+    }
+
     public TermList getTermList1() {
         return TermList1;
     }
 
     public void setTermList1(TermList TermList1) {
         this.TermList1=TermList1;
+    }
+
+    public TernDoTrue getTernDoTrue() {
+        return TernDoTrue;
+    }
+
+    public void setTernDoTrue(TernDoTrue TernDoTrue) {
+        this.TernDoTrue=TernDoTrue;
     }
 
     public TermList getTermList2() {
@@ -50,20 +72,26 @@ public class ExprTern extends Expr {
 
     public void childrenAccept(Visitor visitor) {
         if(TermList!=null) TermList.accept(visitor);
+        if(TernCond!=null) TernCond.accept(visitor);
         if(TermList1!=null) TermList1.accept(visitor);
+        if(TernDoTrue!=null) TernDoTrue.accept(visitor);
         if(TermList2!=null) TermList2.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(TermList!=null) TermList.traverseTopDown(visitor);
+        if(TernCond!=null) TernCond.traverseTopDown(visitor);
         if(TermList1!=null) TermList1.traverseTopDown(visitor);
+        if(TernDoTrue!=null) TernDoTrue.traverseTopDown(visitor);
         if(TermList2!=null) TermList2.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(TermList!=null) TermList.traverseBottomUp(visitor);
+        if(TernCond!=null) TernCond.traverseBottomUp(visitor);
         if(TermList1!=null) TermList1.traverseBottomUp(visitor);
+        if(TernDoTrue!=null) TernDoTrue.traverseBottomUp(visitor);
         if(TermList2!=null) TermList2.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -79,8 +107,20 @@ public class ExprTern extends Expr {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
+        if(TernCond!=null)
+            buffer.append(TernCond.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
         if(TermList1!=null)
             buffer.append(TermList1.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(TernDoTrue!=null)
+            buffer.append(TernDoTrue.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

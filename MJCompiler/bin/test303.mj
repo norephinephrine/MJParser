@@ -10,9 +10,7 @@ class Predmet
 	 char vrsta;
 
 	{
-		 void postaviTezinu(int tezina) {this.tezina = tezina;
-		 postaviTezinu(tezina);
-		 }  
+		 void postaviTezinu(int tezina) {this.tezina = tezina;}  
 		 void ucitajTezinu() { read(tezina); }
 		 int zapremina() { return 0;}
 		 int Q() {return zapremina() * tezina;}
@@ -26,16 +24,12 @@ class Sfera extends Predmet
 {
 	 int r;
 	{
-		 void postaviTezinu(int tezina) {this.tezina = tezina; vrsta = 's';
-		 
-		
-		 }
+		 void postaviTezinu(int tezina) {this.tezina = tezina; vrsta = 's';}
 		 void postaviPoluprecnik(int r) {this.r = r; postaviVrstu('s');}
 		 int zapremina()
 			int z;
 		{
 			z = cinilac;
-			zapremina();
 			return z *(r/delilac);
 		}
 	}
@@ -58,7 +52,6 @@ class Kvadar extends Predmet
 
 int zapreminaK, zapreminaS;
 int tezinaK, tezinaS;
-Kvadar kvadr;
 {
 
 	void ispis( Predmet p)
@@ -88,6 +81,7 @@ Kvadar kvadr;
 		k1.postaviStranice(1,2,3);
 		k2.postaviStranice(2,3,4);
 		k3.postaviStranice(3,4,5);
+		
 		predmeti[0] = s1;
 		predmeti[2] = s2;
 		predmeti[4] = s3;
@@ -101,7 +95,6 @@ Kvadar kvadr;
 			predmeti[i].postaviTezinu(t);	
 			i++;
 		}while(i<6);
-
 		
 		zapreminaS = 0;
 		tezinaS = 0;
@@ -114,7 +107,6 @@ Kvadar kvadr;
 			zapreminaS = zapreminaS + predmeti[i - 1].zapremina();
 			tezinaS = tezinaS + predmeti[i - 1].Q();
 			ispis(predmeti[i - 1]);
-			ispis(kvadr);
 			i++;
 		}while(i<=6);
 		
@@ -127,8 +119,8 @@ Kvadar kvadr;
 				i++;
 				continue; 
 			}
-			zapreminaS = zapreminaS + predmeti[i - 1].zapremina();
-			tezinaS = tezinaS + predmeti[i - 1].Q();
+			zapreminaK = zapreminaK + predmeti[i - 1].zapremina();
+			tezinaK = tezinaK + predmeti[i - 1].Q();
 			ispis(predmeti[i - 1]);
 			i++;
 		}while(i<=6);
@@ -137,6 +129,7 @@ Kvadar kvadr;
 		print(zapreminaK); print(eol);
 		print(tezinaS); print(eol);
 		print(tezinaK); print(eol);
+		
 		i = 0;
 		do{
 			switch(i+1){

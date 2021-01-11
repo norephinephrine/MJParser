@@ -30,6 +30,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	private int switchLevel=0;
 	private int whileLevel=0;
     public int nVars=0;
+    private int ifLvl=0;
     
 	public void report_error(String message, SyntaxNode info) {
 		errorDetected = true;
@@ -101,6 +102,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     public void visit(ConstBool value) {
     	const_check(MJTab.boolType,value,""+value.getBool_value());
     	Obj varNode =MJTab.insert(Obj.Con, const_name, curr_type);
+    	//int ascii0=(int)'0';
     	if(value.getBool_value().equals("true"))
     		varNode.setAdr(1); 
     	else  varNode.setAdr(0); 
@@ -108,7 +110,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     public void visit(ConstChar value) {
     	const_check(MJTab.charType,value,""+value.getChar_value());
     	Obj varNode =MJTab.insert(Obj.Con, const_name, curr_type);
-    	varNode.setAdr(Character.getNumericValue(value.getChar_value()));  	
+		int vl=value.getChar_value(); 
+    	varNode.setAdr(vl);  	
     }    
   
     
@@ -178,6 +181,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		if(obj==MJTab.noObj) {
 			
 	    	currentMethod = MJTab.insert(Obj.Meth, methodTypeName.getName(), methodTypeName.getMethodType().struct);
+	    	methodTypeName.obj = currentMethod;
 	    	numFormal=0;			
 			
 		}    	
@@ -218,7 +222,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	
     	
     	if(returnNotFound) {
-    		report_error("Greska nije pronadjena return naredba u funkciji ("+currentMethod.getName()+") koja vraca rezultat",methodDecl);
+    		report_error("Greska nije pronadjena return naredba u funkciji ("+currentMethod.getName()+") koja vraca rezultat(mora postajati jedan return van if i switch naredbi)",methodDecl);
     	}
     	returnNotFound=false;
     	returnVoid=false;
@@ -239,8 +243,10 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			currentClassObj=obj;
 			report_error("Greska klasa  "+className.getName()+" je vec deklarisana", className);	
 		}
+		className.obj=currentClassObj;
 		MJTab.openScope(); 
-	
+		
+		MJTab.insert(Obj.Fld, "", MJTab.intType);
     }
     
 
@@ -257,9 +263,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	extendObj=MJTab.find(extendType.getType().getTypeName());
     }
     
-    public void visit(ExtendErr extendErr) {
-    	extendErr.struct=MJTab.noType;
-    }
+
     
     public void visit(ExtendTypeExist extendType) {
     	currentExtendClass=extendType.getExtendErr().struct;
@@ -268,6 +272,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	if(currentExtendClass.getKind()!=Struct.Class) {	
     		report_error("Greska ne moze da se prosiri ("+extendObj.getName()+")",extendType);
     		currentExtendClass=MJTab.noType;
+    	}
+    	else if(currentExtendClass==currentClass) {
+    		report_error("Greska klasa ne moze da prosiri samu sebe",extendType);
     	}
     	else {
     		for(Obj symbol:currentExtendClass.getMembers()) {
@@ -298,21 +305,20 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     			report_info("("+designator.getName()+")", designator,true,obj);
     	}
     	
-    	designator.designatorobj = new DesignatorObj();
-    	designator.designatorobj.setObj(obj);
+    	designator.obj=obj;
     }
     public void visit(DesMember desMember) {
-    	Obj obj=desMember.getDesignator().designatorobj.getObj();
-    	boolean desArrPass=desMember.getDesignator().designatorobj.CheckIsArr();
-    	desMember.designatorobj=desMember.getDesignator().designatorobj;
+    	Obj obj=desMember.getDesignator().obj;
+  
     	if(obj!=MJTab.noObj) {
     		Struct struct=null;
     		
-    		if(obj.getType().getKind()==Struct.Class) {
-    			struct=obj.getType();
+    		struct=obj.getType();
+    		if(obj.getKind()==Obj.Type) {
+    			struct=null;
     		}
-    		else if(obj.getType().getKind()==Struct.Array && obj.getType().getElemType().getKind()==Struct.Class && desArrPass){
-    			struct=obj.getType().getElemType();
+    		else if(obj.getType().getKind()==Struct.Class) {
+    			struct=obj.getType();
     		}
     		
     		if(struct!=null) {
@@ -324,7 +330,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
         				member_obj=MJTab.noObj;
         				if(currentExtendClass!=null) {
         					member_obj=currentExtendClass.getMembersTable().searchKey(desMember.getName());
-        					if(member_obj==null || member_obj.getKind()!=Obj.Meth)
+        					if(member_obj==null || member_obj.getKind()!=Obj.Fld)
         						member_obj=MJTab.noObj;
         				}
         			}
@@ -344,42 +350,34 @@ public class SemanticAnalyzer extends VisitorAdaptor {
         		else {
         			report_info("Pristup polju ("+desMember.getName()+")", desMember,true,member_obj);
         		}
-        		desMember.designatorobj.setObj(member_obj);
+        		desMember.obj=member_obj;
         		
         		
     		}  		 		 		
         	else {
-        		report_error("Greska  ("+obj.getName()+") nije klasa pa nema polje ili metodu ("+desMember.getName()+") ", desMember);
-        		desMember.designatorobj.setObj(MJTab.noObj);			
+        		report_error("Greska  ("+obj.getName()+") nije objekat klase pa nema polje ili metodu ("+desMember.getName()+") ", desMember);
+        		desMember.obj=MJTab.noObj;			
     		}
 
     	}
     	else {
     		report_error("Greska prazan objekat ne moze imati  polje ili metodu ("+desMember.getName()+") ", desMember);
-    		desMember.designatorobj.setObj(MJTab.noObj);				
+    		desMember.obj=MJTab.noObj;				
 		}    	
 
-    	desMember.designatorobj.setIsArr(false);
     }    	    
     
     
     public void visit(DesArr desArr) {
-    	Obj obj=desArr.getDesignator().designatorobj.getObj();
-    	boolean desArrPass=desArr.getDesignator().designatorobj.CheckIsArr();
-    	desArr.designatorobj=desArr.getDesignator().designatorobj;
-    	
-    	if(desArrPass) {
-    		report_error("Greska ("+obj.getName()+") ne moze biti niz nizova", desArr);
-    		desArr.designatorobj.setObj(MJTab.noObj);	
-    		desArr.designatorobj.setIsArr(false);
-    	}
-    	else if(obj.getType().getKind()!=Struct.Array) {
+    	Obj obj=desArr.getDesignator().obj;
+   	
+
+    	if(obj.getType().getKind()!=Struct.Array) {
     		report_error("Greska ("+obj.getName()+") mora biti tipa niz", desArr);
-    		desArr.designatorobj.setObj(MJTab.noObj);	
-    		desArr.designatorobj.setIsArr(false);
+    		desArr.obj=MJTab.noObj;
     	}
     	else {
-    		desArr.designatorobj.setIsArr(true);    		
+    		desArr.obj=new Obj(Obj.Elem,"Elem:"+obj.getName(),obj.getType().getElemType());
     	}
     	
     	if(desArr.getExpr().struct!=MJTab.intType) {
@@ -392,19 +390,14 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     public void visit(DesAssignNoErr desAssign) {
     	desAssign.struct=desAssign.getExpr().struct;
     }
-    public void visit(ErrorDesignator err) {
-    	err.struct=MJTab.noType;
-    }
-    
+
     public void visit(DesStmAssign desStmAssign) {
-    	Obj obj=desStmAssign.getDesignator().designatorobj.getObj();
-    	boolean desArrPass=desStmAssign.getDesignator().designatorobj.CheckIsArr();
+    	Obj obj=desStmAssign.getDesignator().obj;
     	Struct expr=desStmAssign.getDesAssignIFErr().struct;
     	
 
-    	if((obj.getKind()==Obj.Var || obj.getKind()==Obj.Fld) && 
-    			(MJTab.assignableToRef(expr, obj.getType())  || (obj.getType().getKind()==Struct.Array
-    			&& MJTab.assignableToRef(expr, obj.getType().getElemType()) && desArrPass))) {
+    	if( (obj.getKind()==Obj.Var || obj.getKind()==Obj.Fld || obj.getKind()==Obj.Elem) && 
+    			(MJTab.assignableToRef(expr, obj.getType()))) {
     			//report_info("("+obj.getName()+")", desStmInc);
     	}
     	else {
@@ -414,10 +407,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
   	
     }
     public void visit(DesStmInc desStmInc) {
-    	Obj obj=desStmInc.getDesignator().designatorobj.getObj();
-    	boolean desArrPass=desStmInc.getDesignator().designatorobj.CheckIsArr();
-    	if((obj.getKind()==Obj.Var || obj.getKind()==Obj.Fld) &&
-    			(obj.getType()==MJTab.intType || (obj.getType().getKind()==Struct.Array && obj.getType().getElemType()==MJTab.intType && desArrPass))) {
+    	Obj obj=desStmInc.getDesignator().obj;
+    	if((obj.getKind()==Obj.Var || obj.getKind()==Obj.Fld || obj.getKind()==Obj.Elem) &&
+    			(obj.getType()==MJTab.intType )) {
     			//report_info("("+obj.getName()+")", desStmInc);
 
     	}
@@ -427,10 +419,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     }
     
     public void visit(DesStmDec desStmDec) {
-    	Obj obj=desStmDec.getDesignator().designatorobj.getObj();
-    	boolean desArrPass=desStmDec.getDesignator().designatorobj.CheckIsArr();
-    	if((obj.getKind()==Obj.Var || obj.getKind()==Obj.Fld) &&
-    			(obj.getType()==MJTab.intType || (obj.getType().getKind()==Struct.Array && obj.getType().getElemType()==MJTab.intType && desArrPass))) {
+    	Obj obj=desStmDec.getDesignator().obj;
+    	if((obj.getKind()==Obj.Var || obj.getKind()==Obj.Fld || obj.getKind()==Obj.Elem) &&
+    			(obj.getType()==MJTab.intType )) {
     			//report_info("("+obj.getName()+")", desStmInc);
     	}
     	else {
@@ -440,7 +431,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     
     
     public void visit(DesStmNoActPar funct) {
-    	Obj obj=funct.getDesignator().designatorobj.getObj();
+    	Obj obj=funct.getDesignator().obj;
     	if(obj.getKind()==Obj.Meth) {
     		if((obj.getLevel()==0 && currentMethod!=obj)||(currentMethod==obj && formalSize()==0)) {     		
         		report_info("Koristi se rezultat metode bez parametara ("+obj.getName()+")", funct,true,obj);    			
@@ -455,7 +446,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	}   	
     }
     public void visit(DesStmActPar funct) {
-    	Obj meth=funct.getDesignator().designatorobj.getObj();
+    	Obj meth=funct.getDesignator().obj;
     	StructList list=funct.getActPars().structlist;
     	if(meth.getKind()==Obj.Meth) {
         	
@@ -479,30 +470,24 @@ public class SemanticAnalyzer extends VisitorAdaptor {
         		
         	}
         	else {
-        		Obj obj=funct.getDesignator().designatorobj.getObj();
-        		report_error("Greska funkcija ("+obj.getName()+")  prihvata "+meth.getLevel()+" parametara, dato je "+list.size(),funct);   		
+        		report_error("Greska funkcija ("+meth.getName()+")  prihvata "+meth.getLevel()+" parametara, dato je "+list.size(),funct);   		
         	}
     			
     	}
     	else {
-    		Obj obj=funct.getDesignator().designatorobj.getObj();
-    		report_error("Greska ime ("+obj.getName()+") nije funkcija/metoda",funct);
+    		report_error("Greska ime ("+meth.getName()+") nije funkcija/metoda",funct);
     	}  
     	if(list!=null)list.clean();
     }   
     //FACTOR VISIT METHODS 
     public void visit(FactVar fact) {
-    	Obj obj=fact.getDesignator().designatorobj.getObj();
-    	boolean desArrPass=fact.getDesignator().designatorobj.CheckIsArr();
-    	if(obj.getType().getKind()==Struct.Array  && desArrPass)
-    		fact.struct=obj.getType().getElemType();
-    	else
-    		fact.struct=obj.getType();
+    	Obj obj=fact.getDesignator().obj;
+    	fact.struct=obj.getType();
     	report_info("Koristi se promenljiva ("+obj.getName()+")", fact,true,obj);
     }
     
     public void visit(FunCallNoParam funct) {	
-    	Obj obj=funct.getDesignator().designatorobj.getObj();
+    	Obj obj=funct.getDesignator().obj;
     	if(obj.getKind()==Obj.Meth) {
     		if(MJTab.noType==obj.getType()) {
     			report_error("Greska funkcija bez parametara ("+obj.getName()+"ne moze se koristiti u izrazima jer nema povratnu vrednost",funct);
@@ -535,7 +520,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     }
     
     public void visit(FunCallParam funct) {
-    	Obj meth=funct.getDesignator().designatorobj.getObj();
+    	Obj meth=funct.getDesignator().obj;
     	StructList list=funct.getActPars().structlist;
     	if(meth.getKind()==Obj.Meth) {
     		if(MJTab.noType==meth.getType()) {
@@ -560,15 +545,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
             		
             	}
             	else {
-            		Obj obj=funct.getDesignator().designatorobj.getObj();
-            		report_error("Greska funkcija ("+obj.getName()+")  prihvata "+meth.getLevel()+" parametara, dato je "+list.size(),funct);
+            		report_error("Greska funkcija ("+meth.getName()+")  prihvata "+meth.getLevel()+" parametara, dato je "+list.size(),funct);
             		funct.struct= MJTab.noType;    		
             	}    			
     		}       			
     	}
     	else {
-    		Obj obj=funct.getDesignator().designatorobj.getObj();
-    		report_error("Greska ime ("+obj.getName()+") nije metoda",funct);
+    		report_error("Greska ime ("+meth.getName()+") nije metoda",funct);
     		funct.struct= MJTab.noType;
     	}
     	if(list!=null)list.clean();
@@ -653,8 +636,12 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	expr.struct= expr.getTermList().struct;
     }
     public void visit(ExprTern expr) {
-    	if(expr.getTermList1().struct.compatibleWith(expr.getTermList2().struct)) {
-    		expr.struct=expr.struct=expr.getTermList1().struct;
+    	
+    	if(expr.getTermList().struct!=MJTab.boolType) {
+    		report_error("Greska  uslovni izraz za ternarni operator nije tipa bool",expr);
+    	}
+    	if(MJTab.equals(expr.getTermList1().struct, expr.getTermList2().struct)) {
+    			expr.struct=expr.getTermList1().struct;
     	}
     	else {
     		report_error("Greska oba clana izraza ternarnog operatora moraju biti istog tipa ",expr);
@@ -663,15 +650,24 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     }
     
     //visit Condition
+    public void visit(ElseStm elseStm) {
+    	ifLvl--;
+    }
+    public void visit(IfOnlyStm ifOnlyStm) {
+    	ifLvl--;
+    }
     public void visit(CondFactNoOp condFact) {
     	//CHECK VALUE
+    	if(condFact.getExpr().struct!=MJTab.boolType) {
+    		report_error("Greska faktor kada nema relacioni operator mora biti tipa bool", condFact);
+    	}
     	condFact.struct=MJTab.boolType;
     }
     public void visit(CondFactOp condFact) {
     	Struct expr1=condFact.getExpr().struct;
     	Struct expr2=condFact.getExpr1().struct;
     	Relop relop=condFact.getRelop();
-    	if(expr1.compatibleWith(expr2)) {
+    	if(MJTab.compatibleWith(expr1, expr2)) {
     		
     		if((expr1.getKind()==Struct.Array|| expr1.getKind()==Struct.Class) && !(relop instanceof RelEqual) && !(relop instanceof RelDiff)){
     			report_error("Greska  izmedju izraza tipa klase ili niza mogu se koristiti samo operatori (==) ili (!=) ",condFact);
@@ -701,10 +697,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     
     public void visit(ConditionPar cond) {
     	cond.struct=cond.getCondition().struct;
+    	ifLvl++;
     }
-    public void visit(ErrorCondition cond) {
-    	cond.struct=MJTab.noType;
-    }   
+
     //STATEMENTS VISIT
     
     public void visit(StatementIf stm) {
@@ -817,10 +812,12 @@ public class SemanticAnalyzer extends VisitorAdaptor {
         		report_error("Greska funkcija je tipa (void) pa ne treba da vraca rezultat", ret);
         	} 
         	else {
-            	if(currentMethod.getType().equals(ret.getExpr().struct)==false) {
+        		
+            	if(MJTab.equals(currentMethod.getType(), ret.getExpr().struct)==false) {
             		report_error("Greska rezultat izraza nije ekvivalentan tipu rezultata funkcije",ret);
             	}  
-            	returnNotFound=false;
+            	if(ifLvl==0 && switchLevel==0)
+            		returnNotFound=false;
         	}
 
         	
@@ -830,10 +827,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	}   	
     }
     public void visit(StatementRead stm) {
-    	Obj obj=stm.getDesignator().designatorobj.getObj();
-    	boolean desArrPass=stm.getDesignator().designatorobj.CheckIsArr();
-    	if((obj.getKind()==Obj.Var || obj.getKind()==Obj.Fld) &&
-    			(rpValid(obj.getType()) || (obj.getType().getKind()==Struct.Array && rpValid(obj.getType().getElemType()) && desArrPass))) {
+    	Obj obj=stm.getDesignator().obj;
+    	if((obj.getKind()==Obj.Var || obj.getKind()==Obj.Fld || obj.getKind()==Obj.Elem) &&
+    			(rpValid(obj.getType()) )) {
     			//TO DO
 
     	} 
@@ -862,7 +858,44 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	else {
     		report_error("Greska kod print loop. Symbol koji treba da se ispise nije tipa int,char ili bool",stm);
     	}
-    }      
+    }  
+    
+    
+    //ERROR VISITS
+    public void visit(ClassErrorVarSemi err) {
+    	report_error("Greska kod deklaracija polja klase("+currentClassObj.getName()+"). Bio je izvrsen oporavak do (;).",err);
+    }
+    public void visit(ConstErrorSemi err) {
+    	report_error("Greska kod deklaracije konstante . Bio je izvrsen oporavak do (;).",err);
+    }
+    public void visit(ConstErrorComma err) {
+    	report_error("Greska kod deklaracije konstante . Bio je izvrsen oporavak do (,).",err);
+    }
+    public void visit(GlobalErrorVarSemi err) {
+    	report_error("Greska kod deklaracije globalne promenljive . Bio je izvrsen oporavak do (;).",err);
+    }
+    public void visit(GlobalErrorVarComma err) {
+    	report_error("Greska kod deklaracije globalne promenljive . Bio je izvrsen oporavak do (,).",err);
+    }
+    public void visit(ExtendErr err) {
+    	err.struct=MJTab.noType;
+    	report_error("Greska kod nasledjivanje klase ("+currentClassObj.getName()+") . Bio je izvrsen oporavak do ( '{' ).",err);
+    }    
+    public void visit(ErrorFormComma err) {
+    	report_error("Greska kod deklaracija formalnih parametara funkcije ("+currentMethod.getName()+") . Bio je izvrsen oporavak do ( ,).",err);
+    }
+    public void visit(ErrorFormParen err) {
+    	report_error("Greska kod deklaracija formalnih parametara funkcije ("+currentMethod.getName()+") . Bio je izvrsen oporavak do ( ')' ).",err);
+    } 
+    public void visit(ErrorCondition err) {
+    	err.struct=MJTab.noType;
+    	report_error("Greska kod logickog izraza kod if-a . Bio je izvrsen oporavak do ( ')' ).",err);    	
+    }       
+    public void visit(ErrorDesignator err) {
+    	err.struct=MJTab.noType;
+    	report_error("Greska kod izraza dodele . Bio je izvrsen oporavak do ( ; ).",err);    	
+    }
+    
     //OTHER PRIVATE METHODS
     //checks if type can be 
     private boolean rpValid(Struct type) {
@@ -874,8 +907,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     
     //checks if the type st equals the current type of the declared constants
     private boolean const_check(Struct st,SyntaxNode nd,String vl) {
-    	boolean ret=true;
-    	if(!curr_type.equals(st)) {
+    	boolean ret=true;	
+    	if(!MJTab.equals(curr_type, st)) {
     		report_error("Greska:  konstanta "+const_name+" i vrednost:"+vl+" se ne poklapaju po tipu", nd); 
     		ret=false;
     	}
@@ -931,7 +964,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 										for(Obj obj_iterator:obj_formal) {
 											if(pos==obj_iterator.getFpPos()) {		
 												//System.out.println()
-												if(ext_iterator.getType()!=obj_iterator.getType()) {
+												if(ext_iterator.getType().equals(obj_iterator.getType())==false) {
 													wrongFormalPar=true;
 												}
 												break;
@@ -984,7 +1017,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	MJTab.chainLocalSymbols(currentClass);
     	MJTab.closeScope();  
  
-    	int numberFields=currentClass.getNumberOfFields()+1;
+    	int numberFields=currentClass.getNumberOfFields();
     	if(numberFields>65536) {
     		report_error("Greska klasa ima vise od 65536 polja",classDecl);
     	}    	
@@ -1040,6 +1073,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		case Struct.Char:
 			output.append("char");
 			break;
+		case Struct.Bool:
+			output.append("bool");
+			break;				
 		case Struct.Array:
 			output.append("Arr of ");
 			
@@ -1053,6 +1089,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			case Struct.Char:
 				output.append("char");
 				break;
+			case Struct.Bool:
+				output.append("bool");
+				break;					
 			case Struct.Class:
 				output.append("Class");
 				break;

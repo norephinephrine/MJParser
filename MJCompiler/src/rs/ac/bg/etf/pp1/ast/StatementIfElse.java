@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 3/0/2021 22:13:2
+// 10/0/2021 5:13:6
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,15 +9,18 @@ public class StatementIfElse extends Statement {
 
     private ConditionParen ConditionParen;
     private Statement Statement;
-    private Statement Statement1;
+    private ElseStart ElseStart;
+    private ElseStm ElseStm;
 
-    public StatementIfElse (ConditionParen ConditionParen, Statement Statement, Statement Statement1) {
+    public StatementIfElse (ConditionParen ConditionParen, Statement Statement, ElseStart ElseStart, ElseStm ElseStm) {
         this.ConditionParen=ConditionParen;
         if(ConditionParen!=null) ConditionParen.setParent(this);
         this.Statement=Statement;
         if(Statement!=null) Statement.setParent(this);
-        this.Statement1=Statement1;
-        if(Statement1!=null) Statement1.setParent(this);
+        this.ElseStart=ElseStart;
+        if(ElseStart!=null) ElseStart.setParent(this);
+        this.ElseStm=ElseStm;
+        if(ElseStm!=null) ElseStm.setParent(this);
     }
 
     public ConditionParen getConditionParen() {
@@ -36,12 +39,20 @@ public class StatementIfElse extends Statement {
         this.Statement=Statement;
     }
 
-    public Statement getStatement1() {
-        return Statement1;
+    public ElseStart getElseStart() {
+        return ElseStart;
     }
 
-    public void setStatement1(Statement Statement1) {
-        this.Statement1=Statement1;
+    public void setElseStart(ElseStart ElseStart) {
+        this.ElseStart=ElseStart;
+    }
+
+    public ElseStm getElseStm() {
+        return ElseStm;
+    }
+
+    public void setElseStm(ElseStm ElseStm) {
+        this.ElseStm=ElseStm;
     }
 
     public void accept(Visitor visitor) {
@@ -51,20 +62,23 @@ public class StatementIfElse extends Statement {
     public void childrenAccept(Visitor visitor) {
         if(ConditionParen!=null) ConditionParen.accept(visitor);
         if(Statement!=null) Statement.accept(visitor);
-        if(Statement1!=null) Statement1.accept(visitor);
+        if(ElseStart!=null) ElseStart.accept(visitor);
+        if(ElseStm!=null) ElseStm.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(ConditionParen!=null) ConditionParen.traverseTopDown(visitor);
         if(Statement!=null) Statement.traverseTopDown(visitor);
-        if(Statement1!=null) Statement1.traverseTopDown(visitor);
+        if(ElseStart!=null) ElseStart.traverseTopDown(visitor);
+        if(ElseStm!=null) ElseStm.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(ConditionParen!=null) ConditionParen.traverseBottomUp(visitor);
         if(Statement!=null) Statement.traverseBottomUp(visitor);
-        if(Statement1!=null) Statement1.traverseBottomUp(visitor);
+        if(ElseStart!=null) ElseStart.traverseBottomUp(visitor);
+        if(ElseStm!=null) ElseStm.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -85,8 +99,14 @@ public class StatementIfElse extends Statement {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        if(Statement1!=null)
-            buffer.append(Statement1.toString("  "+tab));
+        if(ElseStart!=null)
+            buffer.append(ElseStart.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(ElseStm!=null)
+            buffer.append(ElseStm.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

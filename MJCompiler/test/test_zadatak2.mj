@@ -1,0 +1,44 @@
+program Mj
+class A{
+	int i;
+}
+
+class B{
+	A an[];
+}
+
+class C{
+	B b;
+}
+{
+	void main()
+	C cn[]; C c; A a;
+	{
+		cn=new C[5];
+		c=new C;
+		a=new A;
+		c.b=new B;
+		c.b.an=new A[6];
+		c.b.an[1]=new A;
+		cn[3]=new C;
+		cn[3].b=new B;
+		cn[3].b.an=new A[6];
+		cn[3].b.an[4]=new A;
+		a.i =5;
+		print(a.i);
+		print(eol);
+		a.i++;
+		print(a.i);
+		print(eol);		
+		c.b.an[1].i=2;
+		print(c.b.an[1].i);
+		print(eol);	
+		
+		cn[3].b.an[4].i=15;
+		print(cn[3].b.an[4].i);
+		print(eol);						
+		a=cn[3].b.an[4];	
+		print(a.i);
+		
+	}
+}

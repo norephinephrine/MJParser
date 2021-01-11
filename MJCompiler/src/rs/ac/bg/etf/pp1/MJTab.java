@@ -34,16 +34,33 @@ public class MJTab extends Tab {
 		return (resultObj != null) ? resultObj : noObj;
 	}	
 	
+	public static boolean equals(Struct source,Struct other) {
+		if (source.getKind() == Struct.Array) return other.getKind() == Struct.Array
+				&& source.getElemType().equals(other.getElemType());
+
+
+		return source == other;
+	}
+	
+	public static boolean compatibleWith(Struct source,Struct other) {
+		return MJTab.equals(source,other) || source == MJTab.nullType && other.isRefType()
+				|| other == Tab.nullType && source.isRefType();
+	}
 	public static boolean assignableToRef(Struct source,Struct dest) {
 		boolean rez=false;
-		rez=source.assignableTo(dest);
-		if(rez==false && source.getKind()==Struct.Class && dest.getKind()==Struct.Class) {    	
+		if(source.getKind()==Struct.Class && dest.getKind()==Struct.Class) {
+			if(source==dest)return true;
         	Struct curr=source.getElemType();
         	while(curr!=null) {
         		if(curr==dest) return true;
         		curr=curr.getElemType();     		
-        	}   			    				
-		}	
+        	}   			
+		}
+		else {
+			rez=source.assignableTo(dest);
+		}
+			
+
 		return rez;
 	}
 	

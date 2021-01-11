@@ -64,24 +64,26 @@ nonterminal  ConstList, ConstParam, ConstParamSemi, ConstParamComma, ConstName;
 
 nonterminal VarList, VarParam, VarDeclIf, ExtendType, MethodDecPar;
 
-nonterminal MethodTypeName, MethodLocal, FormParListIf, FormParList, FormPar, StatementList;
+nonterminal MethodLocal, FormParListIf, FormParList, FormPar, StatementList;
 
 nonterminal Statement, DesignatorStatement;
 
 nonterminal Assignop, Relop, Addop, Mulop;
 
-nonterminal DoStart, SwitchStart;
+nonterminal DoStart, SwitchStart, ElseStart, ElseStm, IfOnlyStm;
 nonterminal  GlobalVarDecl, GlobalVarList, GlobalVarComma, GlobalVarParamSemi;
 
 nonterminal FormParComma, FormParParen;
  
-nonterminal ClassVarDeclIf, ClassVarDecl, ClassName;
+nonterminal ClassVarDeclIf, ClassVarDecl;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program;
+nonterminal TernCond, TernDoTrue, WhileCondStart, SwitchExpr, CaseColon;
+
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, MethodTypeName, ClassName;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, MethodType, ExtendErr, Expr, TermList, Term, Factor, CondFact, CondTerm, Condition, DesAssignIFErr;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct ConditionParen;
 nonterminal rs.ac.bg.etf.pp1.StructList ActPars;
-nonterminal rs.ac.bg.etf.pp1.DesignatorObj Designator;
 nonterminal rs.ac.bg.etf.pp1.CaseNameList CaseList, CaseParam;
 precedence left ELSE;
 
@@ -285,13 +287,13 @@ StatementList ::= (MultStatement) StatementList Statement
 				  ;		
 Statement	::=(StatementDesignator)	DesignatorStatement
 				|
-				(StatementIf)IF LPAREN ConditionParen Statement
+				(StatementIf)IF LPAREN ConditionParen IfOnlyStm
 				|
-				(StatementIfElse)IF LPAREN  ConditionParen Statement ELSE Statement
+				(StatementIfElse)IF LPAREN  ConditionParen Statement ElseStart ElseStm
 				|
-				(StatementWhile)DoStart Statement WHILE LPAREN Condition RPAREN SEMI
+				(StatementWhile)DoStart Statement WhileCondStart LPAREN Condition RPAREN SEMI
 				| 
-				(StatementSwitch)SwitchStart LPAREN Expr RPAREN LBRACE CaseList RBRACE
+				(StatementSwitch)SwitchStart LPAREN Expr SwitchExpr LBRACE CaseList RBRACE
 				|
 				(StatementBreak)BREAK SEMI
 				|
@@ -309,6 +311,11 @@ Statement	::=(StatementDesignator)	DesignatorStatement
 				|
 				(StatementMult)LBRACE StatementList RBRACE
 				;
+SwitchExpr ::=(SwitchExpr)RPAREN;
+WhileCondStart ::=(WhileCondStart) WHILE;
+ElseStart ::=(ElseStart) ELSE;	
+ElseStm ::=(ElseStm) Statement;	
+IfOnlyStm ::=(IfOnlyStm) Statement;		
 DoStart ::=(DoStart) DO;
 
 SwitchStart ::=(SwitchStart) SWITCH;
@@ -325,9 +332,9 @@ CaseList ::=(CaseListParam) CaseList CaseParam
 			(CaseListEmpty)/* epsilon */
 			;	
 
-CaseParam ::=(CaseParam) CASE NUM_C:num COLON StatementList;		
+CaseParam ::=(CaseParam) CASE NUM_C:num CaseColon StatementList;		
 				
-
+CaseColon::=(CaseColon)COLON;
 
 DesignatorStatement ::= (DesStmAssign) Designator Assignop DesAssignIFErr
 						|
@@ -370,10 +377,11 @@ CondFact ::=(CondFactNoOp) Expr
 				
 Expr ::=(ExprTermList) TermList
 		|	
-		(ExprTern)TermList:condName TERN TermList:exprTrue COLON TermList:exprFalse
+		(ExprTern)TermList:condName TernCond TermList:exprTrue TernDoTrue TermList:exprFalse
 		;
 
-		
+TernCond ::=(TernCond) TERN;
+TernDoTrue ::=(TernDoTrue)COLON;		
 TermList ::=(TermExpr)TermList Addop Term
 			|
 			(TermSinglePos)Term
