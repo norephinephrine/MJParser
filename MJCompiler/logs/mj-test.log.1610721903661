@@ -1,0 +1,1224 @@
+INFO  15:44:52,732 - Compiling source file: C:\Users\jovan\OneDrive\Desktop\ETF HELL\77777 SEMESTAR\prevodioci\projekat\workspace\MJCompiler\test\syn_test\syntax_error2.mj
+INFO  15:44:53,083 - #2 program
+INFO  15:44:53,084 - #49 SyntaxErr
+INFO  15:44:53,084 - #49 int
+INFO  15:44:53,090 - #49 a
+INFO  15:44:53,093 - #7 ;
+INFO  15:44:53,094 - #49 bool
+INFO  15:44:53,097 - #49 b
+INFO  15:44:53,098 - #7 ;
+INFO  15:44:53,098 - #43 class
+INFO  15:44:53,099 - #49 A
+INFO  15:44:53,099 - #3 {
+INFO  15:44:53,102 - #49 int
+INFO  15:44:53,108 - #49 x
+INFO  15:44:53,108 - #7 ;
+INFO  15:44:53,109 - #3 {
+INFO  15:44:53,109 - #44 void
+INFO  15:44:53,112 - #49 main
+INFO  15:44:53,116 - #12 (
+INFO  15:44:53,120 - #13 )
+INFO  15:44:53,120 - #3 {
+INFO  15:44:53,128 - #4 }
+INFO  15:44:53,131 - #4 }
+INFO  15:44:53,135 - #4 }
+INFO  15:44:53,135 - #3 {
+INFO  15:44:53,136 - #49 int
+INFO  15:44:53,137 - #49 test
+INFO  15:44:53,137 - #12 (
+INFO  15:44:53,137 - #13 )
+INFO  15:44:53,138 - #3 {
+INFO  15:44:53,138 - #24 return
+INFO  15:44:53,138 - #48 a
+INFO  15:44:53,139 - #7 ;
+INFO  15:44:53,139 - #4 }
+INFO  15:44:53,140 - #49 int
+INFO  15:44:53,141 - #49 funErr
+INFO  15:44:53,141 - #12 (
+INFO  15:44:53,142 - #49 int
+INFO  15:44:53,142 - #49 a
+INFO  15:44:53,142 - #8 ,
+INFO  15:44:53,143 - #49 A
+INFO  15:44:53,143 - #49 a
+INFO  15:44:53,144 - #8 ,
+INFO  15:44:53,144 - #49 char
+INFO  15:44:53,144 - #49 c
+INFO  15:44:53,144 - #13 )
+INFO  15:44:53,145 - #3 {
+INFO  15:44:53,145 - #4 }
+INFO  15:44:53,146 - #49 int
+INFO  15:44:53,146 - #49 fun
+INFO  15:44:53,146 - #12 (
+INFO  15:44:53,146 - #49 int
+INFO  15:44:53,147 - #49 a
+INFO  15:44:53,147 - #8 ,
+INFO  15:44:53,147 - #49 A
+INFO  15:44:53,147 - #49 b
+INFO  15:44:53,148 - #8 ,
+INFO  15:44:53,148 - #49 char
+INFO  15:44:53,148 - #49 c
+INFO  15:44:53,148 - #13 )
+INFO  15:44:53,149 - #3 {
+INFO  15:44:53,149 - #4 }
+INFO  15:44:53,149 - #44 void
+INFO  15:44:53,149 - #49 main
+INFO  15:44:53,153 - #12 (
+INFO  15:44:53,153 - #13 )
+INFO  15:44:53,153 - #49 A
+INFO  15:44:53,154 - #49 aClass
+INFO  15:44:53,154 - #7 ;
+INFO  15:44:53,154 - #49 char
+INFO  15:44:53,157 - #49 niz
+INFO  15:44:53,158 - #9 [
+INFO  15:44:53,158 - #10 ]
+INFO  15:44:53,158 - #7 ;
+INFO  15:44:53,159 - #3 {
+INFO  15:44:53,159 - #49 a
+INFO  15:44:53,159 - #6 =
+INFO  15:44:53,160 - #46 2
+INFO  15:44:53,163 - #7 ;
+INFO  15:44:53,163 - #22 break
+INFO  15:44:53,164 - #7 ;
+INFO  15:44:53,165 - #23 continue
+INFO  15:44:53,175 - #7 ;
+INFO  15:44:53,175 - #20 switch
+INFO  15:44:53,178 - #12 (
+INFO  15:44:53,182 - #49 a
+INFO  15:44:53,182 - #13 )
+INFO  15:44:53,183 - #3 {
+INFO  15:44:53,186 - #21 case
+INFO  15:44:53,189 - #46 1
+INFO  15:44:53,189 - #45 :
+INFO  15:44:53,189 - #22 break
+INFO  15:44:53,193 - #7 ;
+INFO  15:44:53,193 - #4 }
+INFO  15:44:53,196 - #18 do
+INFO  15:44:53,197 - #3 {
+INFO  15:44:53,200 - #22 break
+INFO  15:44:53,200 - #7 ;
+INFO  15:44:53,202 - #23 continue
+INFO  15:44:53,203 - #7 ;
+INFO  15:44:53,203 - #4 }
+INFO  15:44:53,203 - #19 while
+INFO  15:44:53,204 - #12 (
+INFO  15:44:53,207 - #49 a
+INFO  15:44:53,208 - #36 <
+INFO  15:44:53,208 - #46 2
+INFO  15:44:53,214 - #13 )
+INFO  15:44:53,215 - #7 ;
+INFO  15:44:53,215 - #49 aClass
+INFO  15:44:53,216 - #6 =
+INFO  15:44:53,216 - #30 new
+INFO  15:44:53,216 - #49 A
+INFO  15:44:53,216 - #7 ;
+INFO  15:44:53,217 - #49 niz
+INFO  15:44:53,217 - #6 =
+INFO  15:44:53,217 - #30 new
+INFO  15:44:53,218 - #49 char
+INFO  15:44:53,218 - #9 [
+INFO  15:44:53,218 - #46 2
+INFO  15:44:53,218 - #10 ]
+INFO  15:44:53,219 - #7 ;
+INFO  15:44:53,219 - #25 read
+INFO  15:44:53,220 - #12 (
+INFO  15:44:53,220 - #49 niz
+INFO  15:44:53,220 - #9 [
+INFO  15:44:53,220 - #46 0
+INFO  15:44:53,221 - #10 ]
+INFO  15:44:53,222 - #13 )
+INFO  15:44:53,223 - #7 ;
+INFO  15:44:53,223 - #25 read
+INFO  15:44:53,223 - #12 (
+INFO  15:44:53,223 - #49 b
+INFO  15:44:53,224 - #13 )
+INFO  15:44:53,224 - #7 ;
+INFO  15:44:53,224 - #25 read
+INFO  15:44:53,224 - #12 (
+INFO  15:44:53,224 - #49 aClass
+INFO  15:44:53,225 - #31 .
+INFO  15:44:53,225 - #49 x
+INFO  15:44:53,225 - #13 )
+INFO  15:44:53,225 - #7 ;
+INFO  15:44:53,226 - #25 read
+INFO  15:44:53,226 - #12 (
+INFO  15:44:53,226 - #49 aClass
+INFO  15:44:53,226 - #13 )
+INFO  15:44:53,226 - #7 ;
+INFO  15:44:53,226 - #26 print
+INFO  15:44:53,227 - #12 (
+INFO  15:44:53,227 - #49 niz
+INFO  15:44:53,227 - #9 [
+INFO  15:44:53,227 - #46 0
+INFO  15:44:53,227 - #10 ]
+INFO  15:44:53,228 - #13 )
+INFO  15:44:53,228 - #7 ;
+INFO  15:44:53,228 - #26 print
+INFO  15:44:53,228 - #12 (
+INFO  15:44:53,229 - #49 b
+INFO  15:44:53,229 - #13 )
+INFO  15:44:53,229 - #7 ;
+INFO  15:44:53,229 - #26 print
+INFO  15:44:53,229 - #12 (
+INFO  15:44:53,229 - #49 aClass
+INFO  15:44:53,230 - #31 .
+INFO  15:44:53,230 - #49 x
+INFO  15:44:53,230 - #13 )
+INFO  15:44:53,230 - #7 ;
+INFO  15:44:53,230 - #26 print
+INFO  15:44:53,235 - #12 (
+INFO  15:44:53,235 - #49 aClass
+INFO  15:44:53,235 - #13 )
+INFO  15:44:53,236 - #7 ;
+INFO  15:44:53,236 - #14 if
+INFO  15:44:53,236 - #12 (
+INFO  15:44:53,236 - #46 2
+INFO  15:44:53,237 - #13 )
+INFO  15:44:53,237 - #3 {
+INFO  15:44:53,237 - #4 }
+INFO  15:44:53,238 - #14 if
+INFO  15:44:53,241 - #12 (
+INFO  15:44:53,241 - #49 b
+INFO  15:44:53,241 - #13 )
+INFO  15:44:53,242 - #3 {
+INFO  15:44:53,242 - #4 }
+INFO  15:44:53,242 - #18 do
+INFO  15:44:53,242 - #3 {
+INFO  15:44:53,244 - #4 }
+INFO  15:44:53,245 - #19 while
+INFO  15:44:53,245 - #12 (
+INFO  15:44:53,245 - #46 2
+INFO  15:44:53,245 - #13 )
+INFO  15:44:53,246 - #7 ;
+INFO  15:44:53,246 - #18 do
+INFO  15:44:53,246 - #3 {
+INFO  15:44:53,246 - #4 }
+INFO  15:44:53,246 - #19 while
+INFO  15:44:53,247 - #12 (
+INFO  15:44:53,247 - #49 b
+INFO  15:44:53,247 - #13 )
+INFO  15:44:53,247 - #7 ;
+INFO  15:44:53,247 - #20 switch
+INFO  15:44:53,248 - #12 (
+INFO  15:44:53,248 - #49 b
+INFO  15:44:53,248 - #13 )
+INFO  15:44:53,248 - #3 {
+INFO  15:44:53,249 - #21 case
+INFO  15:44:53,249 - #46 1
+INFO  15:44:53,249 - #45 :
+INFO  15:44:53,249 - #22 break
+INFO  15:44:53,250 - #7 ;
+INFO  15:44:53,250 - #21 case
+INFO  15:44:53,250 - #46 2
+INFO  15:44:53,250 - #45 :
+INFO  15:44:53,251 - #22 break
+INFO  15:44:53,251 - #7 ;
+INFO  15:44:53,251 - #4 }
+INFO  15:44:53,251 - #20 switch
+INFO  15:44:53,251 - #12 (
+INFO  15:44:53,252 - #46 2
+INFO  15:44:53,252 - #13 )
+INFO  15:44:53,252 - #3 {
+INFO  15:44:53,252 - #21 case
+INFO  15:44:53,252 - #46 1
+INFO  15:44:53,255 - #45 :
+INFO  15:44:53,255 - #22 break
+INFO  15:44:53,255 - #7 ;
+INFO  15:44:53,255 - #21 case
+INFO  15:44:53,256 - #46 1
+INFO  15:44:53,256 - #45 :
+INFO  15:44:53,256 - #22 break
+INFO  15:44:53,256 - #7 ;
+INFO  15:44:53,257 - #4 }
+INFO  15:44:53,257 - #49 fun
+INFO  15:44:53,257 - #12 (
+INFO  15:44:53,257 - #49 a
+INFO  15:44:53,257 - #13 )
+INFO  15:44:53,258 - #7 ;
+INFO  15:44:53,258 - #49 fun
+INFO  15:44:53,258 - #12 (
+INFO  15:44:53,258 - #49 a
+INFO  15:44:53,259 - #8 ,
+INFO  15:44:53,259 - #49 aClass
+INFO  15:44:53,259 - #8 ,
+INFO  15:44:53,259 - #49 b
+INFO  15:44:53,259 - #13 )
+INFO  15:44:53,260 - #7 ;
+INFO  15:44:53,260 - #49 fun
+INFO  15:44:53,260 - #12 (
+INFO  15:44:53,260 - #49 a
+INFO  15:44:53,261 - #8 ,
+INFO  15:44:53,261 - #49 aClass
+INFO  15:44:53,261 - #8 ,
+INFO  15:44:53,261 - #49 niz
+INFO  15:44:53,262 - #9 [
+INFO  15:44:53,262 - #46 0
+INFO  15:44:53,262 - #10 ]
+INFO  15:44:53,262 - #13 )
+INFO  15:44:53,263 - #7 ;
+INFO  15:44:53,263 - #14 if
+INFO  15:44:53,263 - #12 (
+INFO  15:44:53,263 - #49 aClass
+INFO  15:44:53,263 - #6 =
+ERROR 15:44:53,267 - 
+Sintaksna greska na liniji 92
+INFO  15:44:53,268 - #49 aClass
+INFO  15:44:53,268 - #13 )
+INFO  15:44:53,268 - #3 {
+INFO  15:44:53,269 - #4 }
+INFO  15:44:53,270 - #4 }
+ERROR 15:44:53,270 - Greska kod logickog izrada za IF.Izvrsen oporavak do ) u liniji 92
+INFO  15:44:53,273 - #4 }
+INFO  15:44:53,287 - Program(
+  ProgName(
+   SyntaxErr
+  ) [ProgName]
+  MultDecl(
+    MultDecl(
+      MultDecl(
+        NoDecl(
+        ) [NoDecl]
+        DecVar(
+          GlobalVarDecl(
+            Type(
+             int
+            ) [Type]
+            GlobalSingleVar(
+              GlobalVarSemi(
+                VarParamNoBrack(
+                 a
+                ) [VarParamNoBrack]
+              ) [GlobalVarSemi]
+            ) [GlobalSingleVar]
+          ) [GlobalVarDecl]
+        ) [DecVar]
+      ) [MultDecl]
+      DecVar(
+        GlobalVarDecl(
+          Type(
+           bool
+          ) [Type]
+          GlobalSingleVar(
+            GlobalVarSemi(
+              VarParamNoBrack(
+               b
+              ) [VarParamNoBrack]
+            ) [GlobalVarSemi]
+          ) [GlobalSingleVar]
+        ) [GlobalVarDecl]
+      ) [DecVar]
+    ) [MultDecl]
+    DecClass(
+      ClassDeclMeth(
+        ClassName(
+         A
+        ) [ClassName]
+        NoExtendType(
+        ) [NoExtendType]
+        ClassVarDeclUse(
+          NoClassVarDecl(
+          ) [NoClassVarDecl]
+          ClassVarDeclNoErr(
+            Type(
+             int
+            ) [Type]
+            SingleVar(
+              VarParamNoBrack(
+               x
+              ) [VarParamNoBrack]
+            ) [SingleVar]
+          ) [ClassVarDeclNoErr]
+        ) [ClassVarDeclUse]
+        MethodDeclUse(
+          NoMethodDecl(
+          ) [NoMethodDecl]
+          MethodDecPar(
+            MethodTypeName(
+              MethVoid(
+              ) [MethVoid]
+             main
+            ) [MethodTypeName]
+            NoFormParList(
+            ) [NoFormParList]
+            MethodLocal(
+              NoVarDecl(
+              ) [NoVarDecl]
+            ) [MethodLocal]
+            NoStatementList(
+            ) [NoStatementList]
+          ) [MethodDecPar]
+        ) [MethodDeclUse]
+      ) [ClassDeclMeth]
+    ) [DecClass]
+  ) [MultDecl]
+  MethodDeclUse(
+    MethodDeclUse(
+      MethodDeclUse(
+        MethodDeclUse(
+          NoMethodDecl(
+          ) [NoMethodDecl]
+          MethodDecPar(
+            MethodTypeName(
+              MethType(
+                Type(
+                 int
+                ) [Type]
+              ) [MethType]
+             test
+            ) [MethodTypeName]
+            NoFormParList(
+            ) [NoFormParList]
+            MethodLocal(
+              NoVarDecl(
+              ) [NoVarDecl]
+            ) [MethodLocal]
+            MultStatement(
+              NoStatementList(
+              ) [NoStatementList]
+              StatementRetExpr(
+                ExprTermList(
+                  TermSinglePos(
+                    FactorSingle(
+                      FactorChar(
+                       a
+                      ) [FactorChar]
+                    ) [FactorSingle]
+                  ) [TermSinglePos]
+                ) [ExprTermList]
+              ) [StatementRetExpr]
+            ) [MultStatement]
+          ) [MethodDecPar]
+        ) [MethodDeclUse]
+        MethodDecPar(
+          MethodTypeName(
+            MethType(
+              Type(
+               int
+              ) [Type]
+            ) [MethType]
+           funErr
+          ) [MethodTypeName]
+          FormParListUse(
+            FormParMult(
+              FormParametarComma(
+                FormParNoBrack(
+                  Type(
+                   int
+                  ) [Type]
+                 a
+                ) [FormParNoBrack]
+              ) [FormParametarComma]
+              FormParMult(
+                FormParametarComma(
+                  FormParNoBrack(
+                    Type(
+                     A
+                    ) [Type]
+                   a
+                  ) [FormParNoBrack]
+                ) [FormParametarComma]
+                FormParSingle(
+                  FormParamNoError(
+                    FormParNoBrack(
+                      Type(
+                       char
+                      ) [Type]
+                     c
+                    ) [FormParNoBrack]
+                  ) [FormParamNoError]
+                ) [FormParSingle]
+              ) [FormParMult]
+            ) [FormParMult]
+          ) [FormParListUse]
+          MethodLocal(
+            NoVarDecl(
+            ) [NoVarDecl]
+          ) [MethodLocal]
+          NoStatementList(
+          ) [NoStatementList]
+        ) [MethodDecPar]
+      ) [MethodDeclUse]
+      MethodDecPar(
+        MethodTypeName(
+          MethType(
+            Type(
+             int
+            ) [Type]
+          ) [MethType]
+         fun
+        ) [MethodTypeName]
+        FormParListUse(
+          FormParMult(
+            FormParametarComma(
+              FormParNoBrack(
+                Type(
+                 int
+                ) [Type]
+               a
+              ) [FormParNoBrack]
+            ) [FormParametarComma]
+            FormParMult(
+              FormParametarComma(
+                FormParNoBrack(
+                  Type(
+                   A
+                  ) [Type]
+                 b
+                ) [FormParNoBrack]
+              ) [FormParametarComma]
+              FormParSingle(
+                FormParamNoError(
+                  FormParNoBrack(
+                    Type(
+                     char
+                    ) [Type]
+                   c
+                  ) [FormParNoBrack]
+                ) [FormParamNoError]
+              ) [FormParSingle]
+            ) [FormParMult]
+          ) [FormParMult]
+        ) [FormParListUse]
+        MethodLocal(
+          NoVarDecl(
+          ) [NoVarDecl]
+        ) [MethodLocal]
+        NoStatementList(
+        ) [NoStatementList]
+      ) [MethodDecPar]
+    ) [MethodDeclUse]
+    MethodDecPar(
+      MethodTypeName(
+        MethVoid(
+        ) [MethVoid]
+       main
+      ) [MethodTypeName]
+      NoFormParList(
+      ) [NoFormParList]
+      MethodLocal(
+        VarDeclUse(
+          VarDeclUse(
+            NoVarDecl(
+            ) [NoVarDecl]
+            VarDecl(
+              Type(
+               A
+              ) [Type]
+              SingleVar(
+                VarParamNoBrack(
+                 aClass
+                ) [VarParamNoBrack]
+              ) [SingleVar]
+            ) [VarDecl]
+          ) [VarDeclUse]
+          VarDecl(
+            Type(
+             char
+            ) [Type]
+            SingleVar(
+              VarParamBrack(
+               niz
+              ) [VarParamBrack]
+            ) [SingleVar]
+          ) [VarDecl]
+        ) [VarDeclUse]
+      ) [MethodLocal]
+      MultStatement(
+        MultStatement(
+          MultStatement(
+            MultStatement(
+              MultStatement(
+                MultStatement(
+                  MultStatement(
+                    MultStatement(
+                      MultStatement(
+                        MultStatement(
+                          MultStatement(
+                            MultStatement(
+                              MultStatement(
+                                MultStatement(
+                                  MultStatement(
+                                    MultStatement(
+                                      MultStatement(
+                                        MultStatement(
+                                          MultStatement(
+                                            MultStatement(
+                                              MultStatement(
+                                                MultStatement(
+                                                  MultStatement(
+                                                    MultStatement(
+                                                      MultStatement(
+                                                        NoStatementList(
+                                                        ) [NoStatementList]
+                                                        StatementDesignator(
+                                                          DesStmAssign(
+                                                            DesignatorSingle(
+                                                             a
+                                                            ) [DesignatorSingle]
+                                                            Assignop(
+                                                            ) [Assignop]
+                                                            DesAssignNoErr(
+                                                              ExprTermList(
+                                                                TermSinglePos(
+                                                                  FactorSingle(
+                                                                    FactorNum(
+                                                                     2
+                                                                    ) [FactorNum]
+                                                                  ) [FactorSingle]
+                                                                ) [TermSinglePos]
+                                                              ) [ExprTermList]
+                                                            ) [DesAssignNoErr]
+                                                          ) [DesStmAssign]
+                                                        ) [StatementDesignator]
+                                                      ) [MultStatement]
+                                                      StatementBreak(
+                                                      ) [StatementBreak]
+                                                    ) [MultStatement]
+                                                    StatementContinue(
+                                                    ) [StatementContinue]
+                                                  ) [MultStatement]
+                                                  StatementSwitch(
+                                                    SwitchStart(
+                                                    ) [SwitchStart]
+                                                    ExprTermList(
+                                                      TermSinglePos(
+                                                        FactorSingle(
+                                                          FactVar(
+                                                            DesignatorSingle(
+                                                             a
+                                                            ) [DesignatorSingle]
+                                                          ) [FactVar]
+                                                        ) [FactorSingle]
+                                                      ) [TermSinglePos]
+                                                    ) [ExprTermList]
+                                                    SwitchExpr(
+                                                    ) [SwitchExpr]
+                                                    CaseListParam(
+                                                      CaseListEmpty(
+                                                      ) [CaseListEmpty]
+                                                      CaseParam(
+                                                       1
+                                                        CaseColon(
+                                                        ) [CaseColon]
+                                                        MultStatement(
+                                                          NoStatementList(
+                                                          ) [NoStatementList]
+                                                          StatementBreak(
+                                                          ) [StatementBreak]
+                                                        ) [MultStatement]
+                                                      ) [CaseParam]
+                                                    ) [CaseListParam]
+                                                  ) [StatementSwitch]
+                                                ) [MultStatement]
+                                                StatementWhile(
+                                                  DoStart(
+                                                  ) [DoStart]
+                                                  StatementMult(
+                                                    MultStatement(
+                                                      MultStatement(
+                                                        NoStatementList(
+                                                        ) [NoStatementList]
+                                                        StatementBreak(
+                                                        ) [StatementBreak]
+                                                      ) [MultStatement]
+                                                      StatementContinue(
+                                                      ) [StatementContinue]
+                                                    ) [MultStatement]
+                                                  ) [StatementMult]
+                                                  WhileCondStart(
+                                                  ) [WhileCondStart]
+                                                  ConditionSingle(
+                                                    CondTermSingle(
+                                                      CondFactOp(
+                                                        ExprTermList(
+                                                          TermSinglePos(
+                                                            FactorSingle(
+                                                              FactVar(
+                                                                DesignatorSingle(
+                                                                 a
+                                                                ) [DesignatorSingle]
+                                                              ) [FactVar]
+                                                            ) [FactorSingle]
+                                                          ) [TermSinglePos]
+                                                        ) [ExprTermList]
+                                                        RelLS(
+                                                        ) [RelLS]
+                                                        ExprTermList(
+                                                          TermSinglePos(
+                                                            FactorSingle(
+                                                              FactorNum(
+                                                               2
+                                                              ) [FactorNum]
+                                                            ) [FactorSingle]
+                                                          ) [TermSinglePos]
+                                                        ) [ExprTermList]
+                                                      ) [CondFactOp]
+                                                    ) [CondTermSingle]
+                                                  ) [ConditionSingle]
+                                                ) [StatementWhile]
+                                              ) [MultStatement]
+                                              StatementDesignator(
+                                                DesStmAssign(
+                                                  DesignatorSingle(
+                                                   aClass
+                                                  ) [DesignatorSingle]
+                                                  Assignop(
+                                                  ) [Assignop]
+                                                  DesAssignNoErr(
+                                                    ExprTermList(
+                                                      TermSinglePos(
+                                                        FactorSingle(
+                                                          FactorNew(
+                                                            Type(
+                                                             A
+                                                            ) [Type]
+                                                          ) [FactorNew]
+                                                        ) [FactorSingle]
+                                                      ) [TermSinglePos]
+                                                    ) [ExprTermList]
+                                                  ) [DesAssignNoErr]
+                                                ) [DesStmAssign]
+                                              ) [StatementDesignator]
+                                            ) [MultStatement]
+                                            StatementDesignator(
+                                              DesStmAssign(
+                                                DesignatorSingle(
+                                                 niz
+                                                ) [DesignatorSingle]
+                                                Assignop(
+                                                ) [Assignop]
+                                                DesAssignNoErr(
+                                                  ExprTermList(
+                                                    TermSinglePos(
+                                                      FactorSingle(
+                                                        FactorNewArr(
+                                                          Type(
+                                                           char
+                                                          ) [Type]
+                                                          ExprTermList(
+                                                            TermSinglePos(
+                                                              FactorSingle(
+                                                                FactorNum(
+                                                                 2
+                                                                ) [FactorNum]
+                                                              ) [FactorSingle]
+                                                            ) [TermSinglePos]
+                                                          ) [ExprTermList]
+                                                        ) [FactorNewArr]
+                                                      ) [FactorSingle]
+                                                    ) [TermSinglePos]
+                                                  ) [ExprTermList]
+                                                ) [DesAssignNoErr]
+                                              ) [DesStmAssign]
+                                            ) [StatementDesignator]
+                                          ) [MultStatement]
+                                          StatementRead(
+                                            DesArr(
+                                              DesignatorSingle(
+                                               niz
+                                              ) [DesignatorSingle]
+                                              ExprTermList(
+                                                TermSinglePos(
+                                                  FactorSingle(
+                                                    FactorNum(
+                                                     0
+                                                    ) [FactorNum]
+                                                  ) [FactorSingle]
+                                                ) [TermSinglePos]
+                                              ) [ExprTermList]
+                                            ) [DesArr]
+                                          ) [StatementRead]
+                                        ) [MultStatement]
+                                        StatementRead(
+                                          DesignatorSingle(
+                                           b
+                                          ) [DesignatorSingle]
+                                        ) [StatementRead]
+                                      ) [MultStatement]
+                                      StatementRead(
+                                        DesMember(
+                                          DesignatorSingle(
+                                           aClass
+                                          ) [DesignatorSingle]
+                                         x
+                                        ) [DesMember]
+                                      ) [StatementRead]
+                                    ) [MultStatement]
+                                    StatementRead(
+                                      DesignatorSingle(
+                                       aClass
+                                      ) [DesignatorSingle]
+                                    ) [StatementRead]
+                                  ) [MultStatement]
+                                  StatementPrint(
+                                    ExprTermList(
+                                      TermSinglePos(
+                                        FactorSingle(
+                                          FactVar(
+                                            DesArr(
+                                              DesignatorSingle(
+                                               niz
+                                              ) [DesignatorSingle]
+                                              ExprTermList(
+                                                TermSinglePos(
+                                                  FactorSingle(
+                                                    FactorNum(
+                                                     0
+                                                    ) [FactorNum]
+                                                  ) [FactorSingle]
+                                                ) [TermSinglePos]
+                                              ) [ExprTermList]
+                                            ) [DesArr]
+                                          ) [FactVar]
+                                        ) [FactorSingle]
+                                      ) [TermSinglePos]
+                                    ) [ExprTermList]
+                                  ) [StatementPrint]
+                                ) [MultStatement]
+                                StatementPrint(
+                                  ExprTermList(
+                                    TermSinglePos(
+                                      FactorSingle(
+                                        FactVar(
+                                          DesignatorSingle(
+                                           b
+                                          ) [DesignatorSingle]
+                                        ) [FactVar]
+                                      ) [FactorSingle]
+                                    ) [TermSinglePos]
+                                  ) [ExprTermList]
+                                ) [StatementPrint]
+                              ) [MultStatement]
+                              StatementPrint(
+                                ExprTermList(
+                                  TermSinglePos(
+                                    FactorSingle(
+                                      FactVar(
+                                        DesMember(
+                                          DesignatorSingle(
+                                           aClass
+                                          ) [DesignatorSingle]
+                                         x
+                                        ) [DesMember]
+                                      ) [FactVar]
+                                    ) [FactorSingle]
+                                  ) [TermSinglePos]
+                                ) [ExprTermList]
+                              ) [StatementPrint]
+                            ) [MultStatement]
+                            StatementPrint(
+                              ExprTermList(
+                                TermSinglePos(
+                                  FactorSingle(
+                                    FactVar(
+                                      DesignatorSingle(
+                                       aClass
+                                      ) [DesignatorSingle]
+                                    ) [FactVar]
+                                  ) [FactorSingle]
+                                ) [TermSinglePos]
+                              ) [ExprTermList]
+                            ) [StatementPrint]
+                          ) [MultStatement]
+                          StatementIf(
+                            ConditionPar(
+                              ConditionSingle(
+                                CondTermSingle(
+                                  CondFactNoOp(
+                                    ExprTermList(
+                                      TermSinglePos(
+                                        FactorSingle(
+                                          FactorNum(
+                                           2
+                                          ) [FactorNum]
+                                        ) [FactorSingle]
+                                      ) [TermSinglePos]
+                                    ) [ExprTermList]
+                                  ) [CondFactNoOp]
+                                ) [CondTermSingle]
+                              ) [ConditionSingle]
+                            ) [ConditionPar]
+                            IfOnlyStm(
+                              StatementMult(
+                                NoStatementList(
+                                ) [NoStatementList]
+                              ) [StatementMult]
+                            ) [IfOnlyStm]
+                          ) [StatementIf]
+                        ) [MultStatement]
+                        StatementIf(
+                          ConditionPar(
+                            ConditionSingle(
+                              CondTermSingle(
+                                CondFactNoOp(
+                                  ExprTermList(
+                                    TermSinglePos(
+                                      FactorSingle(
+                                        FactVar(
+                                          DesignatorSingle(
+                                           b
+                                          ) [DesignatorSingle]
+                                        ) [FactVar]
+                                      ) [FactorSingle]
+                                    ) [TermSinglePos]
+                                  ) [ExprTermList]
+                                ) [CondFactNoOp]
+                              ) [CondTermSingle]
+                            ) [ConditionSingle]
+                          ) [ConditionPar]
+                          IfOnlyStm(
+                            StatementMult(
+                              NoStatementList(
+                              ) [NoStatementList]
+                            ) [StatementMult]
+                          ) [IfOnlyStm]
+                        ) [StatementIf]
+                      ) [MultStatement]
+                      StatementWhile(
+                        DoStart(
+                        ) [DoStart]
+                        StatementMult(
+                          NoStatementList(
+                          ) [NoStatementList]
+                        ) [StatementMult]
+                        WhileCondStart(
+                        ) [WhileCondStart]
+                        ConditionSingle(
+                          CondTermSingle(
+                            CondFactNoOp(
+                              ExprTermList(
+                                TermSinglePos(
+                                  FactorSingle(
+                                    FactorNum(
+                                     2
+                                    ) [FactorNum]
+                                  ) [FactorSingle]
+                                ) [TermSinglePos]
+                              ) [ExprTermList]
+                            ) [CondFactNoOp]
+                          ) [CondTermSingle]
+                        ) [ConditionSingle]
+                      ) [StatementWhile]
+                    ) [MultStatement]
+                    StatementWhile(
+                      DoStart(
+                      ) [DoStart]
+                      StatementMult(
+                        NoStatementList(
+                        ) [NoStatementList]
+                      ) [StatementMult]
+                      WhileCondStart(
+                      ) [WhileCondStart]
+                      ConditionSingle(
+                        CondTermSingle(
+                          CondFactNoOp(
+                            ExprTermList(
+                              TermSinglePos(
+                                FactorSingle(
+                                  FactVar(
+                                    DesignatorSingle(
+                                     b
+                                    ) [DesignatorSingle]
+                                  ) [FactVar]
+                                ) [FactorSingle]
+                              ) [TermSinglePos]
+                            ) [ExprTermList]
+                          ) [CondFactNoOp]
+                        ) [CondTermSingle]
+                      ) [ConditionSingle]
+                    ) [StatementWhile]
+                  ) [MultStatement]
+                  StatementSwitch(
+                    SwitchStart(
+                    ) [SwitchStart]
+                    ExprTermList(
+                      TermSinglePos(
+                        FactorSingle(
+                          FactVar(
+                            DesignatorSingle(
+                             b
+                            ) [DesignatorSingle]
+                          ) [FactVar]
+                        ) [FactorSingle]
+                      ) [TermSinglePos]
+                    ) [ExprTermList]
+                    SwitchExpr(
+                    ) [SwitchExpr]
+                    CaseListParam(
+                      CaseListParam(
+                        CaseListEmpty(
+                        ) [CaseListEmpty]
+                        CaseParam(
+                         1
+                          CaseColon(
+                          ) [CaseColon]
+                          MultStatement(
+                            NoStatementList(
+                            ) [NoStatementList]
+                            StatementBreak(
+                            ) [StatementBreak]
+                          ) [MultStatement]
+                        ) [CaseParam]
+                      ) [CaseListParam]
+                      CaseParam(
+                       2
+                        CaseColon(
+                        ) [CaseColon]
+                        MultStatement(
+                          NoStatementList(
+                          ) [NoStatementList]
+                          StatementBreak(
+                          ) [StatementBreak]
+                        ) [MultStatement]
+                      ) [CaseParam]
+                    ) [CaseListParam]
+                  ) [StatementSwitch]
+                ) [MultStatement]
+                StatementSwitch(
+                  SwitchStart(
+                  ) [SwitchStart]
+                  ExprTermList(
+                    TermSinglePos(
+                      FactorSingle(
+                        FactorNum(
+                         2
+                        ) [FactorNum]
+                      ) [FactorSingle]
+                    ) [TermSinglePos]
+                  ) [ExprTermList]
+                  SwitchExpr(
+                  ) [SwitchExpr]
+                  CaseListParam(
+                    CaseListParam(
+                      CaseListEmpty(
+                      ) [CaseListEmpty]
+                      CaseParam(
+                       1
+                        CaseColon(
+                        ) [CaseColon]
+                        MultStatement(
+                          NoStatementList(
+                          ) [NoStatementList]
+                          StatementBreak(
+                          ) [StatementBreak]
+                        ) [MultStatement]
+                      ) [CaseParam]
+                    ) [CaseListParam]
+                    CaseParam(
+                     1
+                      CaseColon(
+                      ) [CaseColon]
+                      MultStatement(
+                        NoStatementList(
+                        ) [NoStatementList]
+                        StatementBreak(
+                        ) [StatementBreak]
+                      ) [MultStatement]
+                    ) [CaseParam]
+                  ) [CaseListParam]
+                ) [StatementSwitch]
+              ) [MultStatement]
+              StatementDesignator(
+                DesStmActPar(
+                  DesignatorSingle(
+                   fun
+                  ) [DesignatorSingle]
+                  ActParsSingle(
+                    ExprTermList(
+                      TermSinglePos(
+                        FactorSingle(
+                          FactVar(
+                            DesignatorSingle(
+                             a
+                            ) [DesignatorSingle]
+                          ) [FactVar]
+                        ) [FactorSingle]
+                      ) [TermSinglePos]
+                    ) [ExprTermList]
+                  ) [ActParsSingle]
+                ) [DesStmActPar]
+              ) [StatementDesignator]
+            ) [MultStatement]
+            StatementDesignator(
+              DesStmActPar(
+                DesignatorSingle(
+                 fun
+                ) [DesignatorSingle]
+                ActParsList(
+                  ActParsList(
+                    ActParsSingle(
+                      ExprTermList(
+                        TermSinglePos(
+                          FactorSingle(
+                            FactVar(
+                              DesignatorSingle(
+                               a
+                              ) [DesignatorSingle]
+                            ) [FactVar]
+                          ) [FactorSingle]
+                        ) [TermSinglePos]
+                      ) [ExprTermList]
+                    ) [ActParsSingle]
+                    ExprTermList(
+                      TermSinglePos(
+                        FactorSingle(
+                          FactVar(
+                            DesignatorSingle(
+                             aClass
+                            ) [DesignatorSingle]
+                          ) [FactVar]
+                        ) [FactorSingle]
+                      ) [TermSinglePos]
+                    ) [ExprTermList]
+                  ) [ActParsList]
+                  ExprTermList(
+                    TermSinglePos(
+                      FactorSingle(
+                        FactVar(
+                          DesignatorSingle(
+                           b
+                          ) [DesignatorSingle]
+                        ) [FactVar]
+                      ) [FactorSingle]
+                    ) [TermSinglePos]
+                  ) [ExprTermList]
+                ) [ActParsList]
+              ) [DesStmActPar]
+            ) [StatementDesignator]
+          ) [MultStatement]
+          StatementDesignator(
+            DesStmActPar(
+              DesignatorSingle(
+               fun
+              ) [DesignatorSingle]
+              ActParsList(
+                ActParsList(
+                  ActParsSingle(
+                    ExprTermList(
+                      TermSinglePos(
+                        FactorSingle(
+                          FactVar(
+                            DesignatorSingle(
+                             a
+                            ) [DesignatorSingle]
+                          ) [FactVar]
+                        ) [FactorSingle]
+                      ) [TermSinglePos]
+                    ) [ExprTermList]
+                  ) [ActParsSingle]
+                  ExprTermList(
+                    TermSinglePos(
+                      FactorSingle(
+                        FactVar(
+                          DesignatorSingle(
+                           aClass
+                          ) [DesignatorSingle]
+                        ) [FactVar]
+                      ) [FactorSingle]
+                    ) [TermSinglePos]
+                  ) [ExprTermList]
+                ) [ActParsList]
+                ExprTermList(
+                  TermSinglePos(
+                    FactorSingle(
+                      FactVar(
+                        DesArr(
+                          DesignatorSingle(
+                           niz
+                          ) [DesignatorSingle]
+                          ExprTermList(
+                            TermSinglePos(
+                              FactorSingle(
+                                FactorNum(
+                                 0
+                                ) [FactorNum]
+                              ) [FactorSingle]
+                            ) [TermSinglePos]
+                          ) [ExprTermList]
+                        ) [DesArr]
+                      ) [FactVar]
+                    ) [FactorSingle]
+                  ) [TermSinglePos]
+                ) [ExprTermList]
+              ) [ActParsList]
+            ) [DesStmActPar]
+          ) [StatementDesignator]
+        ) [MultStatement]
+        StatementIf(
+          ErrorCondition(
+          ) [ErrorCondition]
+          IfOnlyStm(
+            StatementMult(
+              NoStatementList(
+              ) [NoStatementList]
+            ) [StatementMult]
+          ) [IfOnlyStm]
+        ) [StatementIf]
+      ) [MultStatement]
+    ) [MethodDecPar]
+  ) [MethodDeclUse]
+) [Program]
+INFO  15:44:53,428 - ===================================
+ERROR 15:44:53,436 - Greska kod return expr. Rezultat izraza nije ekvivalentan tipu rezultata funkcije na liniji 15
+ERROR 15:44:53,437 - Greska formalni parametar a je vec deklarisan na liniji 18
+INFO  15:44:53,437 - Pristup globalnoj promenljivi (a) | Var a: int, 0, 0  na liniji 29
+ERROR 15:44:53,437 - Greska break iskaz  se moze koristiti samo unutar do-while petlje i visestrukog grananja (switch)
+ERROR 15:44:53,438 - Greska continue iskaz  se moze koristiti samo unutar do-while petlje 
+INFO  15:44:53,438 - Pristup globalnoj promenljivi (a) | Var a: int, 0, 0  na liniji 33
+INFO  15:44:53,438 - Koristi se promenljiva (a) | Var a: int, 0, 0  na liniji 33
+INFO  15:44:53,441 - Pristup globalnoj promenljivi (a) | Var a: int, 0, 0  na liniji 40
+INFO  15:44:53,441 - Koristi se promenljiva (a) | Var a: int, 0, 0  na liniji 40
+INFO  15:44:53,441 - Pristup lokalnoj promenljivi (aClass) | Var aClass: Class A , 0, 1  na liniji 42
+INFO  15:44:53,442 - Alocira se memorija za objekat klase (A) | Type A: Class A , 0, 0  na liniji 42
+INFO  15:44:53,442 - Pristup lokalnoj promenljivi (niz) | Var niz: Arr of char, 1, 1  na liniji 43
+INFO  15:44:53,442 - Alocira se memorija za niz tipa (char) | Type char: char, -1, -1  na liniji 43
+INFO  15:44:53,442 - Pristup lokalnoj promenljivi (niz) | Var niz: Arr of char, 1, 1  na liniji 46
+INFO  15:44:53,442 - Pristupa se clanu niza (niz) | Var niz: Arr of char, 1, 1  na liniji 46
+INFO  15:44:53,442 - Pristup globalnoj promenljivi (b) | Var b: bool, 1, 0  na liniji 47
+INFO  15:44:53,443 - Pristup lokalnoj promenljivi (aClass) | Var aClass: Class A , 0, 1  na liniji 48
+INFO  15:44:53,443 - Pristup polju (x) | Fld x: int, 1, 1  na liniji 48
+INFO  15:44:53,443 - Pristup lokalnoj promenljivi (aClass) | Var aClass: Class A , 0, 1  na liniji 49
+ERROR 15:44:53,443 - Greska kod read. Ne moze da se smesti vrednost u simbol koji  nije tipa int,char ili bool na liniji 49
+INFO  15:44:53,443 - Pristup lokalnoj promenljivi (niz) | Var niz: Arr of char, 1, 1  na liniji 52
+INFO  15:44:53,443 - Pristupa se clanu niza (niz) | Var niz: Arr of char, 1, 1  na liniji 52
+INFO  15:44:53,443 - Koristi se promenljiva (Elem:niz) | Elem:niz: char, -1, -1  na liniji 52
+INFO  15:44:53,444 - Pristup globalnoj promenljivi (b) | Var b: bool, 1, 0  na liniji 53
+INFO  15:44:53,444 - Koristi se promenljiva (b) | Var b: bool, 1, 0  na liniji 53
+INFO  15:44:53,444 - Pristup lokalnoj promenljivi (aClass) | Var aClass: Class A , 0, 1  na liniji 54
+INFO  15:44:53,444 - Pristup polju (x) | Fld x: int, 1, 1  na liniji 54
+INFO  15:44:53,444 - Koristi se promenljiva (x) | Fld x: int, 1, 1  na liniji 54
+INFO  15:44:53,444 - Pristup lokalnoj promenljivi (aClass) | Var aClass: Class A , 0, 1  na liniji 55
+INFO  15:44:53,444 - Koristi se promenljiva (aClass) | Var aClass: Class A , 0, 1  na liniji 55
+ERROR 15:44:53,448 - Greska kod print loop. Symbol koji treba da se ispise nije tipa int,char ili bool na liniji 55
+ERROR 15:44:53,448 - Greska faktor kada nema relacioni operator mora biti tipa bool na liniji 59
+INFO  15:44:53,448 - Pristup globalnoj promenljivi (b) | Var b: bool, 1, 0  na liniji 62
+INFO  15:44:53,448 - Koristi se promenljiva (b) | Var b: bool, 1, 0  na liniji 62
+ERROR 15:44:53,449 - Greska faktor kada nema relacioni operator mora biti tipa bool na liniji 66
+INFO  15:44:53,449 - Pristup globalnoj promenljivi (b) | Var b: bool, 1, 0  na liniji 69
+INFO  15:44:53,449 - Koristi se promenljiva (b) | Var b: bool, 1, 0  na liniji 69
+INFO  15:44:53,449 - Pristup globalnoj promenljivi (b) | Var b: bool, 1, 0  na liniji 74
+INFO  15:44:53,449 - Koristi se promenljiva (b) | Var b: bool, 1, 0  na liniji 74
+ERROR 15:44:53,449 - Greska izraz kod switch-a treba da bude celobrojnog tipa na liniji 74
+ERROR 15:44:53,449 - Greska grana sa celobrojnom konstantom (1) vec postoji na liniji 12
+INFO  15:44:53,450 - Pristup globalnoj funkciji (fun) | Meth fun: int, 0, 3  na liniji 86
+INFO  15:44:53,450 - Pristup globalnoj promenljivi (a) | Var a: int, 0, 0  na liniji 86
+INFO  15:44:53,450 - Koristi se promenljiva (a) | Var a: int, 0, 0  na liniji 86
+ERROR 15:44:53,453 - Greska funkcija (fun)  prihvata 3 parametara, dato je 1 na liniji 86
+INFO  15:44:53,453 - Pristup globalnoj funkciji (fun) | Meth fun: int, 0, 3  na liniji 87
+INFO  15:44:53,453 - Pristup globalnoj promenljivi (a) | Var a: int, 0, 0  na liniji 87
+INFO  15:44:53,453 - Koristi se promenljiva (a) | Var a: int, 0, 0  na liniji 87
+INFO  15:44:53,453 - Pristup lokalnoj promenljivi (aClass) | Var aClass: Class A , 0, 1  na liniji 87
+INFO  15:44:53,454 - Koristi se promenljiva (aClass) | Var aClass: Class A , 0, 1  na liniji 87
+INFO  15:44:53,454 - Pristup globalnoj promenljivi (b) | Var b: bool, 1, 0  na liniji 87
+INFO  15:44:53,454 - Koristi se promenljiva (b) | Var b: bool, 1, 0  na liniji 87
+ERROR 15:44:53,454 - Greska parametar (c) redni broj (3) nije kompatabilan sa pravim parametrom na liniji 87
+INFO  15:44:53,454 - Pristup globalnoj funkciji (fun) | Meth fun: int, 0, 3  na liniji 88
+INFO  15:44:53,454 - Pristup globalnoj promenljivi (a) | Var a: int, 0, 0  na liniji 88
+INFO  15:44:53,455 - Koristi se promenljiva (a) | Var a: int, 0, 0  na liniji 88
+INFO  15:44:53,455 - Pristup lokalnoj promenljivi (aClass) | Var aClass: Class A , 0, 1  na liniji 88
+INFO  15:44:53,455 - Koristi se promenljiva (aClass) | Var aClass: Class A , 0, 1  na liniji 88
+INFO  15:44:53,455 - Pristup lokalnoj promenljivi (niz) | Var niz: Arr of char, 1, 1  na liniji 88
+INFO  15:44:53,455 - Pristupa se clanu niza (niz) | Var niz: Arr of char, 1, 1  na liniji 88
+INFO  15:44:53,455 - Koristi se promenljiva (Elem:niz) | Elem:niz: char, -1, -1  na liniji 88
+ERROR 15:44:53,456 - Greska kod logickog izraza kod if-a . Bio je izvrsen oporavak do ( ')' ).
+INFO  15:44:53,456 - ===================================
+ERROR 15:44:53,463 - Parsiranje NIJE uspesno zavrseno!

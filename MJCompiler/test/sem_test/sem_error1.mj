@@ -1,0 +1,51 @@
+program SyntaxErr
+
+const int a=true,b='c';
+const bool c=1,d='d';
+const char e=1,f=false;
+
+int1 g;
+int h;
+class A extends int{
+	int a;
+	{
+		int test()
+		{
+		}
+	}
+}
+{
+
+	void test(){
+	
+	}
+	void main()
+	int niz[];A aClass;
+	{
+		niz=new int[2];
+		aClass=new A;
+		
+		//Testira se dodeljivanje
+		int=2;
+		h=3;
+		aClass.a=2;
+		niz[0]=2;
+		
+		//Testira se dec i inc
+		int++;
+		h++;
+		aClass.a++;
+		niz[0]++;
+
+		h--;
+		aClass.a--;
+		niz[0]--;
+		
+		// Testiraju se pozivanje funkcija
+		test();
+		aClass.test();
+		
+		test1();
+		aAclass.test1();	
+	}
+}

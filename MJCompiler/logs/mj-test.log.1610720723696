@@ -1,0 +1,84 @@
+INFO  15:22:04,427 - Compiling source file: C:\Users\jovan\OneDrive\Desktop\ETF HELL\77777 SEMESTAR\prevodioci\projekat\workspace\MJCompiler\test\syn_test\syntax_error2.mj
+INFO  15:22:04,757 - #2 program
+INFO  15:22:04,758 - #49 SyntaxErr
+INFO  15:22:04,758 - #43 class
+INFO  15:22:04,764 - #49 A
+INFO  15:22:04,765 - #3 {
+INFO  15:22:04,767 - #3 {
+INFO  15:22:04,772 - #44 void
+INFO  15:22:04,775 - #49 main
+INFO  15:22:04,778 - #12 (
+INFO  15:22:04,781 - #13 )
+INFO  15:22:04,782 - #3 {
+INFO  15:22:04,790 - #4 }
+INFO  15:22:04,793 - #4 }
+INFO  15:22:04,796 - #4 }
+INFO  15:22:04,797 - #3 {
+INFO  15:22:04,798 - #44 void
+INFO  15:22:04,798 - #49 main
+INFO  15:22:04,799 - #12 (
+INFO  15:22:04,799 - #13 )
+INFO  15:22:04,799 - #3 {
+INFO  15:22:04,800 - #4 }
+INFO  15:22:04,800 - #4 }
+INFO  15:22:04,813 - Program(
+  ProgName(
+   SyntaxErr
+  ) [ProgName]
+  MultDecl(
+    NoDecl(
+    ) [NoDecl]
+    DecClass(
+      ClassDeclMeth(
+        ClassName(
+         A
+        ) [ClassName]
+        NoExtendType(
+        ) [NoExtendType]
+        NoClassVarDecl(
+        ) [NoClassVarDecl]
+        MethodDeclUse(
+          NoMethodDecl(
+          ) [NoMethodDecl]
+          MethodDecPar(
+            MethodTypeName(
+              MethVoid(
+              ) [MethVoid]
+             main
+            ) [MethodTypeName]
+            NoFormParList(
+            ) [NoFormParList]
+            MethodLocal(
+              NoVarDecl(
+              ) [NoVarDecl]
+            ) [MethodLocal]
+            NoStatementList(
+            ) [NoStatementList]
+          ) [MethodDecPar]
+        ) [MethodDeclUse]
+      ) [ClassDeclMeth]
+    ) [DecClass]
+  ) [MultDecl]
+  MethodDeclUse(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecPar(
+      MethodTypeName(
+        MethVoid(
+        ) [MethVoid]
+       main
+      ) [MethodTypeName]
+      NoFormParList(
+      ) [NoFormParList]
+      MethodLocal(
+        NoVarDecl(
+        ) [NoVarDecl]
+      ) [MethodLocal]
+      NoStatementList(
+      ) [NoStatementList]
+    ) [MethodDecPar]
+  ) [MethodDeclUse]
+) [Program]
+INFO  15:22:04,827 - ===================================
+INFO  15:22:04,841 - ===================================
+INFO  15:22:04,872 - Parsiranje uspesno zavrseno!

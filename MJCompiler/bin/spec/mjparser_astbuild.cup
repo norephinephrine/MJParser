@@ -200,7 +200,7 @@ GlobalVarList	::=(GlobalMultVar)GlobalVarComma:G1 GlobalVarList:G2 {: RESULT=new
 GlobalVarParamSemi ::=(GlobalVarSemi) VarParam:V1 SEMI {: RESULT=new GlobalVarSemi(V1); RESULT.setLine(V1left); :}
 			|
 			(GlobalErrorVarSemi)error SEMI:l 
-		    {: parser.report_error("Greska kod definicije VAR globalnih promenljivi.Izvrsen oporavak do ; u liniji " + lleft, null);  :} {: RESULT=new GlobalErrorVarSemi(); :}
+		    {: parser.report_error("Greska kod deklaracije VAR globalnih promenljivi.Izvrsen oporavak do ; u liniji " + lleft, null);  :} {: RESULT=new GlobalErrorVarSemi(); :}
 		    ;
 			
 
@@ -208,7 +208,7 @@ GlobalVarParamSemi ::=(GlobalVarSemi) VarParam:V1 SEMI {: RESULT=new GlobalVarSe
 GlobalVarComma ::=(GlobalCommaVar)VarParam:V1 COMMA {: RESULT=new GlobalCommaVar(V1); RESULT.setLine(V1left); :}		
 			|
 			(GlobalErrorVarComma)error COMMA:l 
-		    {: parser.report_error("Greska kod definicije VAR globalnih promenljivi.Izvrsen oporavak do , u liniji " + lleft, null);  :} {: RESULT=new GlobalErrorVarComma(); :}
+		    {: parser.report_error("Greska kod deklaracije VAR globalnih promenljivi.Izvrsen oporavak do , u liniji " + lleft, null);  :} {: RESULT=new GlobalErrorVarComma(); :}
 		    ;
 /* #METHOD VAR */	
 	    	

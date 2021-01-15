@@ -1,0 +1,329 @@
+INFO  17:36:49,953 - Compiling source file: C:\Users\jovan\OneDrive\Desktop\ETF HELL\77777 SEMESTAR\prevodioci\projekat\workspace\MJCompiler\test\fibonachi.mj
+INFO  17:36:50,291 - #2 program
+INFO  17:36:50,291 - #49 test301
+INFO  17:36:50,291 - #3 {
+INFO  17:36:50,297 - #49 int
+INFO  17:36:50,299 - #49 fibonachi
+INFO  17:36:50,302 - #12 (
+INFO  17:36:50,305 - #49 int
+INFO  17:36:50,306 - #49 n
+INFO  17:36:50,306 - #13 )
+INFO  17:36:50,306 - #3 {
+INFO  17:36:50,312 - #14 if
+INFO  17:36:50,315 - #12 (
+INFO  17:36:50,315 - #49 n
+INFO  17:36:50,315 - #37 <=
+INFO  17:36:50,317 - #46 1
+INFO  17:36:50,323 - #13 )
+INFO  17:36:50,325 - #24 return
+INFO  17:36:50,325 - #49 n
+INFO  17:36:50,326 - #7 ;
+INFO  17:36:50,326 - #24 return
+INFO  17:36:50,330 - #49 fibonachi
+INFO  17:36:50,330 - #12 (
+INFO  17:36:50,330 - #49 n
+INFO  17:36:50,330 - #39 -
+INFO  17:36:50,331 - #46 1
+INFO  17:36:50,336 - #13 )
+INFO  17:36:50,337 - #38 +
+INFO  17:36:50,337 - #49 fibonachi
+INFO  17:36:50,340 - #12 (
+INFO  17:36:50,340 - #49 n
+INFO  17:36:50,340 - #39 -
+INFO  17:36:50,340 - #46 2
+INFO  17:36:50,340 - #13 )
+INFO  17:36:50,341 - #7 ;
+INFO  17:36:50,341 - #4 }
+INFO  17:36:50,341 - #44 void
+INFO  17:36:50,344 - #49 main
+INFO  17:36:50,347 - #12 (
+INFO  17:36:50,348 - #13 )
+INFO  17:36:50,348 - #49 int
+INFO  17:36:50,351 - #49 num
+INFO  17:36:50,352 - #7 ;
+INFO  17:36:50,352 - #3 {
+INFO  17:36:50,357 - #25 read
+INFO  17:36:50,357 - #12 (
+INFO  17:36:50,357 - #49 num
+INFO  17:36:50,358 - #13 )
+INFO  17:36:50,358 - #7 ;
+INFO  17:36:50,358 - #49 num
+INFO  17:36:50,359 - #6 =
+INFO  17:36:50,359 - #49 fibonachi
+INFO  17:36:50,363 - #12 (
+INFO  17:36:50,363 - #49 num
+INFO  17:36:50,363 - #13 )
+INFO  17:36:50,363 - #7 ;
+INFO  17:36:50,364 - #26 print
+INFO  17:36:50,364 - #12 (
+INFO  17:36:50,365 - #49 num
+INFO  17:36:50,365 - #13 )
+INFO  17:36:50,365 - #7 ;
+INFO  17:36:50,365 - #4 }
+INFO  17:36:50,366 - #4 }
+INFO  17:36:50,384 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoDecl(
+  ) [NoDecl]
+  MethodDeclUse(
+    MethodDeclUse(
+      NoMethodDecl(
+      ) [NoMethodDecl]
+      MethodDecPar(
+        MethodTypeName(
+          MethType(
+            Type(
+             int
+            ) [Type]
+          ) [MethType]
+         fibonachi
+        ) [MethodTypeName]
+        FormParListUse(
+          FormParSingle(
+            FormParamNoError(
+              FormParNoBrack(
+                Type(
+                 int
+                ) [Type]
+               n
+              ) [FormParNoBrack]
+            ) [FormParamNoError]
+          ) [FormParSingle]
+        ) [FormParListUse]
+        MethodLocal(
+          NoVarDecl(
+          ) [NoVarDecl]
+        ) [MethodLocal]
+        MultStatement(
+          MultStatement(
+            NoStatementList(
+            ) [NoStatementList]
+            StatementIf(
+              ConditionPar(
+                ConditionSingle(
+                  CondTermSingle(
+                    CondFactOp(
+                      ExprTermList(
+                        TermSinglePos(
+                          FactorSingle(
+                            FactVar(
+                              DesignatorSingle(
+                               n
+                              ) [DesignatorSingle]
+                            ) [FactVar]
+                          ) [FactorSingle]
+                        ) [TermSinglePos]
+                      ) [ExprTermList]
+                      ReLSE(
+                      ) [ReLSE]
+                      ExprTermList(
+                        TermSinglePos(
+                          FactorSingle(
+                            FactorNum(
+                             1
+                            ) [FactorNum]
+                          ) [FactorSingle]
+                        ) [TermSinglePos]
+                      ) [ExprTermList]
+                    ) [CondFactOp]
+                  ) [CondTermSingle]
+                ) [ConditionSingle]
+              ) [ConditionPar]
+              IfOnlyStm(
+                StatementRetExpr(
+                  ExprTermList(
+                    TermSinglePos(
+                      FactorSingle(
+                        FactVar(
+                          DesignatorSingle(
+                           n
+                          ) [DesignatorSingle]
+                        ) [FactVar]
+                      ) [FactorSingle]
+                    ) [TermSinglePos]
+                  ) [ExprTermList]
+                ) [StatementRetExpr]
+              ) [IfOnlyStm]
+            ) [StatementIf]
+          ) [MultStatement]
+          StatementRetExpr(
+            ExprTermList(
+              TermExpr(
+                TermSinglePos(
+                  FactorSingle(
+                    FunCallParam(
+                      DesignatorSingle(
+                       fibonachi
+                      ) [DesignatorSingle]
+                      ActParsSingle(
+                        ExprTermList(
+                          TermExpr(
+                            TermSinglePos(
+                              FactorSingle(
+                                FactVar(
+                                  DesignatorSingle(
+                                   n
+                                  ) [DesignatorSingle]
+                                ) [FactVar]
+                              ) [FactorSingle]
+                            ) [TermSinglePos]
+                            AddMinus(
+                            ) [AddMinus]
+                            FactorSingle(
+                              FactorNum(
+                               1
+                              ) [FactorNum]
+                            ) [FactorSingle]
+                          ) [TermExpr]
+                        ) [ExprTermList]
+                      ) [ActParsSingle]
+                    ) [FunCallParam]
+                  ) [FactorSingle]
+                ) [TermSinglePos]
+                AddPlus(
+                ) [AddPlus]
+                FactorSingle(
+                  FunCallParam(
+                    DesignatorSingle(
+                     fibonachi
+                    ) [DesignatorSingle]
+                    ActParsSingle(
+                      ExprTermList(
+                        TermExpr(
+                          TermSinglePos(
+                            FactorSingle(
+                              FactVar(
+                                DesignatorSingle(
+                                 n
+                                ) [DesignatorSingle]
+                              ) [FactVar]
+                            ) [FactorSingle]
+                          ) [TermSinglePos]
+                          AddMinus(
+                          ) [AddMinus]
+                          FactorSingle(
+                            FactorNum(
+                             2
+                            ) [FactorNum]
+                          ) [FactorSingle]
+                        ) [TermExpr]
+                      ) [ExprTermList]
+                    ) [ActParsSingle]
+                  ) [FunCallParam]
+                ) [FactorSingle]
+              ) [TermExpr]
+            ) [ExprTermList]
+          ) [StatementRetExpr]
+        ) [MultStatement]
+      ) [MethodDecPar]
+    ) [MethodDeclUse]
+    MethodDecPar(
+      MethodTypeName(
+        MethVoid(
+        ) [MethVoid]
+       main
+      ) [MethodTypeName]
+      NoFormParList(
+      ) [NoFormParList]
+      MethodLocal(
+        VarDeclUse(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            SingleVar(
+              VarParamNoBrack(
+               num
+              ) [VarParamNoBrack]
+            ) [SingleVar]
+          ) [VarDecl]
+        ) [VarDeclUse]
+      ) [MethodLocal]
+      MultStatement(
+        MultStatement(
+          MultStatement(
+            NoStatementList(
+            ) [NoStatementList]
+            StatementRead(
+              DesignatorSingle(
+               num
+              ) [DesignatorSingle]
+            ) [StatementRead]
+          ) [MultStatement]
+          StatementDesignator(
+            DesStmAssign(
+              DesignatorSingle(
+               num
+              ) [DesignatorSingle]
+              Assignop(
+              ) [Assignop]
+              DesAssignNoErr(
+                ExprTermList(
+                  TermSinglePos(
+                    FactorSingle(
+                      FunCallParam(
+                        DesignatorSingle(
+                         fibonachi
+                        ) [DesignatorSingle]
+                        ActParsSingle(
+                          ExprTermList(
+                            TermSinglePos(
+                              FactorSingle(
+                                FactVar(
+                                  DesignatorSingle(
+                                   num
+                                  ) [DesignatorSingle]
+                                ) [FactVar]
+                              ) [FactorSingle]
+                            ) [TermSinglePos]
+                          ) [ExprTermList]
+                        ) [ActParsSingle]
+                      ) [FunCallParam]
+                    ) [FactorSingle]
+                  ) [TermSinglePos]
+                ) [ExprTermList]
+              ) [DesAssignNoErr]
+            ) [DesStmAssign]
+          ) [StatementDesignator]
+        ) [MultStatement]
+        StatementPrint(
+          ExprTermList(
+            TermSinglePos(
+              FactorSingle(
+                FactVar(
+                  DesignatorSingle(
+                   num
+                  ) [DesignatorSingle]
+                ) [FactVar]
+              ) [FactorSingle]
+            ) [TermSinglePos]
+          ) [ExprTermList]
+        ) [StatementPrint]
+      ) [MultStatement]
+    ) [MethodDecPar]
+  ) [MethodDeclUse]
+) [Program]
+INFO  17:36:50,400 - ===================================
+INFO  17:36:50,409 - Pristupa se (n) koji je po redu  (1) formalni argument funkcije (fibonachi) | Var n: int, 0, 1  na liniji 8
+INFO  17:36:50,409 - Koristi se promenljiva (n) | Var n: int, 0, 1  na liniji 8
+INFO  17:36:50,410 - Pristupa se (n) koji je po redu  (1) formalni argument funkcije (fibonachi) | Var n: int, 0, 1  na liniji 9
+INFO  17:36:50,410 - Koristi se promenljiva (n) | Var n: int, 0, 1  na liniji 9
+INFO  17:36:50,410 - Pristup globalnoj funkciji (fibonachi) | Meth fibonachi: int, 0, 0  na liniji 10
+INFO  17:36:50,410 - Pristupa se (n) koji je po redu  (1) formalni argument funkcije (fibonachi) | Var n: int, 0, 1  na liniji 10
+INFO  17:36:50,410 - Koristi se promenljiva (n) | Var n: int, 0, 1  na liniji 10
+INFO  17:36:50,413 - Pristup globalnoj funkciji (fibonachi) | Meth fibonachi: int, 0, 0  na liniji 10
+INFO  17:36:50,414 - Pristupa se (n) koji je po redu  (1) formalni argument funkcije (fibonachi) | Var n: int, 0, 1  na liniji 10
+INFO  17:36:50,414 - Koristi se promenljiva (n) | Var n: int, 0, 1  na liniji 10
+INFO  17:36:50,414 - Pristup lokalnoj promenljivi (num) | Var num: int, 0, 1  na liniji 15
+INFO  17:36:50,414 - Pristup lokalnoj promenljivi (num) | Var num: int, 0, 1  na liniji 16
+INFO  17:36:50,414 - Pristup globalnoj funkciji (fibonachi) | Meth fibonachi: int, 0, 1  na liniji 16
+INFO  17:36:50,414 - Pristup lokalnoj promenljivi (num) | Var num: int, 0, 1  na liniji 16
+INFO  17:36:50,415 - Koristi se promenljiva (num) | Var num: int, 0, 1  na liniji 16
+INFO  17:36:50,415 - Pristup lokalnoj promenljivi (num) | Var num: int, 0, 1  na liniji 17
+INFO  17:36:50,415 - Koristi se promenljiva (num) | Var num: int, 0, 1  na liniji 17
+INFO  17:36:50,415 - ===================================
+INFO  17:36:50,454 - Parsiranje uspesno zavrseno!

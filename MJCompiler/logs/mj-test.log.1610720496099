@@ -1,0 +1,40 @@
+INFO  15:21:27,800 - Compiling source file: C:\Users\jovan\OneDrive\Desktop\ETF HELL\77777 SEMESTAR\prevodioci\projekat\workspace\MJCompiler\test\syn_test\syntax_error2.mj
+INFO  15:21:28,144 - #2 program
+INFO  15:21:28,145 - #49 SyntaxErr
+INFO  15:21:28,145 - #3 {
+INFO  15:21:28,151 - #44 void
+INFO  15:21:28,154 - #49 main
+INFO  15:21:28,157 - #12 (
+INFO  15:21:28,160 - #13 )
+INFO  15:21:28,160 - #3 {
+INFO  15:21:28,168 - #4 }
+INFO  15:21:28,171 - #4 }
+INFO  15:21:28,186 - Program(
+  ProgName(
+   SyntaxErr
+  ) [ProgName]
+  NoDecl(
+  ) [NoDecl]
+  MethodDeclUse(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecPar(
+      MethodTypeName(
+        MethVoid(
+        ) [MethVoid]
+       main
+      ) [MethodTypeName]
+      NoFormParList(
+      ) [NoFormParList]
+      MethodLocal(
+        NoVarDecl(
+        ) [NoVarDecl]
+      ) [MethodLocal]
+      NoStatementList(
+      ) [NoStatementList]
+    ) [MethodDecPar]
+  ) [MethodDeclUse]
+) [Program]
+INFO  15:21:28,194 - ===================================
+INFO  15:21:28,202 - ===================================
+INFO  15:21:28,240 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,18 @@
+INFO  15:21:36,118 - Compiling source file: C:\Users\jovan\OneDrive\Desktop\ETF HELL\77777 SEMESTAR\prevodioci\projekat\workspace\MJCompiler\test\syn_test\syntax_error2.mj
+INFO  15:21:36,495 - #2 program
+INFO  15:21:36,496 - #49 SyntaxErr
+INFO  15:21:36,496 - #3 {
+INFO  15:21:36,502 - #4 }
+INFO  15:21:36,516 - Program(
+  ProgName(
+   SyntaxErr
+  ) [ProgName]
+  NoDecl(
+  ) [NoDecl]
+  NoMethodDecl(
+  ) [NoMethodDecl]
+) [Program]
+INFO  15:21:36,518 - ===================================
+ERROR 15:21:36,525 - Nije definisana main metoda
+INFO  15:21:36,526 - ===================================
+ERROR 15:21:36,531 - Parsiranje NIJE uspesno zavrseno!

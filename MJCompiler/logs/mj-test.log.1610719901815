@@ -1,0 +1,189 @@
+INFO  15:11:12,397 - Compiling source file: C:\Users\jovan\OneDrive\Desktop\ETF HELL\77777 SEMESTAR\prevodioci\projekat\workspace\MJCompiler\test\syn_test\syntax_error1.mj
+INFO  15:11:12,731 - #2 program
+INFO  15:11:12,731 - #49 SyntaxErr
+INFO  15:11:12,732 - #5 const
+INFO  15:11:12,738 - #49 int
+INFO  15:11:12,738 - #49 a
+INFO  15:11:12,741 - #6 =
+INFO  15:11:12,744 - #47 true
+INFO  15:11:12,745 - #8 ,
+INFO  15:11:12,746 - #49 b
+INFO  15:11:12,746 - #6 =
+INFO  15:11:12,747 - #48 c
+INFO  15:11:12,747 - #7 ;
+INFO  15:11:12,748 - #5 const
+INFO  15:11:12,752 - #49 bool
+INFO  15:11:12,752 - #49 c
+INFO  15:11:12,753 - #6 =
+INFO  15:11:12,753 - #46 1
+INFO  15:11:12,754 - #8 ,
+INFO  15:11:12,754 - #49 d
+INFO  15:11:12,755 - #6 =
+INFO  15:11:12,756 - #48 d
+INFO  15:11:12,756 - #7 ;
+INFO  15:11:12,757 - #5 const
+INFO  15:11:12,757 - #49 char
+INFO  15:11:12,758 - #49 e
+INFO  15:11:12,758 - #6 =
+INFO  15:11:12,759 - #46 1
+INFO  15:11:12,760 - #8 ,
+INFO  15:11:12,761 - #49 f
+INFO  15:11:12,762 - #6 =
+INFO  15:11:12,762 - #47 false
+INFO  15:11:12,763 - #7 ;
+INFO  15:11:12,763 - #43 class
+INFO  15:11:12,763 - #49 A
+INFO  15:11:12,764 - #11 extends
+INFO  15:11:12,767 - #49 a
+INFO  15:11:12,767 - #3 {
+INFO  15:11:12,768 - #4 }
+INFO  15:11:12,771 - #3 {
+INFO  15:11:12,772 - #44 void
+INFO  15:11:12,775 - #49 main
+INFO  15:11:12,779 - #12 (
+INFO  15:11:12,783 - #13 )
+INFO  15:11:12,783 - #3 {
+INFO  15:11:12,792 - #4 }
+INFO  15:11:12,795 - #4 }
+INFO  15:11:12,817 - Program(
+  ProgName(
+   SyntaxErr
+  ) [ProgName]
+  MultDecl(
+    MultDecl(
+      MultDecl(
+        MultDecl(
+          NoDecl(
+          ) [NoDecl]
+          DecConst(
+            ConstDecl(
+              Type(
+               int
+              ) [Type]
+              MultConst(
+                ConstCommaEnd(
+                  ConstName(
+                   a
+                  ) [ConstName]
+                  ConstBool(
+                   true
+                  ) [ConstBool]
+                ) [ConstCommaEnd]
+                SingleConst(
+                  ConstSemi(
+                    ConstName(
+                     b
+                    ) [ConstName]
+                    ConstChar(
+                     c
+                    ) [ConstChar]
+                  ) [ConstSemi]
+                ) [SingleConst]
+              ) [MultConst]
+            ) [ConstDecl]
+          ) [DecConst]
+        ) [MultDecl]
+        DecConst(
+          ConstDecl(
+            Type(
+             bool
+            ) [Type]
+            MultConst(
+              ConstCommaEnd(
+                ConstName(
+                 c
+                ) [ConstName]
+                ConstNum(
+                 1
+                ) [ConstNum]
+              ) [ConstCommaEnd]
+              SingleConst(
+                ConstSemi(
+                  ConstName(
+                   d
+                  ) [ConstName]
+                  ConstChar(
+                   d
+                  ) [ConstChar]
+                ) [ConstSemi]
+              ) [SingleConst]
+            ) [MultConst]
+          ) [ConstDecl]
+        ) [DecConst]
+      ) [MultDecl]
+      DecConst(
+        ConstDecl(
+          Type(
+           char
+          ) [Type]
+          MultConst(
+            ConstCommaEnd(
+              ConstName(
+               e
+              ) [ConstName]
+              ConstNum(
+               1
+              ) [ConstNum]
+            ) [ConstCommaEnd]
+            SingleConst(
+              ConstSemi(
+                ConstName(
+                 f
+                ) [ConstName]
+                ConstBool(
+                 false
+                ) [ConstBool]
+              ) [ConstSemi]
+            ) [SingleConst]
+          ) [MultConst]
+        ) [ConstDecl]
+      ) [DecConst]
+    ) [MultDecl]
+    DecClass(
+      ClassDeclNoMeth(
+        ClassName(
+         A
+        ) [ClassName]
+        ExtendTypeExist(
+          ExtendNoError(
+            Type(
+             a
+            ) [Type]
+          ) [ExtendNoError]
+        ) [ExtendTypeExist]
+        NoClassVarDecl(
+        ) [NoClassVarDecl]
+      ) [ClassDeclNoMeth]
+    ) [DecClass]
+  ) [MultDecl]
+  MethodDeclUse(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecPar(
+      MethodTypeName(
+        MethVoid(
+        ) [MethVoid]
+       main
+      ) [MethodTypeName]
+      NoFormParList(
+      ) [NoFormParList]
+      MethodLocal(
+        NoVarDecl(
+        ) [NoVarDecl]
+      ) [MethodLocal]
+      NoStatementList(
+      ) [NoStatementList]
+    ) [MethodDecPar]
+  ) [MethodDeclUse]
+) [Program]
+INFO  15:11:12,882 - ===================================
+ERROR 15:11:12,890 - Greska:  konstanta a i vrednost:true se ne poklapaju po tipu na liniji 3
+ERROR 15:11:12,891 - Greska:  konstanta b i vrednost:c se ne poklapaju po tipu na liniji 3
+ERROR 15:11:12,891 - Greska:  konstanta c i vrednost:1 se ne poklapaju po tipu na liniji 4
+ERROR 15:11:12,891 - Greska:  konstanta d i vrednost:d se ne poklapaju po tipu na liniji 4
+ERROR 15:11:12,892 - Greska:  konstanta e i vrednost:1 se ne poklapaju po tipu na liniji 5
+ERROR 15:11:12,892 - Greska:  konstanta f i vrednost:false se ne poklapaju po tipu na liniji 5
+ERROR 15:11:12,893 - Greska: Ime a ne predstavlja tip! na liniji 7
+ERROR 15:11:12,893 - Greska ne moze da se prosiri (a) na liniji 7
+INFO  15:11:12,894 - ===================================
+ERROR 15:11:12,898 - Parsiranje NIJE uspesno zavrseno!

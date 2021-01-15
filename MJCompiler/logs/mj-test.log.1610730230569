@@ -1,0 +1,739 @@
+INFO  18:02:56,248 - Compiling source file: C:\Users\jovan\OneDrive\Desktop\ETF HELL\77777 SEMESTAR\prevodioci\projekat\workspace\MJCompiler\test\test_zadatak4.MJ
+INFO  18:02:56,593 - #2 program
+INFO  18:02:56,593 - #49 Mj
+INFO  18:02:56,594 - #49 int
+INFO  18:02:56,599 - #49 x
+INFO  18:02:56,603 - #8 ,
+INFO  18:02:56,604 - #49 y
+INFO  18:02:56,604 - #7 ;
+INFO  18:02:56,605 - #43 class
+INFO  18:02:56,609 - #49 TCalc
+INFO  18:02:56,609 - #3 {
+INFO  18:02:56,613 - #49 int
+INFO  18:02:56,618 - #49 tax
+INFO  18:02:56,618 - #7 ;
+INFO  18:02:56,618 - #3 {
+INFO  18:02:56,619 - #44 void
+INFO  18:02:56,622 - #49 mia
+INFO  18:02:56,625 - #12 (
+INFO  18:02:56,628 - #49 int
+INFO  18:02:56,629 - #49 i
+INFO  18:02:56,629 - #13 )
+INFO  18:02:56,631 - #3 {
+INFO  18:02:56,637 - #49 tax
+INFO  18:02:56,640 - #6 =
+INFO  18:02:56,640 - #49 i
+INFO  18:02:56,644 - #7 ;
+INFO  18:02:56,644 - #14 if
+INFO  18:02:56,645 - #12 (
+INFO  18:02:56,645 - #47 false
+INFO  18:02:56,646 - #13 )
+INFO  18:02:56,646 - #26 print
+INFO  18:02:56,647 - #12 (
+INFO  18:02:56,647 - #48 T
+INFO  18:02:56,649 - #13 )
+INFO  18:02:56,649 - #7 ;
+INFO  18:02:56,650 - #15 else
+INFO  18:02:56,650 - #26 print
+INFO  18:02:56,653 - #12 (
+INFO  18:02:56,654 - #48 F
+INFO  18:02:56,654 - #13 )
+INFO  18:02:56,654 - #7 ;
+INFO  18:02:56,655 - #4 }
+INFO  18:02:56,658 - #44 void
+INFO  18:02:56,662 - #49 f
+INFO  18:02:56,662 - #12 (
+INFO  18:02:56,663 - #49 int
+INFO  18:02:56,663 - #49 i
+INFO  18:02:56,663 - #13 )
+INFO  18:02:56,664 - #3 {
+INFO  18:02:56,664 - #4 }
+INFO  18:02:56,664 - #4 }
+INFO  18:02:56,665 - #4 }
+INFO  18:02:56,665 - #43 class
+INFO  18:02:56,665 - #49 ATCalc
+INFO  18:02:56,666 - #11 extends
+INFO  18:02:56,666 - #49 TCalc
+INFO  18:02:56,666 - #3 {
+INFO  18:02:56,666 - #3 {
+INFO  18:02:56,667 - #44 void
+INFO  18:02:56,667 - #49 mia
+INFO  18:02:56,667 - #12 (
+INFO  18:02:56,669 - #49 int
+INFO  18:02:56,669 - #49 i
+INFO  18:02:56,670 - #13 )
+INFO  18:02:56,670 - #3 {
+INFO  18:02:56,670 - #49 f
+INFO  18:02:56,670 - #12 (
+INFO  18:02:56,671 - #49 i
+INFO  18:02:56,671 - #13 )
+INFO  18:02:56,671 - #7 ;
+INFO  18:02:56,671 - #26 print
+INFO  18:02:56,672 - #12 (
+INFO  18:02:56,672 - #48 A
+INFO  18:02:56,679 - #13 )
+INFO  18:02:56,680 - #7 ;
+INFO  18:02:56,680 - #4 }
+INFO  18:02:56,680 - #4 }
+INFO  18:02:56,680 - #4 }
+INFO  18:02:56,681 - #3 {
+INFO  18:02:56,681 - #49 int
+INFO  18:02:56,681 - #49 test
+INFO  18:02:56,681 - #12 (
+INFO  18:02:56,682 - #13 )
+INFO  18:02:56,682 - #3 {
+INFO  18:02:56,685 - #14 if
+INFO  18:02:56,685 - #12 (
+INFO  18:02:56,686 - #46 2
+INFO  18:02:56,686 - #32 ==
+INFO  18:02:56,686 - #46 4
+INFO  18:02:56,693 - #13 )
+INFO  18:02:56,694 - #3 {
+INFO  18:02:56,694 - #24 return
+INFO  18:02:56,694 - #46 0
+INFO  18:02:56,695 - #7 ;
+INFO  18:02:56,695 - #4 }
+INFO  18:02:56,696 - #24 return
+INFO  18:02:56,699 - #46 1
+INFO  18:02:56,700 - #7 ;
+INFO  18:02:56,700 - #4 }
+INFO  18:02:56,700 - #49 int
+INFO  18:02:56,701 - #49 fun
+INFO  18:02:56,701 - #12 (
+INFO  18:02:56,701 - #49 int
+INFO  18:02:56,702 - #49 arg
+INFO  18:02:56,702 - #13 )
+INFO  18:02:56,702 - #3 {
+INFO  18:02:56,702 - #24 return
+INFO  18:02:56,703 - #49 arg
+INFO  18:02:56,703 - #41 *
+INFO  18:02:56,703 - #49 arg
+INFO  18:02:56,710 - #7 ;
+INFO  18:02:56,710 - #4 }
+INFO  18:02:56,711 - #44 void
+INFO  18:02:56,711 - #49 main
+INFO  18:02:56,711 - #12 (
+INFO  18:02:56,712 - #13 )
+INFO  18:02:56,712 - #49 TCalc
+INFO  18:02:56,712 - #49 obj
+INFO  18:02:56,713 - #7 ;
+INFO  18:02:56,714 - #3 {
+INFO  18:02:56,717 - #49 x
+INFO  18:02:56,717 - #6 =
+INFO  18:02:56,718 - #49 fun
+INFO  18:02:56,718 - #12 (
+INFO  18:02:56,718 - #46 3
+INFO  18:02:56,718 - #13 )
+INFO  18:02:56,720 - #7 ;
+INFO  18:02:56,721 - #49 obj
+INFO  18:02:56,721 - #6 =
+INFO  18:02:56,721 - #30 new
+INFO  18:02:56,721 - #49 TCalc
+INFO  18:02:56,722 - #7 ;
+INFO  18:02:56,722 - #49 obj
+INFO  18:02:56,722 - #31 .
+INFO  18:02:56,722 - #49 mia
+INFO  18:02:56,723 - #12 (
+INFO  18:02:56,723 - #46 4
+INFO  18:02:56,723 - #13 )
+INFO  18:02:56,723 - #7 ;
+INFO  18:02:56,724 - #49 obj
+INFO  18:02:56,724 - #6 =
+INFO  18:02:56,724 - #30 new
+INFO  18:02:56,724 - #49 ATCalc
+INFO  18:02:56,725 - #7 ;
+INFO  18:02:56,725 - #49 obj
+INFO  18:02:56,725 - #31 .
+INFO  18:02:56,725 - #49 mia
+INFO  18:02:56,725 - #12 (
+INFO  18:02:56,725 - #46 4
+INFO  18:02:56,725 - #13 )
+INFO  18:02:56,725 - #7 ;
+INFO  18:02:56,726 - #4 }
+INFO  18:02:56,726 - #4 }
+INFO  18:02:56,738 - Program(
+  ProgName(
+   Mj
+  ) [ProgName]
+  MultDecl(
+    MultDecl(
+      MultDecl(
+        NoDecl(
+        ) [NoDecl]
+        DecVar(
+          GlobalVarDecl(
+            Type(
+             int
+            ) [Type]
+            GlobalMultVar(
+              GlobalCommaVar(
+                VarParamNoBrack(
+                 x
+                ) [VarParamNoBrack]
+              ) [GlobalCommaVar]
+              GlobalSingleVar(
+                GlobalVarSemi(
+                  VarParamNoBrack(
+                   y
+                  ) [VarParamNoBrack]
+                ) [GlobalVarSemi]
+              ) [GlobalSingleVar]
+            ) [GlobalMultVar]
+          ) [GlobalVarDecl]
+        ) [DecVar]
+      ) [MultDecl]
+      DecClass(
+        ClassDeclMeth(
+          ClassName(
+           TCalc
+          ) [ClassName]
+          NoExtendType(
+          ) [NoExtendType]
+          ClassVarDeclUse(
+            NoClassVarDecl(
+            ) [NoClassVarDecl]
+            ClassVarDeclNoErr(
+              Type(
+               int
+              ) [Type]
+              SingleVar(
+                VarParamNoBrack(
+                 tax
+                ) [VarParamNoBrack]
+              ) [SingleVar]
+            ) [ClassVarDeclNoErr]
+          ) [ClassVarDeclUse]
+          MethodDeclUse(
+            MethodDeclUse(
+              NoMethodDecl(
+              ) [NoMethodDecl]
+              MethodDecPar(
+                MethodTypeName(
+                  MethVoid(
+                  ) [MethVoid]
+                 mia
+                ) [MethodTypeName]
+                FormParListUse(
+                  FormParSingle(
+                    FormParamNoError(
+                      FormParNoBrack(
+                        Type(
+                         int
+                        ) [Type]
+                       i
+                      ) [FormParNoBrack]
+                    ) [FormParamNoError]
+                  ) [FormParSingle]
+                ) [FormParListUse]
+                MethodLocal(
+                  NoVarDecl(
+                  ) [NoVarDecl]
+                ) [MethodLocal]
+                MultStatement(
+                  MultStatement(
+                    NoStatementList(
+                    ) [NoStatementList]
+                    StatementDesignator(
+                      DesStmAssign(
+                        DesignatorSingle(
+                         tax
+                        ) [DesignatorSingle]
+                        Assignop(
+                        ) [Assignop]
+                        DesAssignNoErr(
+                          ExprTermList(
+                            TermSinglePos(
+                              FactorSingle(
+                                FactVar(
+                                  DesignatorSingle(
+                                   i
+                                  ) [DesignatorSingle]
+                                ) [FactVar]
+                              ) [FactorSingle]
+                            ) [TermSinglePos]
+                          ) [ExprTermList]
+                        ) [DesAssignNoErr]
+                      ) [DesStmAssign]
+                    ) [StatementDesignator]
+                  ) [MultStatement]
+                  StatementIfElse(
+                    ConditionPar(
+                      ConditionSingle(
+                        CondTermSingle(
+                          CondFactNoOp(
+                            ExprTermList(
+                              TermSinglePos(
+                                FactorSingle(
+                                  FactorBool(
+                                   false
+                                  ) [FactorBool]
+                                ) [FactorSingle]
+                              ) [TermSinglePos]
+                            ) [ExprTermList]
+                          ) [CondFactNoOp]
+                        ) [CondTermSingle]
+                      ) [ConditionSingle]
+                    ) [ConditionPar]
+                    StatementPrint(
+                      ExprTermList(
+                        TermSinglePos(
+                          FactorSingle(
+                            FactorChar(
+                             T
+                            ) [FactorChar]
+                          ) [FactorSingle]
+                        ) [TermSinglePos]
+                      ) [ExprTermList]
+                    ) [StatementPrint]
+                    ElseStart(
+                    ) [ElseStart]
+                    ElseStm(
+                      StatementPrint(
+                        ExprTermList(
+                          TermSinglePos(
+                            FactorSingle(
+                              FactorChar(
+                               F
+                              ) [FactorChar]
+                            ) [FactorSingle]
+                          ) [TermSinglePos]
+                        ) [ExprTermList]
+                      ) [StatementPrint]
+                    ) [ElseStm]
+                  ) [StatementIfElse]
+                ) [MultStatement]
+              ) [MethodDecPar]
+            ) [MethodDeclUse]
+            MethodDecPar(
+              MethodTypeName(
+                MethVoid(
+                ) [MethVoid]
+               f
+              ) [MethodTypeName]
+              FormParListUse(
+                FormParSingle(
+                  FormParamNoError(
+                    FormParNoBrack(
+                      Type(
+                       int
+                      ) [Type]
+                     i
+                    ) [FormParNoBrack]
+                  ) [FormParamNoError]
+                ) [FormParSingle]
+              ) [FormParListUse]
+              MethodLocal(
+                NoVarDecl(
+                ) [NoVarDecl]
+              ) [MethodLocal]
+              NoStatementList(
+              ) [NoStatementList]
+            ) [MethodDecPar]
+          ) [MethodDeclUse]
+        ) [ClassDeclMeth]
+      ) [DecClass]
+    ) [MultDecl]
+    DecClass(
+      ClassDeclMeth(
+        ClassName(
+         ATCalc
+        ) [ClassName]
+        ExtendTypeExist(
+          ExtendNoError(
+            Type(
+             TCalc
+            ) [Type]
+          ) [ExtendNoError]
+        ) [ExtendTypeExist]
+        NoClassVarDecl(
+        ) [NoClassVarDecl]
+        MethodDeclUse(
+          NoMethodDecl(
+          ) [NoMethodDecl]
+          MethodDecPar(
+            MethodTypeName(
+              MethVoid(
+              ) [MethVoid]
+             mia
+            ) [MethodTypeName]
+            FormParListUse(
+              FormParSingle(
+                FormParamNoError(
+                  FormParNoBrack(
+                    Type(
+                     int
+                    ) [Type]
+                   i
+                  ) [FormParNoBrack]
+                ) [FormParamNoError]
+              ) [FormParSingle]
+            ) [FormParListUse]
+            MethodLocal(
+              NoVarDecl(
+              ) [NoVarDecl]
+            ) [MethodLocal]
+            MultStatement(
+              MultStatement(
+                NoStatementList(
+                ) [NoStatementList]
+                StatementDesignator(
+                  DesStmActPar(
+                    DesignatorSingle(
+                     f
+                    ) [DesignatorSingle]
+                    ActParsSingle(
+                      ExprTermList(
+                        TermSinglePos(
+                          FactorSingle(
+                            FactVar(
+                              DesignatorSingle(
+                               i
+                              ) [DesignatorSingle]
+                            ) [FactVar]
+                          ) [FactorSingle]
+                        ) [TermSinglePos]
+                      ) [ExprTermList]
+                    ) [ActParsSingle]
+                  ) [DesStmActPar]
+                ) [StatementDesignator]
+              ) [MultStatement]
+              StatementPrint(
+                ExprTermList(
+                  TermSinglePos(
+                    FactorSingle(
+                      FactorChar(
+                       A
+                      ) [FactorChar]
+                    ) [FactorSingle]
+                  ) [TermSinglePos]
+                ) [ExprTermList]
+              ) [StatementPrint]
+            ) [MultStatement]
+          ) [MethodDecPar]
+        ) [MethodDeclUse]
+      ) [ClassDeclMeth]
+    ) [DecClass]
+  ) [MultDecl]
+  MethodDeclUse(
+    MethodDeclUse(
+      MethodDeclUse(
+        NoMethodDecl(
+        ) [NoMethodDecl]
+        MethodDecPar(
+          MethodTypeName(
+            MethType(
+              Type(
+               int
+              ) [Type]
+            ) [MethType]
+           test
+          ) [MethodTypeName]
+          NoFormParList(
+          ) [NoFormParList]
+          MethodLocal(
+            NoVarDecl(
+            ) [NoVarDecl]
+          ) [MethodLocal]
+          MultStatement(
+            MultStatement(
+              NoStatementList(
+              ) [NoStatementList]
+              StatementIf(
+                ConditionPar(
+                  ConditionSingle(
+                    CondTermSingle(
+                      CondFactOp(
+                        ExprTermList(
+                          TermSinglePos(
+                            FactorSingle(
+                              FactorNum(
+                               2
+                              ) [FactorNum]
+                            ) [FactorSingle]
+                          ) [TermSinglePos]
+                        ) [ExprTermList]
+                        RelEqual(
+                        ) [RelEqual]
+                        ExprTermList(
+                          TermSinglePos(
+                            FactorSingle(
+                              FactorNum(
+                               4
+                              ) [FactorNum]
+                            ) [FactorSingle]
+                          ) [TermSinglePos]
+                        ) [ExprTermList]
+                      ) [CondFactOp]
+                    ) [CondTermSingle]
+                  ) [ConditionSingle]
+                ) [ConditionPar]
+                IfOnlyStm(
+                  StatementMult(
+                    MultStatement(
+                      NoStatementList(
+                      ) [NoStatementList]
+                      StatementRetExpr(
+                        ExprTermList(
+                          TermSinglePos(
+                            FactorSingle(
+                              FactorNum(
+                               0
+                              ) [FactorNum]
+                            ) [FactorSingle]
+                          ) [TermSinglePos]
+                        ) [ExprTermList]
+                      ) [StatementRetExpr]
+                    ) [MultStatement]
+                  ) [StatementMult]
+                ) [IfOnlyStm]
+              ) [StatementIf]
+            ) [MultStatement]
+            StatementRetExpr(
+              ExprTermList(
+                TermSinglePos(
+                  FactorSingle(
+                    FactorNum(
+                     1
+                    ) [FactorNum]
+                  ) [FactorSingle]
+                ) [TermSinglePos]
+              ) [ExprTermList]
+            ) [StatementRetExpr]
+          ) [MultStatement]
+        ) [MethodDecPar]
+      ) [MethodDeclUse]
+      MethodDecPar(
+        MethodTypeName(
+          MethType(
+            Type(
+             int
+            ) [Type]
+          ) [MethType]
+         fun
+        ) [MethodTypeName]
+        FormParListUse(
+          FormParSingle(
+            FormParamNoError(
+              FormParNoBrack(
+                Type(
+                 int
+                ) [Type]
+               arg
+              ) [FormParNoBrack]
+            ) [FormParamNoError]
+          ) [FormParSingle]
+        ) [FormParListUse]
+        MethodLocal(
+          NoVarDecl(
+          ) [NoVarDecl]
+        ) [MethodLocal]
+        MultStatement(
+          NoStatementList(
+          ) [NoStatementList]
+          StatementRetExpr(
+            ExprTermList(
+              TermSinglePos(
+                FactorExpr(
+                  FactorSingle(
+                    FactVar(
+                      DesignatorSingle(
+                       arg
+                      ) [DesignatorSingle]
+                    ) [FactVar]
+                  ) [FactorSingle]
+                  MulMul(
+                  ) [MulMul]
+                  FactVar(
+                    DesignatorSingle(
+                     arg
+                    ) [DesignatorSingle]
+                  ) [FactVar]
+                ) [FactorExpr]
+              ) [TermSinglePos]
+            ) [ExprTermList]
+          ) [StatementRetExpr]
+        ) [MultStatement]
+      ) [MethodDecPar]
+    ) [MethodDeclUse]
+    MethodDecPar(
+      MethodTypeName(
+        MethVoid(
+        ) [MethVoid]
+       main
+      ) [MethodTypeName]
+      NoFormParList(
+      ) [NoFormParList]
+      MethodLocal(
+        VarDeclUse(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl(
+            Type(
+             TCalc
+            ) [Type]
+            SingleVar(
+              VarParamNoBrack(
+               obj
+              ) [VarParamNoBrack]
+            ) [SingleVar]
+          ) [VarDecl]
+        ) [VarDeclUse]
+      ) [MethodLocal]
+      MultStatement(
+        MultStatement(
+          MultStatement(
+            MultStatement(
+              MultStatement(
+                NoStatementList(
+                ) [NoStatementList]
+                StatementDesignator(
+                  DesStmAssign(
+                    DesignatorSingle(
+                     x
+                    ) [DesignatorSingle]
+                    Assignop(
+                    ) [Assignop]
+                    DesAssignNoErr(
+                      ExprTermList(
+                        TermSinglePos(
+                          FactorSingle(
+                            FunCallParam(
+                              DesignatorSingle(
+                               fun
+                              ) [DesignatorSingle]
+                              ActParsSingle(
+                                ExprTermList(
+                                  TermSinglePos(
+                                    FactorSingle(
+                                      FactorNum(
+                                       3
+                                      ) [FactorNum]
+                                    ) [FactorSingle]
+                                  ) [TermSinglePos]
+                                ) [ExprTermList]
+                              ) [ActParsSingle]
+                            ) [FunCallParam]
+                          ) [FactorSingle]
+                        ) [TermSinglePos]
+                      ) [ExprTermList]
+                    ) [DesAssignNoErr]
+                  ) [DesStmAssign]
+                ) [StatementDesignator]
+              ) [MultStatement]
+              StatementDesignator(
+                DesStmAssign(
+                  DesignatorSingle(
+                   obj
+                  ) [DesignatorSingle]
+                  Assignop(
+                  ) [Assignop]
+                  DesAssignNoErr(
+                    ExprTermList(
+                      TermSinglePos(
+                        FactorSingle(
+                          FactorNew(
+                            Type(
+                             TCalc
+                            ) [Type]
+                          ) [FactorNew]
+                        ) [FactorSingle]
+                      ) [TermSinglePos]
+                    ) [ExprTermList]
+                  ) [DesAssignNoErr]
+                ) [DesStmAssign]
+              ) [StatementDesignator]
+            ) [MultStatement]
+            StatementDesignator(
+              DesStmActPar(
+                DesMember(
+                  DesignatorSingle(
+                   obj
+                  ) [DesignatorSingle]
+                 mia
+                ) [DesMember]
+                ActParsSingle(
+                  ExprTermList(
+                    TermSinglePos(
+                      FactorSingle(
+                        FactorNum(
+                         4
+                        ) [FactorNum]
+                      ) [FactorSingle]
+                    ) [TermSinglePos]
+                  ) [ExprTermList]
+                ) [ActParsSingle]
+              ) [DesStmActPar]
+            ) [StatementDesignator]
+          ) [MultStatement]
+          StatementDesignator(
+            DesStmAssign(
+              DesignatorSingle(
+               obj
+              ) [DesignatorSingle]
+              Assignop(
+              ) [Assignop]
+              DesAssignNoErr(
+                ExprTermList(
+                  TermSinglePos(
+                    FactorSingle(
+                      FactorNew(
+                        Type(
+                         ATCalc
+                        ) [Type]
+                      ) [FactorNew]
+                    ) [FactorSingle]
+                  ) [TermSinglePos]
+                ) [ExprTermList]
+              ) [DesAssignNoErr]
+            ) [DesStmAssign]
+          ) [StatementDesignator]
+        ) [MultStatement]
+        StatementDesignator(
+          DesStmActPar(
+            DesMember(
+              DesignatorSingle(
+               obj
+              ) [DesignatorSingle]
+             mia
+            ) [DesMember]
+            ActParsSingle(
+              ExprTermList(
+                TermSinglePos(
+                  FactorSingle(
+                    FactorNum(
+                     4
+                    ) [FactorNum]
+                  ) [FactorSingle]
+                ) [TermSinglePos]
+              ) [ExprTermList]
+            ) [ActParsSingle]
+          ) [DesStmActPar]
+        ) [StatementDesignator]
+      ) [MultStatement]
+    ) [MethodDecPar]
+  ) [MethodDeclUse]
+) [Program]
+INFO  18:02:56,835 - ===================================
+INFO  18:02:56,843 - Pristup polju (tax) | Fld tax: int, 1, 1  na liniji 6
+INFO  18:02:56,844 - Pristupa se (i) koji je po redu  (1) formalni argument funkcije (mia) | Var i: int, 1, 1  na liniji 6
+INFO  18:02:56,844 - Koristi se promenljiva (i) | Var i: int, 1, 1  na liniji 6
+INFO  18:02:56,845 - Prosiruje se klasa (TCalc) | Type TCalc: Class TCalc , 0, 0  na liniji 15
+INFO  18:02:56,845 - Pristup metodi (f) | Meth f: notype, 0, 1  na liniji 17
+INFO  18:02:56,845 - Pristupa se (i) koji je po redu  (1) formalni argument funkcije (mia) | Var i: int, 1, 1  na liniji 17
+INFO  18:02:56,847 - Koristi se promenljiva (i) | Var i: int, 1, 1  na liniji 17
+INFO  18:02:56,850 - Pristupa se (arg) koji je po redu  (1) formalni argument funkcije (fun) | Var arg: int, 0, 1  na liniji 29
+INFO  18:02:56,850 - Koristi se promenljiva (arg) | Var arg: int, 0, 1  na liniji 29
+INFO  18:02:56,850 - Pristupa se (arg) koji je po redu  (1) formalni argument funkcije (fun) | Var arg: int, 0, 1  na liniji 29
+INFO  18:02:56,851 - Koristi se promenljiva (arg) | Var arg: int, 0, 1  na liniji 29
+INFO  18:02:56,851 - Pristup globalnoj promenljivi (x) | Var x: int, 0, 0  na liniji 35
+INFO  18:02:56,851 - Pristup globalnoj funkciji (fun) | Meth fun: int, 0, 1  na liniji 35
+INFO  18:02:56,852 - Pristup lokalnoj promenljivi (obj) | Var obj: Class TCalc , 0, 1  na liniji 36
+INFO  18:02:56,852 - Alocira se memorija za objekat klase (TCalc) | Type TCalc: Class TCalc , 0, 0  na liniji 36
+INFO  18:02:56,852 - Pristup lokalnoj promenljivi (obj) | Var obj: Class TCalc , 0, 1  na liniji 37
+INFO  18:02:56,852 - Pristup metodi  (mia) | Meth mia: notype, 0, 1  na liniji 37
+INFO  18:02:56,853 - Pristup lokalnoj promenljivi (obj) | Var obj: Class TCalc , 0, 1  na liniji 38
+INFO  18:02:56,853 - Alocira se memorija za objekat klase (ATCalc) | Type ATCalc: Class ATCalc , 0, 0  na liniji 38
+INFO  18:02:56,853 - Pristup lokalnoj promenljivi (obj) | Var obj: Class TCalc , 0, 1  na liniji 39
+INFO  18:02:56,853 - Pristup metodi  (mia) | Meth mia: notype, 0, 1  na liniji 39
+INFO  18:02:56,853 - ===================================
+INFO  18:02:56,887 - Parsiranje uspesno zavrseno!

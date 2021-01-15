@@ -1,6 +1,12 @@
 program Mj
 class A{
 	int i;
+	{
+		int hi(){
+			print('H');print('i');
+			return 0;
+		}
+	}
 }
 
 class B{
@@ -39,6 +45,7 @@ class C{
 		print(eol);						
 		a=cn[3].b.an[4];	
 		print(a.i);
+		cn[3].b.an[4].hi();
 		
 	}
 }

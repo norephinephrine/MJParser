@@ -1,0 +1,501 @@
+Buildfile: C:\Users\jovan\OneDrive\Desktop\ETF HELL\77777 SEMESTAR\prevodioci\projekat\workspace\MJCompiler\build.xml
+
+test:
+
+testRun:
+     [java] file:/C:/Program%20Files/apache-ant-1.10.9/lib/ant-launcher.jar
+     [java] file:/C:/Users/jovan/OneDrive/Desktop/ETF%20HELL/77777%20SEMESTAR/prevodioci/projekat/workspace/MJCompiler/config/log4j.xml
+     [java] INFO  18:21:21,276 - Compiling source file: C:\Users\jovan\OneDrive\Desktop\ETF HELL\77777 SEMESTAR\prevodioci\projekat\workspace\MJCompiler\test\syn_test\syntax_recovery.mj
+     [java] INFO  18:21:21,629 - #2 program
+     [java] INFO  18:21:21,630 - #49 Syntax
+     [java] INFO  18:21:21,630 - #5 const
+     [java] INFO  18:21:21,636 - #49 int1
+     [java] INFO  18:21:21,636 - #7 ;
+     [java] ERROR 18:21:21,639 - 
+     [java] Sintaksna greska na liniji 3
+     [java] INFO  18:21:21,640 - #5 const
+     [java] INFO  18:21:21,640 - #49 int
+     [java] INFO  18:21:21,640 - #49 a
+     [java] ERROR 18:21:21,641 - Greska kod definicije CONST globalnih konstanti.Izvrsen oporavak do ; u liniji 3
+     [java] INFO  18:21:21,649 - #6 =
+     [java] INFO  18:21:21,652 - #46 2
+     [java] INFO  18:21:21,652 - #8 ,
+     [java] INFO  18:21:21,653 - #49 a
+     [java] INFO  18:21:21,653 - #49 a
+     [java] ERROR 18:21:21,653 - 
+     [java] Sintaksna greska na liniji 5
+     [java] INFO  18:21:21,654 - #8 ,
+     [java] INFO  18:21:21,654 - #49 b
+     [java] INFO  18:21:21,654 - #6 =
+     [java] INFO  18:21:21,654 - #46 2
+     [java] ERROR 18:21:21,654 - Greska kod definicije CONST globalnih konstanti.Izvrsen oporavak do , u liniji 5
+     [java] INFO  18:21:21,657 - #8 ,
+     [java] INFO  18:21:21,658 - #49 c
+     [java] INFO  18:21:21,658 - #6 =
+     [java] INFO  18:21:21,658 - #46 1
+     [java] INFO  18:21:21,658 - #8 ,
+     [java] INFO  18:21:21,658 - #49 e
+     [java] INFO  18:21:21,658 - #6 =
+     [java] INFO  18:21:21,658 - #46 4
+     [java] INFO  18:21:21,659 - #7 ;
+     [java] INFO  18:21:21,659 - #49 int
+     [java] INFO  18:21:21,659 - #49 a
+     [java] INFO  18:21:21,659 - #49 b
+     [java] ERROR 18:21:21,659 - 
+     [java] Sintaksna greska na liniji 7
+     [java] INFO  18:21:21,660 - #8 ,
+     [java] INFO  18:21:21,660 - #49 b
+     [java] INFO  18:21:21,660 - #8 ,
+     [java] INFO  18:21:21,660 - #49 c
+     [java] ERROR 18:21:21,660 - Greska kod deklaracije VAR globalnih promenljivi.Izvrsen oporavak do , u liniji 7
+     [java] INFO  18:21:21,663 - #8 ,
+     [java] INFO  18:21:21,663 - #49 d
+     [java] INFO  18:21:21,663 - #7 ;
+     [java] INFO  18:21:21,664 - #49 int
+     [java] INFO  18:21:21,667 - #49 a
+     [java] INFO  18:21:21,667 - #49 b
+     [java] ERROR 18:21:21,667 - 
+     [java] Sintaksna greska na liniji 8
+     [java] INFO  18:21:21,667 - #7 ;
+     [java] INFO  18:21:21,667 - #43 class
+     [java] INFO  18:21:21,668 - #49 A
+     [java] INFO  18:21:21,668 - #11 extends
+     [java] ERROR 18:21:21,668 - Greska kod deklaracije VAR globalnih promenljivi.Izvrsen oporavak do ; u liniji 8
+     [java] INFO  18:21:21,673 - #49 B
+     [java] INFO  18:21:21,673 - #49 C
+     [java] ERROR 18:21:21,673 - 
+     [java] Sintaksna greska na liniji 11
+     [java] INFO  18:21:21,673 - #3 {
+     [java] INFO  18:21:21,674 - #49 int
+     [java] INFO  18:21:21,674 - #49 a
+     [java] INFO  18:21:21,674 - #8 ,
+     [java] ERROR 18:21:21,674 - Pogresna dekleracija prosirenja klase.Izvrsen oporavak do { u liniji 11
+     [java] INFO  18:21:21,677 - #49 b
+     [java] INFO  18:21:21,677 - #49 b
+     [java] ERROR 18:21:21,677 - 
+     [java] Sintaksna greska na liniji 12
+     [java] INFO  18:21:21,678 - #8 ,
+     [java] INFO  18:21:21,678 - #49 c
+     [java] INFO  18:21:21,678 - #8 ,
+     [java] INFO  18:21:21,678 - #49 d
+     [java] INFO  18:21:21,678 - #7 ;
+     [java] INFO  18:21:21,678 - #4 }
+     [java] INFO  18:21:21,678 - #3 {
+     [java] INFO  18:21:21,679 - #49 int
+     [java] ERROR 18:21:21,679 - Greska kod deklaracije privatnih polja klase.Izvrsen oporavak do ; u liniji 12
+     [java] INFO  18:21:21,684 - #49 test1
+     [java] INFO  18:21:21,685 - #12 (
+     [java] INFO  18:21:21,687 - #49 int
+     [java] INFO  18:21:21,687 - #49 a
+     [java] INFO  18:21:21,688 - #8 ,
+     [java] INFO  18:21:21,688 - #49 int
+     [java] INFO  18:21:21,688 - #49 b
+     [java] INFO  18:21:21,688 - #49 c
+     [java] ERROR 18:21:21,688 - 
+     [java] Sintaksna greska na liniji 16
+     [java] INFO  18:21:21,688 - #8 ,
+     [java] INFO  18:21:21,689 - #49 int
+     [java] INFO  18:21:21,689 - #49 c
+     [java] INFO  18:21:21,689 - #13 )
+     [java] ERROR 18:21:21,689 - Greska kod deklaracije formalnih parametara funkcije.Izvrsen oporavak do , u liniji 16
+     [java] INFO  18:21:21,692 - #3 {
+     [java] INFO  18:21:21,704 - #4 }
+     [java] INFO  18:21:21,706 - #49 int
+     [java] INFO  18:21:21,709 - #49 test2
+     [java] INFO  18:21:21,710 - #12 (
+     [java] INFO  18:21:21,710 - #49 int
+     [java] INFO  18:21:21,710 - #49 a
+     [java] INFO  18:21:21,710 - #8 ,
+     [java] INFO  18:21:21,710 - #49 int
+     [java] INFO  18:21:21,710 - #49 b
+     [java] INFO  18:21:21,710 - #8 ,
+     [java] INFO  18:21:21,710 - #49 int
+     [java] INFO  18:21:21,710 - #49 c
+     [java] INFO  18:21:21,711 - #49 c
+     [java] ERROR 18:21:21,711 - 
+     [java] Sintaksna greska na liniji 19
+     [java] INFO  18:21:21,711 - #13 )
+     [java] INFO  18:21:21,711 - #3 {
+     [java] INFO  18:21:21,711 - #4 }
+     [java] INFO  18:21:21,711 - #44 void
+     [java] ERROR 18:21:21,711 - Greska kod deklaracije formalnih parametara funkcije.Izvrsen oporavak do ) u liniji 19
+     [java] INFO  18:21:21,714 - #49 main
+     [java] INFO  18:21:21,716 - #12 (
+     [java] INFO  18:21:21,716 - #13 )
+     [java] INFO  18:21:21,717 - #3 {
+     [java] INFO  18:21:21,719 - #14 if
+     [java] INFO  18:21:21,719 - #12 (
+     [java] INFO  18:21:21,719 - #49 test1
+     [java] INFO  18:21:21,720 - #36 <
+     [java] INFO  18:21:21,720 - #49 test2
+     [java] INFO  18:21:21,725 - #49 test
+     [java] ERROR 18:21:21,725 - 
+     [java] Sintaksna greska na liniji 23
+     [java] INFO  18:21:21,726 - #46 3
+     [java] INFO  18:21:21,726 - #13 )
+     [java] INFO  18:21:21,726 - #3 {
+     [java] INFO  18:21:21,726 - #4 }
+     [java] INFO  18:21:21,726 - #49 f
+     [java] ERROR 18:21:21,726 - Greska kod logickog izrada za IF.Izvrsen oporavak do ) u liniji 23
+     [java] INFO  18:21:21,732 - #6 =
+     [java] INFO  18:21:21,732 - #46 2
+     [java] INFO  18:21:21,735 - #7 ;
+     [java] INFO  18:21:21,735 - #49 f
+     [java] INFO  18:21:21,736 - #6 =
+     [java] INFO  18:21:21,736 - #49 asdfasd
+     [java] INFO  18:21:21,736 - #49 sad
+     [java] ERROR 18:21:21,736 - 
+     [java] Sintaksna greska na liniji 26
+     [java] INFO  18:21:21,736 - #7 ;
+     [java] INFO  18:21:21,736 - #4 }
+     [java] INFO  18:21:21,736 - #4 }
+     [java] ERROR 18:21:21,737 - Greska kod konstrukcija iskaza dodele.Izvrsen oporavak do ; u liniji 26
+     [java] INFO  18:21:21,751 - Program(
+     [java]   ProgName(
+     [java]    Syntax
+     [java]   ) [ProgName]
+     [java]   MultDecl(
+     [java]     MultDecl(
+     [java]       MultDecl(
+     [java]         MultDecl(
+     [java]           MultDecl(
+     [java]             NoDecl(
+     [java]             ) [NoDecl]
+     [java]             DecConst(
+     [java]               ConstDecl(
+     [java]                 Type(
+     [java]                  int1
+     [java]                 ) [Type]
+     [java]                 SingleConst(
+     [java]                   ConstErrorSemi(
+     [java]                   ) [ConstErrorSemi]
+     [java]                 ) [SingleConst]
+     [java]               ) [ConstDecl]
+     [java]             ) [DecConst]
+     [java]           ) [MultDecl]
+     [java]           DecConst(
+     [java]             ConstDecl(
+     [java]               Type(
+     [java]                int
+     [java]               ) [Type]
+     [java]               MultConst(
+     [java]                 ConstCommaEnd(
+     [java]                   ConstName(
+     [java]                    a
+     [java]                   ) [ConstName]
+     [java]                   ConstNum(
+     [java]                    2
+     [java]                   ) [ConstNum]
+     [java]                 ) [ConstCommaEnd]
+     [java]                 MultConst(
+     [java]                   ConstErrorComma(
+     [java]                   ) [ConstErrorComma]
+     [java]                   MultConst(
+     [java]                     ConstCommaEnd(
+     [java]                       ConstName(
+     [java]                        b
+     [java]                       ) [ConstName]
+     [java]                       ConstNum(
+     [java]                        2
+     [java]                       ) [ConstNum]
+     [java]                     ) [ConstCommaEnd]
+     [java]                     MultConst(
+     [java]                       ConstCommaEnd(
+     [java]                         ConstName(
+     [java]                          c
+     [java]                         ) [ConstName]
+     [java]                         ConstNum(
+     [java]                          1
+     [java]                         ) [ConstNum]
+     [java]                       ) [ConstCommaEnd]
+     [java]                       SingleConst(
+     [java]                         ConstSemi(
+     [java]                           ConstName(
+     [java]                            e
+     [java]                           ) [ConstName]
+     [java]                           ConstNum(
+     [java]                            4
+     [java]                           ) [ConstNum]
+     [java]                         ) [ConstSemi]
+     [java]                       ) [SingleConst]
+     [java]                     ) [MultConst]
+     [java]                   ) [MultConst]
+     [java]                 ) [MultConst]
+     [java]               ) [MultConst]
+     [java]             ) [ConstDecl]
+     [java]           ) [DecConst]
+     [java]         ) [MultDecl]
+     [java]         DecVar(
+     [java]           GlobalVarDecl(
+     [java]             Type(
+     [java]              int
+     [java]             ) [Type]
+     [java]             GlobalMultVar(
+     [java]               GlobalErrorVarComma(
+     [java]               ) [GlobalErrorVarComma]
+     [java]               GlobalMultVar(
+     [java]                 GlobalCommaVar(
+     [java]                   VarParamNoBrack(
+     [java]                    b
+     [java]                   ) [VarParamNoBrack]
+     [java]                 ) [GlobalCommaVar]
+     [java]                 GlobalMultVar(
+     [java]                   GlobalCommaVar(
+     [java]                     VarParamNoBrack(
+     [java]                      c
+     [java]                     ) [VarParamNoBrack]
+     [java]                   ) [GlobalCommaVar]
+     [java]                   GlobalSingleVar(
+     [java]                     GlobalVarSemi(
+     [java]                       VarParamNoBrack(
+     [java]                        d
+     [java]                       ) [VarParamNoBrack]
+     [java]                     ) [GlobalVarSemi]
+     [java]                   ) [GlobalSingleVar]
+     [java]                 ) [GlobalMultVar]
+     [java]               ) [GlobalMultVar]
+     [java]             ) [GlobalMultVar]
+     [java]           ) [GlobalVarDecl]
+     [java]         ) [DecVar]
+     [java]       ) [MultDecl]
+     [java]       DecVar(
+     [java]         GlobalVarDecl(
+     [java]           Type(
+     [java]            int
+     [java]           ) [Type]
+     [java]           GlobalSingleVar(
+     [java]             GlobalErrorVarSemi(
+     [java]             ) [GlobalErrorVarSemi]
+     [java]           ) [GlobalSingleVar]
+     [java]         ) [GlobalVarDecl]
+     [java]       ) [DecVar]
+     [java]     ) [MultDecl]
+     [java]     DecClass(
+     [java]       ClassDeclNoMeth(
+     [java]         ClassName(
+     [java]          A
+     [java]         ) [ClassName]
+     [java]         ExtendTypeExist(
+     [java]           ExtendErr(
+     [java]           ) [ExtendErr]
+     [java]         ) [ExtendTypeExist]
+     [java]         ClassVarDeclUse(
+     [java]           NoClassVarDecl(
+     [java]           ) [NoClassVarDecl]
+     [java]           ClassErrorVarSemi(
+     [java]           ) [ClassErrorVarSemi]
+     [java]         ) [ClassVarDeclUse]
+     [java]       ) [ClassDeclNoMeth]
+     [java]     ) [DecClass]
+     [java]   ) [MultDecl]
+     [java]   MethodDeclUse(
+     [java]     MethodDeclUse(
+     [java]       MethodDeclUse(
+     [java]         NoMethodDecl(
+     [java]         ) [NoMethodDecl]
+     [java]         MethodDecPar(
+     [java]           MethodTypeName(
+     [java]             MethType(
+     [java]               Type(
+     [java]                int
+     [java]               ) [Type]
+     [java]             ) [MethType]
+     [java]            test1
+     [java]           ) [MethodTypeName]
+     [java]           FormParListUse(
+     [java]             FormParMult(
+     [java]               FormParametarComma(
+     [java]                 FormParNoBrack(
+     [java]                   Type(
+     [java]                    int
+     [java]                   ) [Type]
+     [java]                  a
+     [java]                 ) [FormParNoBrack]
+     [java]               ) [FormParametarComma]
+     [java]               FormParMult(
+     [java]                 ErrorFormComma(
+     [java]                 ) [ErrorFormComma]
+     [java]                 FormParSingle(
+     [java]                   FormParamNoError(
+     [java]                     FormParNoBrack(
+     [java]                       Type(
+     [java]                        int
+     [java]                       ) [Type]
+     [java]                      c
+     [java]                     ) [FormParNoBrack]
+     [java]                   ) [FormParamNoError]
+     [java]                 ) [FormParSingle]
+     [java]               ) [FormParMult]
+     [java]             ) [FormParMult]
+     [java]           ) [FormParListUse]
+     [java]           MethodLocal(
+     [java]             NoVarDecl(
+     [java]             ) [NoVarDecl]
+     [java]           ) [MethodLocal]
+     [java]           NoStatementList(
+     [java]           ) [NoStatementList]
+     [java]         ) [MethodDecPar]
+     [java]       ) [MethodDeclUse]
+     [java]       MethodDecPar(
+     [java]         MethodTypeName(
+     [java]           MethType(
+     [java]             Type(
+     [java]              int
+     [java]             ) [Type]
+     [java]           ) [MethType]
+     [java]          test2
+     [java]         ) [MethodTypeName]
+     [java]         FormParListUse(
+     [java]           FormParMult(
+     [java]             FormParametarComma(
+     [java]               FormParNoBrack(
+     [java]                 Type(
+     [java]                  int
+     [java]                 ) [Type]
+     [java]                a
+     [java]               ) [FormParNoBrack]
+     [java]             ) [FormParametarComma]
+     [java]             FormParMult(
+     [java]               FormParametarComma(
+     [java]                 FormParNoBrack(
+     [java]                   Type(
+     [java]                    int
+     [java]                   ) [Type]
+     [java]                  b
+     [java]                 ) [FormParNoBrack]
+     [java]               ) [FormParametarComma]
+     [java]               FormParSingle(
+     [java]                 ErrorFormParen(
+     [java]                 ) [ErrorFormParen]
+     [java]               ) [FormParSingle]
+     [java]             ) [FormParMult]
+     [java]           ) [FormParMult]
+     [java]         ) [FormParListUse]
+     [java]         MethodLocal(
+     [java]           NoVarDecl(
+     [java]           ) [NoVarDecl]
+     [java]         ) [MethodLocal]
+     [java]         NoStatementList(
+     [java]         ) [NoStatementList]
+     [java]       ) [MethodDecPar]
+     [java]     ) [MethodDeclUse]
+     [java]     MethodDecPar(
+     [java]       MethodTypeName(
+     [java]         MethVoid(
+     [java]         ) [MethVoid]
+     [java]        main
+     [java]       ) [MethodTypeName]
+     [java]       NoFormParList(
+     [java]       ) [NoFormParList]
+     [java]       MethodLocal(
+     [java]         NoVarDecl(
+     [java]         ) [NoVarDecl]
+     [java]       ) [MethodLocal]
+     [java]       MultStatement(
+     [java]         MultStatement(
+     [java]           MultStatement(
+     [java]             NoStatementList(
+     [java]             ) [NoStatementList]
+     [java]             StatementIf(
+     [java]               ErrorCondition(
+     [java]               ) [ErrorCondition]
+     [java]               IfOnlyStm(
+     [java]                 StatementMult(
+     [java]                   NoStatementList(
+     [java]                   ) [NoStatementList]
+     [java]                 ) [StatementMult]
+     [java]               ) [IfOnlyStm]
+     [java]             ) [StatementIf]
+     [java]           ) [MultStatement]
+     [java]           StatementDesignator(
+     [java]             DesStmAssign(
+     [java]               DesignatorSingle(
+     [java]                f
+     [java]               ) [DesignatorSingle]
+     [java]               Assignop(
+     [java]               ) [Assignop]
+     [java]               DesAssignNoErr(
+     [java]                 ExprTermList(
+     [java]                   TermSinglePos(
+     [java]                     FactorSingle(
+     [java]                       FactorNum(
+     [java]                        2
+     [java]                       ) [FactorNum]
+     [java]                     ) [FactorSingle]
+     [java]                   ) [TermSinglePos]
+     [java]                 ) [ExprTermList]
+     [java]               ) [DesAssignNoErr]
+     [java]             ) [DesStmAssign]
+     [java]           ) [StatementDesignator]
+     [java]         ) [MultStatement]
+     [java]         StatementDesignator(
+     [java]           DesStmAssign(
+     [java]             DesignatorSingle(
+     [java]              f
+     [java]             ) [DesignatorSingle]
+     [java]             Assignop(
+     [java]             ) [Assignop]
+     [java]             ErrorDesignator(
+     [java]             ) [ErrorDesignator]
+     [java]           ) [DesStmAssign]
+     [java]         ) [StatementDesignator]
+     [java]       ) [MultStatement]
+     [java]     ) [MethodDecPar]
+     [java]   ) [MethodDeclUse]
+     [java] ) [Program]
+     [java] INFO  18:21:21,766 - ===================================
+     [java] ERROR 18:21:21,775 - Nije pronadjen tip int1 u tabeli simbola!  na liniji 3
+     [java] ERROR 18:21:21,776 - Greska kod deklaracije konstante . Bio je izvrsen oporavak do (;).
+     [java] ERROR 18:21:21,776 - Greska kod deklaracije konstante . Bio je izvrsen oporavak do (,).
+     [java] ERROR 18:21:21,776 - Greska kod deklaracije globalne promenljive . Bio je izvrsen oporavak do (,).
+     [java] ERROR 18:21:21,776 - Greska b je vec deklarisano na liniji 7
+     [java] ERROR 18:21:21,776 - Greska c je vec deklarisano na liniji 7
+     [java] ERROR 18:21:21,776 - Greska kod deklaracije globalne promenljive . Bio je izvrsen oporavak do (;).
+     [java] ERROR 18:21:21,777 - Greska. Klasa (A)  pokusava da prosiri gresku. Bio je izvrsen oporavak do ( '{' ).
+     [java] ERROR 18:21:21,777 - Greska kod deklaracija polja klase(A). Bio je izvrsen oporavak do (;).
+     [java] ERROR 18:21:21,777 - Greska kod deklaracija formalnih parametara funkcije (test1) . Bio je izvrsen oporavak do ( ,).
+     [java] ERROR 18:21:21,777 - Greska kod deklaracija formalnih parametara funkcije (test2) . Bio je izvrsen oporavak do ( ')' ).
+     [java] ERROR 18:21:21,778 - Greska kod logickog izraza kod if-a . Bio je izvrsen oporavak do ( ')' ).
+     [java] ERROR 18:21:21,778 - Greska na liniji 25 : ime f nije deklarisano!  na liniji 25
+     [java] ERROR 18:21:21,778 - Greska izraz nije kompatibilan sa simbolom na liniji 25
+     [java] ERROR 18:21:21,778 - Greska na liniji 26 : ime f nije deklarisano!  na liniji 26
+     [java] ERROR 18:21:21,778 - Greska kod izraza dodele . Bio je izvrsen oporavak do ( ; ).
+     [java] INFO  18:21:21,779 - ===================================
+     [java] =====================SYMBOL TABLE DUMP=========================
+     [java] Type int: int, -1, -1 
+     [java] Type char: char, -1, -1 
+     [java] Con eol: char, 10, 0 
+     [java] Con null: Class [], 0, 0 
+     [java] Meth chr: char, 0, 1 
+     [java]    Var i: int, 0, 1 
+     [java] 
+     [java] Meth ord: int, 0, 1 
+     [java]    Var ch: char, 0, 1 
+     [java] 
+     [java] Meth len: int, 0, 1 
+     [java]    Var arr: Arr of notype, 0, 1 
+     [java] 
+     [java] Type bool: bool, -1, -1 
+     [java] Prog Syntax: notype, 0, 1 
+     [java]    Con a: int, 2, 0 
+     [java]    Con b: int, 2, 0 
+     [java]    Con c: int, 1, 0 
+     [java]    Con e: int, 4, 0 
+     [java]    Var d: int, 0, 0 
+     [java]    Type A: Class [Fld : int, 0, 1 ], 0, 0 
+     [java]    Meth test1: int, 0, 2 
+     [java]       Var a: int, 0, 1 
+     [java]       Var c: int, 1, 1 
+     [java] 
+     [java]    Meth test2: int, 0, 2 
+     [java]       Var a: int, 0, 1 
+     [java]       Var b: int, 1, 1 
+     [java] 
+     [java]    Meth main: notype, 0, 0 
+     [java] 
+     [java] 
+     [java] 
+     [java] ERROR 18:21:21,780 - Parsiranje NIJE uspesno zavrseno!
+
+BUILD SUCCESSFUL
+Total time: 0 seconds

@@ -12,7 +12,7 @@ program Mj
 		y=0;
 		x=6;
 		t='H';
-		print(0?2:5%2);
+		print(false?2:5%2);
 		print(x);
 		read(x);
 		print(x);
@@ -34,7 +34,8 @@ program Mj
 						break;
 				}
 				x++;
-			}while(x<15 || y);			
+				if(x==15)y=1;
+			}while(x<15 || y==0);			
 				print('a');
 			}
 			

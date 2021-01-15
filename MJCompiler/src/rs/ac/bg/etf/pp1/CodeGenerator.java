@@ -105,6 +105,7 @@ public class CodeGenerator extends VisitorAdaptor {
 	Stack<CaseNameList> caseNamesStack=new Stack<CaseNameList>();
 	int ternTrueAdr=0;
 	int ternFalseAdr=0;
+	
 	public int getMainPc(){
 		return mainPc;
 	}
@@ -201,7 +202,7 @@ public class CodeGenerator extends VisitorAdaptor {
     }
         	
 	public void visit(MethodTypeName methodTypeName){
-		if("main".equalsIgnoreCase(methodTypeName.getName())){
+		if("main".equalsIgnoreCase(methodTypeName.getName()) && classDef==false){
 			mainPc = Code.pc;	
 			addVirtual();			
 		}
@@ -226,8 +227,15 @@ public class CodeGenerator extends VisitorAdaptor {
 	}
 	
 	public void visit(MethodDecPar methodDecl){
-		Code.put(Code.exit);
-		Code.put(Code.return_);		
+		if(methodDecl.getMethodTypeName().getMethodType().struct==MJTab.noType) {
+			Code.put(Code.exit);
+			Code.put(Code.return_);				
+		}
+		else {
+			Code.put(Code.trap);
+			Code.put(0);
+		}
+	
 	}    
 	
 	//DESIGNATOR
@@ -267,7 +275,8 @@ public class CodeGenerator extends VisitorAdaptor {
 				&& FunCallParam.class!=parent.getClass() && StatementRead.class!=parent.getClass()){
 			Code.load(designator.obj);
 		}	
-		if(designator.obj.getKind()==Obj.Meth && classDef==false) {
+		//checks if method is a member function and if it isnt it adds all the addresses and expressions needed to get the object address
+		if(designator.obj.getKind()==Obj.Meth ) {
 			ArrayList<Designator> list=new ArrayList<Designator>();
 			
 			Designator parentNode=designator.getDesignator();

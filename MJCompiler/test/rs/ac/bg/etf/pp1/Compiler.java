@@ -46,8 +46,10 @@ public class Compiler {
 		try {
 			File sourceCode;
 			if(args.length==0)
-				sourceCode = new File("test/fibonachi.mj");
-			else  sourceCode = new File(args[0]);
+				sourceCode = new File("test/syntax_recovery.mj");
+			else {
+				 sourceCode = new File(args[0]);
+			}
 
 			log.info("Compiling source file: " + sourceCode.getAbsolutePath());
 			
@@ -60,7 +62,7 @@ public class Compiler {
 	        Program prog = (Program)(s.value); 
 	        Compiler.init();
 			// ispis sintaksnog stabla
-			//log.info(prog.toString(""));
+			log.info(prog.toString(""));
 			log.info("===================================");
 
 			// ispis prepoznatih programskih konstrukcija

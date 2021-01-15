@@ -1,0 +1,107 @@
+program SyntaxErr
+
+int a;
+bool b;
+class A{
+		int x;
+		{
+		void main(){
+		
+		}
+	}
+}
+{
+		int test(){
+			return 'a';
+		}
+		
+		int funErr(int a,A a,char c){
+		
+		}
+		
+		int fun(int a,A b,char c){
+		
+		}		
+		void main()
+		A aClass;char niz[];
+		{
+			//continue and break testiranje
+			a=2;
+			break;
+			continue;
+			
+			switch(a){
+				case 1:break;
+			}
+			
+			do{
+				break;
+				continue;
+			}while(a<2);
+			
+			aClass=new A;
+			niz=new char[2];
+			
+			//read testiranje
+			read(niz[0]);
+			read(b);
+			read(aClass.x);
+			read(aClass);
+			
+			//print testiranje
+			print(niz[0]);
+			print(b);
+			print(aClass.x);
+			print(aClass);	
+			
+			
+			//testiranje if i while uslova
+			if(2){
+			}
+			
+			if(b){
+			}	
+			
+			do{
+			}while(2);
+			
+			do{
+			}while(b);		
+			
+			
+			//testiranje switch
+			
+			switch(b){
+				case 1:break;
+				case 2:break;
+			}
+
+			switch(2){
+				case 1:break;
+				case 1:break;
+			}		
+			
+			//testiranje stvarnih parametara
+			
+			fun(a);
+			fun(a,aClass,b);	
+			fun(a,aClass,niz[0]);		
+			
+			//testiranje relacionog operatera
+			
+			if(aClass==new A){
+			}
+			if(aClass==b){
+			}	
+			
+			if(niz!=b){
+			}
+			if(niz!=new char[2]){
+			}			
+			
+			if(aClass>null){
+			}
+					
+		}
+
+}

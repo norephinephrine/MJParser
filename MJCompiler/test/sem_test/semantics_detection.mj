@@ -1,0 +1,36 @@
+program SemDet
+
+const int con=2;
+int global;
+
+
+class A{
+	int x_field;
+	{
+		void isp(){
+			print(x_field);
+		}
+	}	
+}
+{
+
+	void ispis(int x){
+	
+		print(x);
+	}
+
+	void main()
+	int x;int x_arr[];A aClass;
+	{
+		x=con;
+		global=3;
+		x_arr=new int[2];
+		x_arr[0]=global;
+		ispis(x_arr[0]);
+		aClass=new A;
+		aClass.x_field=6;
+		aClass.isp();
+		
+		
+	}
+}

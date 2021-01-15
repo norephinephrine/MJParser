@@ -1,0 +1,214 @@
+INFO  15:25:23,713 - Compiling source file: C:\Users\jovan\OneDrive\Desktop\ETF HELL\77777 SEMESTAR\prevodioci\projekat\workspace\MJCompiler\test\syn_test\syntax_error2.mj
+INFO  15:25:24,052 - #2 program
+INFO  15:25:24,052 - #49 SyntaxErr
+INFO  15:25:24,053 - #49 int
+INFO  15:25:24,059 - #49 a
+INFO  15:25:24,062 - #6 =
+ERROR 15:25:24,062 - 
+Sintaksna greska na liniji 3
+INFO  15:25:24,063 - #46 2
+INFO  15:25:24,063 - #7 ;
+INFO  15:25:24,064 - #43 class
+INFO  15:25:24,065 - #49 A
+INFO  15:25:24,065 - #3 {
+ERROR 15:25:24,065 - Greska kod deklaracije VAR globalnih promenljivi.Izvrsen oporavak do ; u liniji 3
+INFO  15:25:24,074 - #3 {
+INFO  15:25:24,079 - #44 void
+INFO  15:25:24,084 - #49 main
+INFO  15:25:24,087 - #12 (
+INFO  15:25:24,090 - #13 )
+INFO  15:25:24,090 - #3 {
+INFO  15:25:24,099 - #4 }
+INFO  15:25:24,103 - #4 }
+INFO  15:25:24,106 - #4 }
+INFO  15:25:24,106 - #3 {
+INFO  15:25:24,107 - #44 void
+INFO  15:25:24,107 - #49 main
+INFO  15:25:24,107 - #12 (
+INFO  15:25:24,108 - #13 )
+INFO  15:25:24,108 - #3 {
+INFO  15:25:24,108 - #22 break
+INFO  15:25:24,109 - #7 ;
+INFO  15:25:24,110 - #20 switch
+INFO  15:25:24,113 - #12 (
+INFO  15:25:24,117 - #49 a
+INFO  15:25:24,117 - #13 )
+INFO  15:25:24,118 - #3 {
+INFO  15:25:24,121 - #21 case
+INFO  15:25:24,124 - #46 1
+INFO  15:25:24,124 - #45 :
+INFO  15:25:24,125 - #22 break
+INFO  15:25:24,127 - #7 ;
+INFO  15:25:24,129 - #4 }
+INFO  15:25:24,133 - #18 do
+INFO  15:25:24,133 - #3 {
+INFO  15:25:24,136 - #4 }
+INFO  15:25:24,138 - #19 while
+INFO  15:25:24,138 - #12 (
+INFO  15:25:24,141 - #49 a
+INFO  15:25:24,141 - #36 <
+INFO  15:25:24,142 - #46 2
+INFO  15:25:24,148 - #13 )
+INFO  15:25:24,149 - #7 ;
+INFO  15:25:24,149 - #4 }
+INFO  15:25:24,150 - #4 }
+INFO  15:25:24,168 - Program(
+  ProgName(
+   SyntaxErr
+  ) [ProgName]
+  MultDecl(
+    MultDecl(
+      NoDecl(
+      ) [NoDecl]
+      DecVar(
+        GlobalVarDecl(
+          Type(
+           int
+          ) [Type]
+          GlobalSingleVar(
+            GlobalErrorVarSemi(
+            ) [GlobalErrorVarSemi]
+          ) [GlobalSingleVar]
+        ) [GlobalVarDecl]
+      ) [DecVar]
+    ) [MultDecl]
+    DecClass(
+      ClassDeclMeth(
+        ClassName(
+         A
+        ) [ClassName]
+        NoExtendType(
+        ) [NoExtendType]
+        NoClassVarDecl(
+        ) [NoClassVarDecl]
+        MethodDeclUse(
+          NoMethodDecl(
+          ) [NoMethodDecl]
+          MethodDecPar(
+            MethodTypeName(
+              MethVoid(
+              ) [MethVoid]
+             main
+            ) [MethodTypeName]
+            NoFormParList(
+            ) [NoFormParList]
+            MethodLocal(
+              NoVarDecl(
+              ) [NoVarDecl]
+            ) [MethodLocal]
+            NoStatementList(
+            ) [NoStatementList]
+          ) [MethodDecPar]
+        ) [MethodDeclUse]
+      ) [ClassDeclMeth]
+    ) [DecClass]
+  ) [MultDecl]
+  MethodDeclUse(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecPar(
+      MethodTypeName(
+        MethVoid(
+        ) [MethVoid]
+       main
+      ) [MethodTypeName]
+      NoFormParList(
+      ) [NoFormParList]
+      MethodLocal(
+        NoVarDecl(
+        ) [NoVarDecl]
+      ) [MethodLocal]
+      MultStatement(
+        MultStatement(
+          MultStatement(
+            NoStatementList(
+            ) [NoStatementList]
+            StatementBreak(
+            ) [StatementBreak]
+          ) [MultStatement]
+          StatementSwitch(
+            SwitchStart(
+            ) [SwitchStart]
+            ExprTermList(
+              TermSinglePos(
+                FactorSingle(
+                  FactVar(
+                    DesignatorSingle(
+                     a
+                    ) [DesignatorSingle]
+                  ) [FactVar]
+                ) [FactorSingle]
+              ) [TermSinglePos]
+            ) [ExprTermList]
+            SwitchExpr(
+            ) [SwitchExpr]
+            CaseListParam(
+              CaseListEmpty(
+              ) [CaseListEmpty]
+              CaseParam(
+               1
+                CaseColon(
+                ) [CaseColon]
+                MultStatement(
+                  NoStatementList(
+                  ) [NoStatementList]
+                  StatementBreak(
+                  ) [StatementBreak]
+                ) [MultStatement]
+              ) [CaseParam]
+            ) [CaseListParam]
+          ) [StatementSwitch]
+        ) [MultStatement]
+        StatementWhile(
+          DoStart(
+          ) [DoStart]
+          StatementMult(
+            NoStatementList(
+            ) [NoStatementList]
+          ) [StatementMult]
+          WhileCondStart(
+          ) [WhileCondStart]
+          ConditionSingle(
+            CondTermSingle(
+              CondFactOp(
+                ExprTermList(
+                  TermSinglePos(
+                    FactorSingle(
+                      FactVar(
+                        DesignatorSingle(
+                         a
+                        ) [DesignatorSingle]
+                      ) [FactVar]
+                    ) [FactorSingle]
+                  ) [TermSinglePos]
+                ) [ExprTermList]
+                RelLS(
+                ) [RelLS]
+                ExprTermList(
+                  TermSinglePos(
+                    FactorSingle(
+                      FactorNum(
+                       2
+                      ) [FactorNum]
+                    ) [FactorSingle]
+                  ) [TermSinglePos]
+                ) [ExprTermList]
+              ) [CondFactOp]
+            ) [CondTermSingle]
+          ) [ConditionSingle]
+        ) [StatementWhile]
+      ) [MultStatement]
+    ) [MethodDecPar]
+  ) [MethodDeclUse]
+) [Program]
+INFO  15:25:24,199 - ===================================
+ERROR 15:25:24,207 - Greska kod deklaracije globalne promenljive . Bio je izvrsen oporavak do (;).
+ERROR 15:25:24,208 - Greska break iskaz  se moze koristiti samo unutar do-while petlje i visestrukog grananja (switch)
+ERROR 15:25:24,208 - Greska na liniji 16 : ime a nije deklarisano!  na liniji 16
+INFO  15:25:24,209 - Koristi se promenljiva (noObj) | Var noObj: notype, -1, -1  na liniji 16
+ERROR 15:25:24,212 - Greska izraz kod switch-a treba da bude celobrojnog tipa na liniji 16
+ERROR 15:25:24,213 - Greska na liniji 22 : ime a nije deklarisano!  na liniji 22
+INFO  15:25:24,214 - Koristi se promenljiva (noObj) | Var noObj: notype, -1, -1  na liniji 22
+ERROR 15:25:24,214 - Greska  izrazi nisu kompatibilni za relacionu operaciju  na liniji 22
+INFO  15:25:24,215 - ===================================
+ERROR 15:25:24,219 - Parsiranje NIJE uspesno zavrseno!

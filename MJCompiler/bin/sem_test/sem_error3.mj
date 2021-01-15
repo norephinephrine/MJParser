@@ -1,0 +1,52 @@
+program SyntaxErr
+
+
+int a;
+char ch;
+bool b;
+
+class A{
+	int x;
+}
+
+A aClass;
+
+int niz[];
+{
+
+	int main(int a)
+	{
+		// Testiranje Expr
+		a=-b;
+		a=-ch;
+		a=-niz;
+		a=-aClass;
+		
+		a=b+a;
+		
+		a=b*2;
+		
+		//Testiranje ternarnog operatora
+		a=a? a:a;
+		
+		a=b? ch:a;
+		
+		//testiranje pravljenje novog niza
+		niz=new int[ch];
+		niz=new int[b];
+		
+		//testiranje praljvenje novog objekta klase
+		
+		aClass=new A;
+		aClass=new a;
+		
+		//pristup clanu
+		a.x=2;
+		
+		
+		//pristup elementu niza
+		
+		a[2]=2;
+		niz[b]=3;
+	}
+}

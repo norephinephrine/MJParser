@@ -1,0 +1,62 @@
+INFO  15:21:54,448 - Compiling source file: C:\Users\jovan\OneDrive\Desktop\ETF HELL\77777 SEMESTAR\prevodioci\projekat\workspace\MJCompiler\test\syn_test\syntax_error2.mj
+INFO  15:21:54,820 - #2 program
+INFO  15:21:54,820 - #49 SyntaxErr
+INFO  15:21:54,821 - #43 class
+INFO  15:21:54,826 - #49 A
+INFO  15:21:54,827 - #3 {
+INFO  15:21:54,830 - #3 {
+INFO  15:21:54,835 - #44 void
+INFO  15:21:54,838 - #49 main
+INFO  15:21:54,841 - #12 (
+INFO  15:21:54,844 - #13 )
+INFO  15:21:54,844 - #3 {
+INFO  15:21:54,853 - #4 }
+INFO  15:21:54,856 - #4 }
+INFO  15:21:54,859 - #4 }
+INFO  15:21:54,859 - #3 {
+INFO  15:21:54,860 - #4 }
+INFO  15:21:54,871 - Program(
+  ProgName(
+   SyntaxErr
+  ) [ProgName]
+  MultDecl(
+    NoDecl(
+    ) [NoDecl]
+    DecClass(
+      ClassDeclMeth(
+        ClassName(
+         A
+        ) [ClassName]
+        NoExtendType(
+        ) [NoExtendType]
+        NoClassVarDecl(
+        ) [NoClassVarDecl]
+        MethodDeclUse(
+          NoMethodDecl(
+          ) [NoMethodDecl]
+          MethodDecPar(
+            MethodTypeName(
+              MethVoid(
+              ) [MethVoid]
+             main
+            ) [MethodTypeName]
+            NoFormParList(
+            ) [NoFormParList]
+            MethodLocal(
+              NoVarDecl(
+              ) [NoVarDecl]
+            ) [MethodLocal]
+            NoStatementList(
+            ) [NoStatementList]
+          ) [MethodDecPar]
+        ) [MethodDeclUse]
+      ) [ClassDeclMeth]
+    ) [DecClass]
+  ) [MultDecl]
+  NoMethodDecl(
+  ) [NoMethodDecl]
+) [Program]
+INFO  15:21:54,881 - ===================================
+ERROR 15:21:54,897 - Nije definisana main metoda
+INFO  15:21:54,898 - ===================================
+ERROR 15:21:54,901 - Parsiranje NIJE uspesno zavrseno!

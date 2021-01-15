@@ -1,0 +1,396 @@
+INFO  16:12:55,133 - Compiling source file: C:\Users\jovan\OneDrive\Desktop\ETF HELL\77777 SEMESTAR\prevodioci\projekat\workspace\MJCompiler\test\syn_test\syntax_error3.mj
+INFO  16:12:55,508 - #2 program
+INFO  16:12:55,509 - #49 SyntaxErr
+INFO  16:12:55,509 - #49 int
+INFO  16:12:55,514 - #49 a
+INFO  16:12:55,517 - #7 ;
+INFO  16:12:55,518 - #49 char
+INFO  16:12:55,521 - #49 ch
+INFO  16:12:55,522 - #7 ;
+INFO  16:12:55,522 - #49 bool
+INFO  16:12:55,522 - #49 b
+INFO  16:12:55,522 - #7 ;
+INFO  16:12:55,523 - #43 class
+INFO  16:12:55,523 - #49 A
+INFO  16:12:55,523 - #3 {
+INFO  16:12:55,526 - #4 }
+INFO  16:12:55,532 - #49 A
+INFO  16:12:55,533 - #49 aClass
+INFO  16:12:55,533 - #7 ;
+INFO  16:12:55,533 - #49 int
+INFO  16:12:55,534 - #49 niz
+INFO  16:12:55,534 - #9 [
+INFO  16:12:55,534 - #10 ]
+INFO  16:12:55,535 - #7 ;
+INFO  16:12:55,535 - #3 {
+INFO  16:12:55,535 - #49 int
+INFO  16:12:55,540 - #49 main
+INFO  16:12:55,541 - #12 (
+INFO  16:12:55,543 - #49 int
+INFO  16:12:55,544 - #49 a
+INFO  16:12:55,544 - #13 )
+INFO  16:12:55,544 - #3 {
+INFO  16:12:55,550 - #49 a
+INFO  16:12:55,553 - #6 =
+INFO  16:12:55,553 - #39 -
+INFO  16:12:55,556 - #49 b
+INFO  16:12:55,557 - #7 ;
+INFO  16:12:55,558 - #49 a
+INFO  16:12:55,559 - #6 =
+INFO  16:12:55,559 - #39 -
+INFO  16:12:55,559 - #49 ch
+INFO  16:12:55,560 - #7 ;
+INFO  16:12:55,560 - #49 a
+INFO  16:12:55,560 - #6 =
+INFO  16:12:55,561 - #39 -
+INFO  16:12:55,561 - #49 niz
+INFO  16:12:55,561 - #7 ;
+INFO  16:12:55,561 - #49 a
+INFO  16:12:55,562 - #6 =
+INFO  16:12:55,562 - #39 -
+INFO  16:12:55,562 - #49 aClass
+INFO  16:12:55,562 - #7 ;
+INFO  16:12:55,563 - #49 a
+INFO  16:12:55,563 - #6 =
+INFO  16:12:55,563 - #49 a
+INFO  16:12:55,563 - #38 +
+INFO  16:12:55,564 - #46 2
+INFO  16:12:55,570 - #7 ;
+INFO  16:12:55,571 - #49 a
+INFO  16:12:55,571 - #6 =
+INFO  16:12:55,571 - #49 b
+INFO  16:12:55,572 - #38 +
+INFO  16:12:55,572 - #49 a
+INFO  16:12:55,572 - #7 ;
+INFO  16:12:55,573 - #4 }
+INFO  16:12:55,573 - #4 }
+INFO  16:12:55,595 - Program(
+  ProgName(
+   SyntaxErr
+  ) [ProgName]
+  MultDecl(
+    MultDecl(
+      MultDecl(
+        MultDecl(
+          MultDecl(
+            MultDecl(
+              NoDecl(
+              ) [NoDecl]
+              DecVar(
+                GlobalVarDecl(
+                  Type(
+                   int
+                  ) [Type]
+                  GlobalSingleVar(
+                    GlobalVarSemi(
+                      VarParamNoBrack(
+                       a
+                      ) [VarParamNoBrack]
+                    ) [GlobalVarSemi]
+                  ) [GlobalSingleVar]
+                ) [GlobalVarDecl]
+              ) [DecVar]
+            ) [MultDecl]
+            DecVar(
+              GlobalVarDecl(
+                Type(
+                 char
+                ) [Type]
+                GlobalSingleVar(
+                  GlobalVarSemi(
+                    VarParamNoBrack(
+                     ch
+                    ) [VarParamNoBrack]
+                  ) [GlobalVarSemi]
+                ) [GlobalSingleVar]
+              ) [GlobalVarDecl]
+            ) [DecVar]
+          ) [MultDecl]
+          DecVar(
+            GlobalVarDecl(
+              Type(
+               bool
+              ) [Type]
+              GlobalSingleVar(
+                GlobalVarSemi(
+                  VarParamNoBrack(
+                   b
+                  ) [VarParamNoBrack]
+                ) [GlobalVarSemi]
+              ) [GlobalSingleVar]
+            ) [GlobalVarDecl]
+          ) [DecVar]
+        ) [MultDecl]
+        DecClass(
+          ClassDeclNoMeth(
+            ClassName(
+             A
+            ) [ClassName]
+            NoExtendType(
+            ) [NoExtendType]
+            NoClassVarDecl(
+            ) [NoClassVarDecl]
+          ) [ClassDeclNoMeth]
+        ) [DecClass]
+      ) [MultDecl]
+      DecVar(
+        GlobalVarDecl(
+          Type(
+           A
+          ) [Type]
+          GlobalSingleVar(
+            GlobalVarSemi(
+              VarParamNoBrack(
+               aClass
+              ) [VarParamNoBrack]
+            ) [GlobalVarSemi]
+          ) [GlobalSingleVar]
+        ) [GlobalVarDecl]
+      ) [DecVar]
+    ) [MultDecl]
+    DecVar(
+      GlobalVarDecl(
+        Type(
+         int
+        ) [Type]
+        GlobalSingleVar(
+          GlobalVarSemi(
+            VarParamBrack(
+             niz
+            ) [VarParamBrack]
+          ) [GlobalVarSemi]
+        ) [GlobalSingleVar]
+      ) [GlobalVarDecl]
+    ) [DecVar]
+  ) [MultDecl]
+  MethodDeclUse(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecPar(
+      MethodTypeName(
+        MethType(
+          Type(
+           int
+          ) [Type]
+        ) [MethType]
+       main
+      ) [MethodTypeName]
+      FormParListUse(
+        FormParSingle(
+          FormParamNoError(
+            FormParNoBrack(
+              Type(
+               int
+              ) [Type]
+             a
+            ) [FormParNoBrack]
+          ) [FormParamNoError]
+        ) [FormParSingle]
+      ) [FormParListUse]
+      MethodLocal(
+        NoVarDecl(
+        ) [NoVarDecl]
+      ) [MethodLocal]
+      MultStatement(
+        MultStatement(
+          MultStatement(
+            MultStatement(
+              MultStatement(
+                MultStatement(
+                  NoStatementList(
+                  ) [NoStatementList]
+                  StatementDesignator(
+                    DesStmAssign(
+                      DesignatorSingle(
+                       a
+                      ) [DesignatorSingle]
+                      Assignop(
+                      ) [Assignop]
+                      DesAssignNoErr(
+                        ExprTermList(
+                          TermSingleNeg(
+                            FactorSingle(
+                              FactVar(
+                                DesignatorSingle(
+                                 b
+                                ) [DesignatorSingle]
+                              ) [FactVar]
+                            ) [FactorSingle]
+                          ) [TermSingleNeg]
+                        ) [ExprTermList]
+                      ) [DesAssignNoErr]
+                    ) [DesStmAssign]
+                  ) [StatementDesignator]
+                ) [MultStatement]
+                StatementDesignator(
+                  DesStmAssign(
+                    DesignatorSingle(
+                     a
+                    ) [DesignatorSingle]
+                    Assignop(
+                    ) [Assignop]
+                    DesAssignNoErr(
+                      ExprTermList(
+                        TermSingleNeg(
+                          FactorSingle(
+                            FactVar(
+                              DesignatorSingle(
+                               ch
+                              ) [DesignatorSingle]
+                            ) [FactVar]
+                          ) [FactorSingle]
+                        ) [TermSingleNeg]
+                      ) [ExprTermList]
+                    ) [DesAssignNoErr]
+                  ) [DesStmAssign]
+                ) [StatementDesignator]
+              ) [MultStatement]
+              StatementDesignator(
+                DesStmAssign(
+                  DesignatorSingle(
+                   a
+                  ) [DesignatorSingle]
+                  Assignop(
+                  ) [Assignop]
+                  DesAssignNoErr(
+                    ExprTermList(
+                      TermSingleNeg(
+                        FactorSingle(
+                          FactVar(
+                            DesignatorSingle(
+                             niz
+                            ) [DesignatorSingle]
+                          ) [FactVar]
+                        ) [FactorSingle]
+                      ) [TermSingleNeg]
+                    ) [ExprTermList]
+                  ) [DesAssignNoErr]
+                ) [DesStmAssign]
+              ) [StatementDesignator]
+            ) [MultStatement]
+            StatementDesignator(
+              DesStmAssign(
+                DesignatorSingle(
+                 a
+                ) [DesignatorSingle]
+                Assignop(
+                ) [Assignop]
+                DesAssignNoErr(
+                  ExprTermList(
+                    TermSingleNeg(
+                      FactorSingle(
+                        FactVar(
+                          DesignatorSingle(
+                           aClass
+                          ) [DesignatorSingle]
+                        ) [FactVar]
+                      ) [FactorSingle]
+                    ) [TermSingleNeg]
+                  ) [ExprTermList]
+                ) [DesAssignNoErr]
+              ) [DesStmAssign]
+            ) [StatementDesignator]
+          ) [MultStatement]
+          StatementDesignator(
+            DesStmAssign(
+              DesignatorSingle(
+               a
+              ) [DesignatorSingle]
+              Assignop(
+              ) [Assignop]
+              DesAssignNoErr(
+                ExprTermList(
+                  TermExpr(
+                    TermSinglePos(
+                      FactorSingle(
+                        FactVar(
+                          DesignatorSingle(
+                           a
+                          ) [DesignatorSingle]
+                        ) [FactVar]
+                      ) [FactorSingle]
+                    ) [TermSinglePos]
+                    AddPlus(
+                    ) [AddPlus]
+                    FactorSingle(
+                      FactorNum(
+                       2
+                      ) [FactorNum]
+                    ) [FactorSingle]
+                  ) [TermExpr]
+                ) [ExprTermList]
+              ) [DesAssignNoErr]
+            ) [DesStmAssign]
+          ) [StatementDesignator]
+        ) [MultStatement]
+        StatementDesignator(
+          DesStmAssign(
+            DesignatorSingle(
+             a
+            ) [DesignatorSingle]
+            Assignop(
+            ) [Assignop]
+            DesAssignNoErr(
+              ExprTermList(
+                TermExpr(
+                  TermSinglePos(
+                    FactorSingle(
+                      FactVar(
+                        DesignatorSingle(
+                         b
+                        ) [DesignatorSingle]
+                      ) [FactVar]
+                    ) [FactorSingle]
+                  ) [TermSinglePos]
+                  AddPlus(
+                  ) [AddPlus]
+                  FactorSingle(
+                    FactVar(
+                      DesignatorSingle(
+                       a
+                      ) [DesignatorSingle]
+                    ) [FactVar]
+                  ) [FactorSingle]
+                ) [TermExpr]
+              ) [ExprTermList]
+            ) [DesAssignNoErr]
+          ) [DesStmAssign]
+        ) [StatementDesignator]
+      ) [MultStatement]
+    ) [MethodDecPar]
+  ) [MethodDeclUse]
+) [Program]
+INFO  16:12:55,654 - ===================================
+INFO  16:12:55,663 - Pristupa se (a) koji je po redu  (1) formalni argument funkcije (main) | Var a: int, 0, 1  na liniji 20
+INFO  16:12:55,663 - Pristup globalnoj promenljivi (b) | Var b: bool, 2, 0  na liniji 20
+INFO  16:12:55,664 - Koristi se promenljiva (b) | Var b: bool, 2, 0  na liniji 20
+ERROR 16:12:55,664 - Greska da bi clan mogao biti negativan mora biti tipa (int)  na liniji 20
+ERROR 16:12:55,664 - Greska izraz nije kompatibilan sa simbolom na liniji 20
+INFO  16:12:55,665 - Pristupa se (a) koji je po redu  (1) formalni argument funkcije (main) | Var a: int, 0, 1  na liniji 21
+INFO  16:12:55,665 - Pristup globalnoj promenljivi (ch) | Var ch: char, 1, 0  na liniji 21
+INFO  16:12:55,665 - Koristi se promenljiva (ch) | Var ch: char, 1, 0  na liniji 21
+ERROR 16:12:55,665 - Greska da bi clan mogao biti negativan mora biti tipa (int)  na liniji 21
+ERROR 16:12:55,665 - Greska izraz nije kompatibilan sa simbolom na liniji 21
+INFO  16:12:55,665 - Pristupa se (a) koji je po redu  (1) formalni argument funkcije (main) | Var a: int, 0, 1  na liniji 22
+INFO  16:12:55,666 - Pristup globalnoj promenljivi (niz) | Var niz: Arr of int, 4, 0  na liniji 22
+INFO  16:12:55,666 - Koristi se promenljiva (niz) | Var niz: Arr of int, 4, 0  na liniji 22
+ERROR 16:12:55,666 - Greska da bi clan mogao biti negativan mora biti tipa (int)  na liniji 22
+ERROR 16:12:55,666 - Greska izraz nije kompatibilan sa simbolom na liniji 22
+INFO  16:12:55,667 - Pristupa se (a) koji je po redu  (1) formalni argument funkcije (main) | Var a: int, 0, 1  na liniji 23
+INFO  16:12:55,667 - Pristup globalnoj promenljivi (aClass) | Var aClass: Class A , 3, 0  na liniji 23
+INFO  16:12:55,667 - Koristi se promenljiva (aClass) | Var aClass: Class A , 3, 0  na liniji 23
+ERROR 16:12:55,668 - Greska da bi clan mogao biti negativan mora biti tipa (int)  na liniji 23
+ERROR 16:12:55,668 - Greska izraz nije kompatibilan sa simbolom na liniji 23
+INFO  16:12:55,668 - Pristupa se (a) koji je po redu  (1) formalni argument funkcije (main) | Var a: int, 0, 1  na liniji 25
+INFO  16:12:55,669 - Pristupa se (a) koji je po redu  (1) formalni argument funkcije (main) | Var a: int, 0, 1  na liniji 25
+INFO  16:12:55,669 - Koristi se promenljiva (a) | Var a: int, 0, 1  na liniji 25
+INFO  16:12:55,669 - Pristupa se (a) koji je po redu  (1) formalni argument funkcije (main) | Var a: int, 0, 1  na liniji 26
+INFO  16:12:55,670 - Pristup globalnoj promenljivi (b) | Var b: bool, 2, 0  na liniji 26
+INFO  16:12:55,670 - Koristi se promenljiva (b) | Var b: bool, 2, 0  na liniji 26
+INFO  16:12:55,670 - Pristupa se (a) koji je po redu  (1) formalni argument funkcije (main) | Var a: int, 0, 1  na liniji 26
+INFO  16:12:55,670 - Koristi se promenljiva (a) | Var a: int, 0, 1  na liniji 26
+ERROR 16:12:55,670 - Greska oba clana izraza mnozenja/deljenja/modula moraju biti tipa (int)  na liniji 26
+ERROR 16:12:55,673 - Greska izraz nije kompatibilan sa simbolom na liniji 26
+ERROR 16:12:55,674 - Greska main mora da bude void tipa i ne sme da ima formalne argumente na liniji 17
+INFO  16:12:55,674 - ===================================
+ERROR 16:12:55,678 - Parsiranje NIJE uspesno zavrseno!

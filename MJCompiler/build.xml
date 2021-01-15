@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="MJCompiler" default="compile" basedir=".">
 
-	
+	<property name="arg0" value="test/test301.mj" />
+	<property name="debug" value="" />	
 	<target name="delete">
 		<delete>
 			<fileset dir="src/rs/ac/bg/etf/pp1">
@@ -63,6 +64,35 @@
 			</classpath>
 		</javac>
 	</target>
+
+	<target name="test"  >
+		<javac srcdir="test/rs/ac/bg/etf/pp1" includeantruntime="false">
+			<classpath>
+				<pathelement path="lib/JFlex.jar"/>
+				<pathelement path="lib/cup_v10k.jar"/>
+				<pathelement path="lib/log4j-1.2.17.jar"/>
+				<pathelement path="lib/symboltable-1-1.jar"/>
+				<pathelement path="lib/mj-runtime-1.1.jar"/>
+				<pathelement path="src"/>
+			</classpath>
+		</javac>
+	</target>
+	
+	<target name="testRun" depends="test" >
+		<java  classname="rs.ac.bg.etf.pp1.Compiler">
+			<arg  value="${arg0}"/>
+			<classpath>
+				<pathelement path="lib/JFlex.jar"/>
+				<pathelement path="lib/cup_v10k.jar"/>
+				<pathelement path="lib/log4j-1.2.17.jar"/>
+				<pathelement path="lib/symboltable-1-1.jar"/>
+				<pathelement path="lib/mj-runtime-1.1.jar"/>
+				<pathelement path="config"/>
+				<pathelement path="src"/>
+				<pathelement path="test"/>
+			</classpath>
+		</java>
+	</target>	
 	
 	<target name="disasm">
 		<java classname="rs.etf.pp1.mj.runtime.disasm">
@@ -75,6 +105,7 @@
 
 	<target name="runObj" depends="disasm" >
 		<java classname="rs.etf.pp1.mj.runtime.Run">
+			<arg value="${debug}"/>
 			<arg value="test/program.obj"/>
 			<classpath>
 				<pathelement location="lib/mj-runtime-1.1.jar"/>

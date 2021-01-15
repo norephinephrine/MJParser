@@ -46,6 +46,14 @@ public class MJTab extends Tab {
 		return MJTab.equals(source,other) || source == MJTab.nullType && other.isRefType()
 				|| other == Tab.nullType && source.isRefType();
 	}
+	
+	 private static boolean assignableTo(Struct source,Struct dest) {
+		return 	MJTab.equals(source,dest) 
+				|| 
+				(source == MJTab.nullType && dest.isRefType())
+				|| 
+				(source.getKind() == Struct.Array && dest.getKind() == Struct.Array && dest.getElemType() == Tab.noType);	
+	}
 	public static boolean assignableToRef(Struct source,Struct dest) {
 		boolean rez=false;
 		if(source.getKind()==Struct.Class && dest.getKind()==Struct.Class) {
@@ -56,12 +64,24 @@ public class MJTab extends Tab {
         		curr=curr.getElemType();     		
         	}   			
 		}
-		else {
-			rez=source.assignableTo(dest);
-		}
+		rez=MJTab.assignableTo(source,dest);
 			
 
 		return rez;
+	}
+	
+	public static String findClassName(Struct s) {
+		Scope universeScope=currentScope;
+		if(universeScope.getOuter()==null)return "";
+		while(universeScope.getOuter().getOuter()!=null)
+			universeScope=universeScope.getOuter();
+		
+		for(Obj o:universeScope.getLocals().symbols()) {
+			if(o.getType()==s) {
+				return o.getName();
+			}
+		}
+		return "";
 	}
 	
 }

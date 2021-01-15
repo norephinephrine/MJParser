@@ -4,12 +4,25 @@ program test_303
 
 const int cinilac = 4, delilac = 3;
 
+
+
 class Predmet
 {
+	Predmet p;
+	Predmet hm[];
 	 int tezina;
 	 char vrsta;
 
 	{
+	
+
+		 void hi(){
+		 print('p');print('i');
+		 print(eol);
+		 }
+		 void hiThis(){
+		 	this.hi();
+		 }
 		 void postaviTezinu(int tezina) {this.tezina = tezina;}  
 		 void ucitajTezinu() { read(tezina); }
 		 int zapremina() { return 0;}
@@ -17,6 +30,10 @@ class Predmet
 		 void postaviVrstu(char vrsta) {this.vrsta = vrsta;}
 		 char dohvVrstu() { return vrsta; }
 		 int dohvTezinu() { return tezina; }
+		void hir(Predmet p){
+			p.tezina=1234;
+			print(p.tezina);
+		}		 
 	}
 }
 
@@ -24,7 +41,12 @@ class Sfera extends Predmet
 {
 	 int r;
 	{
-		 void postaviTezinu(int tezina) {this.tezina = tezina; vrsta = 's';}
+	
+		 void hi(){
+		 print('s');print('i');
+		 print(eol);
+		 }	
+		 void postaviTezinu(int tezina) {this.tezina = tezina; }
 		 void postaviPoluprecnik(int r) {this.r = r; postaviVrstu('s');}
 		 int zapremina()
 			int z;
@@ -32,14 +54,22 @@ class Sfera extends Predmet
 			z = cinilac;
 			return z *(r/delilac);
 		}
+		
+	
 	}
+	
 }
 
 class Kvadar extends Predmet
 {
 	 int a, b, c;
 	{
-		 void postaviTezinu(int tezina) {this.tezina = tezina; vrsta = 'k';}
+	
+		 void hi(){
+		 print('k');print('i');
+		 print(eol);
+		 }		
+		 void postaviTezinu(int tezina) {this.tezina = tezina;}
 		 void postaviStranice(int a, int b, int c) {this.a = a; this.b = b; this.c = c; vrsta = 'k';}
 		 int zapremina()
 			int z;
@@ -47,6 +77,12 @@ class Kvadar extends Predmet
 			z = a * b * c;
 			return z;
 		}
+		void hir(Predmet p){
+			p.tezina=4444;
+			print(p.tezina);
+			p.hiThis();
+		}	
+		
 	}
 }
 
@@ -88,7 +124,10 @@ int tezinaK, tezinaS;
 		predmeti[1] = k1;
 		predmeti[3] = k2;
 		predmeti[5] = k3;
-
+		
+		k1.hir(new Predmet);
+		k1.hir(new Sfera);
+		k1.hir(new Kvadar);
 		read(t);
 		i=0;
 		do{
@@ -153,5 +192,16 @@ int tezinaK, tezinaS;
 			print(eol);
 			i++;
 		}while(i<10);
+		
+		predmeti[0]=null;
+		if(predmeti[0]==null)print('E');
+		
+		if(new  Predmet==null) print('P');
+		else print('K');
+		
+		predmeti=null;
+		if(predmeti==null)print('N');
+		
+		if(null==new int[2])print('W');
 	}
 }

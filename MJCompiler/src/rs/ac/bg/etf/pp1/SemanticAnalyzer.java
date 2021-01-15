@@ -220,9 +220,11 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	}
     	MJTab.closeScope();
     	
-    	
+    	//skloni ovo ako ne mora u vreme izvravanja da se provera return-a
+    	returnNotFound=false;
     	if(returnNotFound) {
-    		report_error("Greska nije pronadjena return naredba u funkciji ("+currentMethod.getName()+") koja vraca rezultat(mora postajati jedan return van if i switch naredbi)",methodDecl);
+    		//promeni ako trap ne radi: mora postajati jedan return van if i switch naredbi
+    		report_error("Greska nije pronadjena return naredba u funkciji ("+currentMethod.getName()+") koja vraca rezultat",methodDecl);
     	}
     	returnNotFound=false;
     	returnVoid=false;
@@ -270,7 +272,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	
     	//ADD ALL FIELDS FROM UPPER CLASS
     	if(currentExtendClass.getKind()!=Struct.Class) {	
-    		report_error("Greska ne moze da se prosiri ("+extendObj.getName()+")",extendType);
+    		if(extendObj!=null)
+    			report_error("Greska ne moze da se prosiri ("+extendObj.getName()+")",extendType);
     		currentExtendClass=MJTab.noType;
     	}
     	else if(currentExtendClass==currentClass) {
@@ -302,7 +305,28 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			report_error("Greska na liniji " + designator.getLine()+ " : ime "+designator.getName()+" nije deklarisano! ", designator);
     	}
     	else {
-    			report_info("("+designator.getName()+")", designator,true,obj);
+    			if(obj.getKind()==Obj.Fld)
+    				report_info("Pristup polju ("+designator.getName()+")", designator,true,obj);
+    			else if(obj.getKind()==Obj.Meth ) {
+    					if(currentClass!=null)
+    						report_info("Pristup metodi ("+designator.getName()+")", designator,true,obj);
+    					else  report_info("Pristup globalnoj funkciji ("+designator.getName()+")", designator,true,obj);
+
+    			}
+    			else if(obj.getKind()==Obj.Con) {
+    				report_info("Pristup konstanti ("+designator.getName()+")", designator,true,obj);
+    			}
+    			else if(obj.getKind()==Obj.Var) {
+    				if(obj.getFpPos()>0) {
+    					report_info("Pristupa se ("+designator.getName()+") koji je po redu  ("+obj.getFpPos()+") formalni argument funkcije ("+currentMethod.getName()+")",designator,true,obj);
+    				}
+    				else if(obj.getLevel()==0)
+    					report_info("Pristup globalnoj promenljivi ("+designator.getName()+")", designator,true,obj);
+    				else report_info("Pristup lokalnoj promenljivi ("+designator.getName()+")", designator,true,obj);
+    			}
+    			else if(obj.getKind()==Obj.Type) {
+    				report_error("Greska. Ne moze tip("+obj.getName()+") da se koristi kao designator",designator);
+    			}
     	}
     	
     	designator.obj=obj;
@@ -313,7 +337,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	if(obj!=MJTab.noObj) {
     		Struct struct=null;
     		
-    		struct=obj.getType();
+    	
     		if(obj.getKind()==Obj.Type) {
     			struct=null;
     		}
@@ -348,7 +372,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
         			report_error("Greska klasa ("+obj.getName()+") nema polje ili metodu ("+desMember.getName()+") ",desMember);
         		}
         		else {
-        			report_info("Pristup polju ("+desMember.getName()+")", desMember,true,member_obj);
+        			if(member_obj.getKind()==Obj.Meth)
+        				report_info("Pristup metodi  ("+desMember.getName()+")", desMember,true,member_obj);
+        			else report_info("Pristup polju ("+desMember.getName()+")", desMember,true,member_obj);
         		}
         		desMember.obj=member_obj;
         		
@@ -377,6 +403,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     		desArr.obj=MJTab.noObj;
     	}
     	else {
+    		report_info("Pristupa se clanu niza ("+obj.getName()+")",desArr,true,obj);
     		desArr.obj=new Obj(Obj.Elem,"Elem:"+obj.getName(),obj.getType().getElemType());
     	}
     	
@@ -433,8 +460,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     public void visit(DesStmNoActPar funct) {
     	Obj obj=funct.getDesignator().obj;
     	if(obj.getKind()==Obj.Meth) {
-    		if((obj.getLevel()==0 && currentMethod!=obj)||(currentMethod==obj && formalSize()==0)) {     		
-        		report_info("Koristi se rezultat metode bez parametara ("+obj.getName()+")", funct,true,obj);    			
+    		if((obj.getLevel()==0 && currentMethod!=obj)||(currentMethod==obj && formalSize()==0)) {
+    			//report_info("Poziva se  funkcija ("+obj.getName()+") koja nema parametra", funct,true,obj);
+
     		}
     		else {
     			report_error("Greska metoda ("+obj.getName()+")  zahteva parametre",funct);
@@ -467,6 +495,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
         			
 
         		}
+        		//report_info("Poziva se  funkcija ("+meth.getName()+") koja ima parametre", funct,true,meth);       		
         		
         	}
         	else {
@@ -495,7 +524,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     		else {
         		if((obj.getLevel()==0 && currentMethod!=obj)||(currentMethod==obj && formalSize()==0)) {
             		funct.struct=obj.getType();
-            		report_info("Koristi se rezultat metode bez parametara ("+obj.getName()+")", funct,true,obj);    			
+            		//report_info("Poziva se  funkcija ("+obj.getName()+") koja nema parametre", funct,true,obj);                		    			
         		}
         		else {
         			funct.struct=MJTab.noType;
@@ -542,7 +571,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
             			}
             		}
             		funct.struct=meth.getType();
-            		
+            		//report_info("U izrazu se koristi  funkcija ("+meth.getName()+") koja ima parametre", funct,true,meth);              		
+            		 
             	}
             	else {
             		report_error("Greska funkcija ("+meth.getName()+")  prihvata "+meth.getLevel()+" parametara, dato je "+list.size(),funct);
@@ -589,7 +619,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		if(factNew.getExpr().struct!=MJTab.intType) {
 			report_error("Greska izraz za velicinu niza mora biti tipa (int)",factNew);
 		}
-		report_info("Alocira se memorija za objekat klase ("+obj.getName()+")", factNew,true,obj);  
+		report_info("Alocira se memorija za niz tipa ("+obj.getName()+")", factNew,true,obj);  
 		factNew.struct=new Struct(Struct.Array,obj.getType());
 
     }
@@ -628,7 +658,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     		expr.struct=MJTab.intType;
     	}
     	else {
-    		report_error("Greska oba clana izraza mnozenja/deljenja/modula moraju biti tipa (int) ",expr);
+    		report_error("Greska oba clana izraza sabiranja/oduzimanja moraju biti tipa (int) ",expr);
     		expr.struct=MJTab.noType;
     	}   	
     }
@@ -814,10 +844,10 @@ public class SemanticAnalyzer extends VisitorAdaptor {
         	else {
         		
             	if(MJTab.equals(currentMethod.getType(), ret.getExpr().struct)==false) {
-            		report_error("Greska rezultat izraza nije ekvivalentan tipu rezultata funkcije",ret);
+            		report_error("Greska kod return expr. Rezultat izraza nije ekvivalentan tipu rezultata funkcije",ret);
             	}  
-            	if(ifLvl==0 && switchLevel==0)
-            		returnNotFound=false;
+            	//if(ifLvl==0 && switchLevel==0)
+            	returnNotFound=false;
         	}
 
         	
@@ -879,7 +909,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     }
     public void visit(ExtendErr err) {
     	err.struct=MJTab.noType;
-    	report_error("Greska kod nasledjivanje klase ("+currentClassObj.getName()+") . Bio je izvrsen oporavak do ( '{' ).",err);
+    	report_error("Greska. Klasa ("+currentClassObj.getName()+")  pokusava da prosiri gresku. Bio je izvrsen oporavak do ( '{' ).",err);
     }    
     public void visit(ErrorFormComma err) {
     	report_error("Greska kod deklaracija formalnih parametara funkcije ("+currentMethod.getName()+") . Bio je izvrsen oporavak do ( ,).",err);
@@ -942,10 +972,15 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 								curr=new Obj(symbol.getKind(), symbol.getName(), symbol.getType(),symbol.getAdr(),symbol.getLevel());
 						
 							curr.setFpPos(symbol.getFpPos());
+							curr.setAdr(symbol.getAdr());
+							curr.setLevel(symbol.getLevel());
 							locals.insertKey(curr);
 						}
 						
 						obj_new.setLocals(locals);
+						obj_new.setLevel(ext_o.getLevel());
+						obj_new.setAdr(ext_o.getAdr());
+						
 					}
 					else {
 						if(obj.getKind()==Obj.Meth) {
@@ -1093,13 +1128,15 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 				output.append("bool");
 				break;					
 			case Struct.Class:
-				output.append("Class");
+				output.append("Class ");
+				output.append(MJTab.findClassName(structToVisit.getElemType()));
 				break;
 			}
 			break;
 		case Struct.Class:
-			output.append("Class [");
-			output.append("]");
+			output.append("Class ");
+			output.append(MJTab.findClassName(structToVisit));
+			output.append(" ");
 			break;
 		}
 

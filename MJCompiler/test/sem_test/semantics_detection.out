@@ -1,0 +1,588 @@
+Buildfile: C:\Users\jovan\OneDrive\Desktop\ETF HELL\77777 SEMESTAR\prevodioci\projekat\workspace\MJCompiler\build.xml
+
+test:
+
+testRun:
+     [java] file:/C:/Program%20Files/apache-ant-1.10.9/lib/ant-launcher.jar
+     [java] file:/C:/Users/jovan/OneDrive/Desktop/ETF%20HELL/77777%20SEMESTAR/prevodioci/projekat/workspace/MJCompiler/config/log4j.xml
+     [java] INFO  18:24:03,935 - Compiling source file: C:\Users\jovan\OneDrive\Desktop\ETF HELL\77777 SEMESTAR\prevodioci\projekat\workspace\MJCompiler\test\sem_test\semantics_detection.mj
+     [java] INFO  18:24:04,275 - #2 program
+     [java] INFO  18:24:04,275 - #49 SemDet
+     [java] INFO  18:24:04,276 - #5 const
+     [java] INFO  18:24:04,282 - #49 int
+     [java] INFO  18:24:04,282 - #49 con
+     [java] INFO  18:24:04,285 - #6 =
+     [java] INFO  18:24:04,288 - #46 2
+     [java] INFO  18:24:04,289 - #7 ;
+     [java] INFO  18:24:04,289 - #49 int
+     [java] INFO  18:24:04,295 - #49 global
+     [java] INFO  18:24:04,295 - #7 ;
+     [java] INFO  18:24:04,296 - #43 class
+     [java] INFO  18:24:04,300 - #49 A
+     [java] INFO  18:24:04,300 - #3 {
+     [java] INFO  18:24:04,303 - #49 int
+     [java] INFO  18:24:04,309 - #49 x_field
+     [java] INFO  18:24:04,309 - #7 ;
+     [java] INFO  18:24:04,310 - #3 {
+     [java] INFO  18:24:04,311 - #44 void
+     [java] INFO  18:24:04,315 - #49 isp
+     [java] INFO  18:24:04,318 - #12 (
+     [java] INFO  18:24:04,321 - #13 )
+     [java] INFO  18:24:04,321 - #3 {
+     [java] INFO  18:24:04,329 - #26 print
+     [java] INFO  18:24:04,332 - #12 (
+     [java] INFO  18:24:04,332 - #49 x_field
+     [java] INFO  18:24:04,333 - #13 )
+     [java] INFO  18:24:04,334 - #7 ;
+     [java] INFO  18:24:04,334 - #4 }
+     [java] INFO  18:24:04,335 - #4 }
+     [java] INFO  18:24:04,339 - #4 }
+     [java] INFO  18:24:04,339 - #3 {
+     [java] INFO  18:24:04,339 - #44 void
+     [java] INFO  18:24:04,340 - #49 ispis
+     [java] INFO  18:24:04,340 - #12 (
+     [java] INFO  18:24:04,340 - #49 int
+     [java] INFO  18:24:04,340 - #49 x
+     [java] INFO  18:24:04,341 - #13 )
+     [java] INFO  18:24:04,341 - #3 {
+     [java] INFO  18:24:04,342 - #26 print
+     [java] INFO  18:24:04,342 - #12 (
+     [java] INFO  18:24:04,342 - #49 x
+     [java] INFO  18:24:04,343 - #13 )
+     [java] INFO  18:24:04,343 - #7 ;
+     [java] INFO  18:24:04,343 - #4 }
+     [java] INFO  18:24:04,343 - #44 void
+     [java] INFO  18:24:04,344 - #49 main
+     [java] INFO  18:24:04,344 - #12 (
+     [java] INFO  18:24:04,345 - #13 )
+     [java] INFO  18:24:04,345 - #49 int
+     [java] INFO  18:24:04,345 - #49 x
+     [java] INFO  18:24:04,345 - #7 ;
+     [java] INFO  18:24:04,346 - #49 int
+     [java] INFO  18:24:04,349 - #49 x_arr
+     [java] INFO  18:24:04,349 - #9 [
+     [java] INFO  18:24:04,349 - #10 ]
+     [java] INFO  18:24:04,350 - #7 ;
+     [java] INFO  18:24:04,350 - #49 A
+     [java] INFO  18:24:04,350 - #49 aClass
+     [java] INFO  18:24:04,350 - #7 ;
+     [java] INFO  18:24:04,350 - #3 {
+     [java] INFO  18:24:04,351 - #49 x
+     [java] INFO  18:24:04,351 - #6 =
+     [java] INFO  18:24:04,351 - #49 con
+     [java] INFO  18:24:04,354 - #7 ;
+     [java] INFO  18:24:04,354 - #49 global
+     [java] INFO  18:24:04,354 - #6 =
+     [java] INFO  18:24:04,355 - #46 3
+     [java] INFO  18:24:04,355 - #7 ;
+     [java] INFO  18:24:04,355 - #49 x_arr
+     [java] INFO  18:24:04,355 - #6 =
+     [java] INFO  18:24:04,355 - #30 new
+     [java] INFO  18:24:04,355 - #49 int
+     [java] INFO  18:24:04,356 - #9 [
+     [java] INFO  18:24:04,356 - #46 2
+     [java] INFO  18:24:04,356 - #10 ]
+     [java] INFO  18:24:04,365 - #7 ;
+     [java] INFO  18:24:04,365 - #49 x_arr
+     [java] INFO  18:24:04,366 - #9 [
+     [java] INFO  18:24:04,366 - #46 0
+     [java] INFO  18:24:04,366 - #10 ]
+     [java] INFO  18:24:04,366 - #6 =
+     [java] INFO  18:24:04,366 - #49 global
+     [java] INFO  18:24:04,366 - #7 ;
+     [java] INFO  18:24:04,367 - #49 ispis
+     [java] INFO  18:24:04,367 - #12 (
+     [java] INFO  18:24:04,367 - #49 x_arr
+     [java] INFO  18:24:04,367 - #9 [
+     [java] INFO  18:24:04,367 - #46 0
+     [java] INFO  18:24:04,367 - #10 ]
+     [java] INFO  18:24:04,368 - #13 )
+     [java] INFO  18:24:04,368 - #7 ;
+     [java] INFO  18:24:04,368 - #49 aClass
+     [java] INFO  18:24:04,368 - #6 =
+     [java] INFO  18:24:04,368 - #30 new
+     [java] INFO  18:24:04,369 - #49 A
+     [java] INFO  18:24:04,369 - #7 ;
+     [java] INFO  18:24:04,369 - #49 aClass
+     [java] INFO  18:24:04,369 - #31 .
+     [java] INFO  18:24:04,369 - #49 x_field
+     [java] INFO  18:24:04,369 - #6 =
+     [java] INFO  18:24:04,370 - #46 6
+     [java] INFO  18:24:04,370 - #7 ;
+     [java] INFO  18:24:04,370 - #49 aClass
+     [java] INFO  18:24:04,370 - #31 .
+     [java] INFO  18:24:04,370 - #49 isp
+     [java] INFO  18:24:04,370 - #12 (
+     [java] INFO  18:24:04,370 - #13 )
+     [java] INFO  18:24:04,370 - #7 ;
+     [java] INFO  18:24:04,371 - #4 }
+     [java] INFO  18:24:04,371 - #4 }
+     [java] INFO  18:24:04,383 - Program(
+     [java]   ProgName(
+     [java]    SemDet
+     [java]   ) [ProgName]
+     [java]   MultDecl(
+     [java]     MultDecl(
+     [java]       MultDecl(
+     [java]         NoDecl(
+     [java]         ) [NoDecl]
+     [java]         DecConst(
+     [java]           ConstDecl(
+     [java]             Type(
+     [java]              int
+     [java]             ) [Type]
+     [java]             SingleConst(
+     [java]               ConstSemi(
+     [java]                 ConstName(
+     [java]                  con
+     [java]                 ) [ConstName]
+     [java]                 ConstNum(
+     [java]                  2
+     [java]                 ) [ConstNum]
+     [java]               ) [ConstSemi]
+     [java]             ) [SingleConst]
+     [java]           ) [ConstDecl]
+     [java]         ) [DecConst]
+     [java]       ) [MultDecl]
+     [java]       DecVar(
+     [java]         GlobalVarDecl(
+     [java]           Type(
+     [java]            int
+     [java]           ) [Type]
+     [java]           GlobalSingleVar(
+     [java]             GlobalVarSemi(
+     [java]               VarParamNoBrack(
+     [java]                global
+     [java]               ) [VarParamNoBrack]
+     [java]             ) [GlobalVarSemi]
+     [java]           ) [GlobalSingleVar]
+     [java]         ) [GlobalVarDecl]
+     [java]       ) [DecVar]
+     [java]     ) [MultDecl]
+     [java]     DecClass(
+     [java]       ClassDeclMeth(
+     [java]         ClassName(
+     [java]          A
+     [java]         ) [ClassName]
+     [java]         NoExtendType(
+     [java]         ) [NoExtendType]
+     [java]         ClassVarDeclUse(
+     [java]           NoClassVarDecl(
+     [java]           ) [NoClassVarDecl]
+     [java]           ClassVarDeclNoErr(
+     [java]             Type(
+     [java]              int
+     [java]             ) [Type]
+     [java]             SingleVar(
+     [java]               VarParamNoBrack(
+     [java]                x_field
+     [java]               ) [VarParamNoBrack]
+     [java]             ) [SingleVar]
+     [java]           ) [ClassVarDeclNoErr]
+     [java]         ) [ClassVarDeclUse]
+     [java]         MethodDeclUse(
+     [java]           NoMethodDecl(
+     [java]           ) [NoMethodDecl]
+     [java]           MethodDecPar(
+     [java]             MethodTypeName(
+     [java]               MethVoid(
+     [java]               ) [MethVoid]
+     [java]              isp
+     [java]             ) [MethodTypeName]
+     [java]             NoFormParList(
+     [java]             ) [NoFormParList]
+     [java]             MethodLocal(
+     [java]               NoVarDecl(
+     [java]               ) [NoVarDecl]
+     [java]             ) [MethodLocal]
+     [java]             MultStatement(
+     [java]               NoStatementList(
+     [java]               ) [NoStatementList]
+     [java]               StatementPrint(
+     [java]                 ExprTermList(
+     [java]                   TermSinglePos(
+     [java]                     FactorSingle(
+     [java]                       FactVar(
+     [java]                         DesignatorSingle(
+     [java]                          x_field
+     [java]                         ) [DesignatorSingle]
+     [java]                       ) [FactVar]
+     [java]                     ) [FactorSingle]
+     [java]                   ) [TermSinglePos]
+     [java]                 ) [ExprTermList]
+     [java]               ) [StatementPrint]
+     [java]             ) [MultStatement]
+     [java]           ) [MethodDecPar]
+     [java]         ) [MethodDeclUse]
+     [java]       ) [ClassDeclMeth]
+     [java]     ) [DecClass]
+     [java]   ) [MultDecl]
+     [java]   MethodDeclUse(
+     [java]     MethodDeclUse(
+     [java]       NoMethodDecl(
+     [java]       ) [NoMethodDecl]
+     [java]       MethodDecPar(
+     [java]         MethodTypeName(
+     [java]           MethVoid(
+     [java]           ) [MethVoid]
+     [java]          ispis
+     [java]         ) [MethodTypeName]
+     [java]         FormParListUse(
+     [java]           FormParSingle(
+     [java]             FormParamNoError(
+     [java]               FormParNoBrack(
+     [java]                 Type(
+     [java]                  int
+     [java]                 ) [Type]
+     [java]                x
+     [java]               ) [FormParNoBrack]
+     [java]             ) [FormParamNoError]
+     [java]           ) [FormParSingle]
+     [java]         ) [FormParListUse]
+     [java]         MethodLocal(
+     [java]           NoVarDecl(
+     [java]           ) [NoVarDecl]
+     [java]         ) [MethodLocal]
+     [java]         MultStatement(
+     [java]           NoStatementList(
+     [java]           ) [NoStatementList]
+     [java]           StatementPrint(
+     [java]             ExprTermList(
+     [java]               TermSinglePos(
+     [java]                 FactorSingle(
+     [java]                   FactVar(
+     [java]                     DesignatorSingle(
+     [java]                      x
+     [java]                     ) [DesignatorSingle]
+     [java]                   ) [FactVar]
+     [java]                 ) [FactorSingle]
+     [java]               ) [TermSinglePos]
+     [java]             ) [ExprTermList]
+     [java]           ) [StatementPrint]
+     [java]         ) [MultStatement]
+     [java]       ) [MethodDecPar]
+     [java]     ) [MethodDeclUse]
+     [java]     MethodDecPar(
+     [java]       MethodTypeName(
+     [java]         MethVoid(
+     [java]         ) [MethVoid]
+     [java]        main
+     [java]       ) [MethodTypeName]
+     [java]       NoFormParList(
+     [java]       ) [NoFormParList]
+     [java]       MethodLocal(
+     [java]         VarDeclUse(
+     [java]           VarDeclUse(
+     [java]             VarDeclUse(
+     [java]               NoVarDecl(
+     [java]               ) [NoVarDecl]
+     [java]               VarDecl(
+     [java]                 Type(
+     [java]                  int
+     [java]                 ) [Type]
+     [java]                 SingleVar(
+     [java]                   VarParamNoBrack(
+     [java]                    x
+     [java]                   ) [VarParamNoBrack]
+     [java]                 ) [SingleVar]
+     [java]               ) [VarDecl]
+     [java]             ) [VarDeclUse]
+     [java]             VarDecl(
+     [java]               Type(
+     [java]                int
+     [java]               ) [Type]
+     [java]               SingleVar(
+     [java]                 VarParamBrack(
+     [java]                  x_arr
+     [java]                 ) [VarParamBrack]
+     [java]               ) [SingleVar]
+     [java]             ) [VarDecl]
+     [java]           ) [VarDeclUse]
+     [java]           VarDecl(
+     [java]             Type(
+     [java]              A
+     [java]             ) [Type]
+     [java]             SingleVar(
+     [java]               VarParamNoBrack(
+     [java]                aClass
+     [java]               ) [VarParamNoBrack]
+     [java]             ) [SingleVar]
+     [java]           ) [VarDecl]
+     [java]         ) [VarDeclUse]
+     [java]       ) [MethodLocal]
+     [java]       MultStatement(
+     [java]         MultStatement(
+     [java]           MultStatement(
+     [java]             MultStatement(
+     [java]               MultStatement(
+     [java]                 MultStatement(
+     [java]                   MultStatement(
+     [java]                     MultStatement(
+     [java]                       NoStatementList(
+     [java]                       ) [NoStatementList]
+     [java]                       StatementDesignator(
+     [java]                         DesStmAssign(
+     [java]                           DesignatorSingle(
+     [java]                            x
+     [java]                           ) [DesignatorSingle]
+     [java]                           Assignop(
+     [java]                           ) [Assignop]
+     [java]                           DesAssignNoErr(
+     [java]                             ExprTermList(
+     [java]                               TermSinglePos(
+     [java]                                 FactorSingle(
+     [java]                                   FactVar(
+     [java]                                     DesignatorSingle(
+     [java]                                      con
+     [java]                                     ) [DesignatorSingle]
+     [java]                                   ) [FactVar]
+     [java]                                 ) [FactorSingle]
+     [java]                               ) [TermSinglePos]
+     [java]                             ) [ExprTermList]
+     [java]                           ) [DesAssignNoErr]
+     [java]                         ) [DesStmAssign]
+     [java]                       ) [StatementDesignator]
+     [java]                     ) [MultStatement]
+     [java]                     StatementDesignator(
+     [java]                       DesStmAssign(
+     [java]                         DesignatorSingle(
+     [java]                          global
+     [java]                         ) [DesignatorSingle]
+     [java]                         Assignop(
+     [java]                         ) [Assignop]
+     [java]                         DesAssignNoErr(
+     [java]                           ExprTermList(
+     [java]                             TermSinglePos(
+     [java]                               FactorSingle(
+     [java]                                 FactorNum(
+     [java]                                  3
+     [java]                                 ) [FactorNum]
+     [java]                               ) [FactorSingle]
+     [java]                             ) [TermSinglePos]
+     [java]                           ) [ExprTermList]
+     [java]                         ) [DesAssignNoErr]
+     [java]                       ) [DesStmAssign]
+     [java]                     ) [StatementDesignator]
+     [java]                   ) [MultStatement]
+     [java]                   StatementDesignator(
+     [java]                     DesStmAssign(
+     [java]                       DesignatorSingle(
+     [java]                        x_arr
+     [java]                       ) [DesignatorSingle]
+     [java]                       Assignop(
+     [java]                       ) [Assignop]
+     [java]                       DesAssignNoErr(
+     [java]                         ExprTermList(
+     [java]                           TermSinglePos(
+     [java]                             FactorSingle(
+     [java]                               FactorNewArr(
+     [java]                                 Type(
+     [java]                                  int
+     [java]                                 ) [Type]
+     [java]                                 ExprTermList(
+     [java]                                   TermSinglePos(
+     [java]                                     FactorSingle(
+     [java]                                       FactorNum(
+     [java]                                        2
+     [java]                                       ) [FactorNum]
+     [java]                                     ) [FactorSingle]
+     [java]                                   ) [TermSinglePos]
+     [java]                                 ) [ExprTermList]
+     [java]                               ) [FactorNewArr]
+     [java]                             ) [FactorSingle]
+     [java]                           ) [TermSinglePos]
+     [java]                         ) [ExprTermList]
+     [java]                       ) [DesAssignNoErr]
+     [java]                     ) [DesStmAssign]
+     [java]                   ) [StatementDesignator]
+     [java]                 ) [MultStatement]
+     [java]                 StatementDesignator(
+     [java]                   DesStmAssign(
+     [java]                     DesArr(
+     [java]                       DesignatorSingle(
+     [java]                        x_arr
+     [java]                       ) [DesignatorSingle]
+     [java]                       ExprTermList(
+     [java]                         TermSinglePos(
+     [java]                           FactorSingle(
+     [java]                             FactorNum(
+     [java]                              0
+     [java]                             ) [FactorNum]
+     [java]                           ) [FactorSingle]
+     [java]                         ) [TermSinglePos]
+     [java]                       ) [ExprTermList]
+     [java]                     ) [DesArr]
+     [java]                     Assignop(
+     [java]                     ) [Assignop]
+     [java]                     DesAssignNoErr(
+     [java]                       ExprTermList(
+     [java]                         TermSinglePos(
+     [java]                           FactorSingle(
+     [java]                             FactVar(
+     [java]                               DesignatorSingle(
+     [java]                                global
+     [java]                               ) [DesignatorSingle]
+     [java]                             ) [FactVar]
+     [java]                           ) [FactorSingle]
+     [java]                         ) [TermSinglePos]
+     [java]                       ) [ExprTermList]
+     [java]                     ) [DesAssignNoErr]
+     [java]                   ) [DesStmAssign]
+     [java]                 ) [StatementDesignator]
+     [java]               ) [MultStatement]
+     [java]               StatementDesignator(
+     [java]                 DesStmActPar(
+     [java]                   DesignatorSingle(
+     [java]                    ispis
+     [java]                   ) [DesignatorSingle]
+     [java]                   ActParsSingle(
+     [java]                     ExprTermList(
+     [java]                       TermSinglePos(
+     [java]                         FactorSingle(
+     [java]                           FactVar(
+     [java]                             DesArr(
+     [java]                               DesignatorSingle(
+     [java]                                x_arr
+     [java]                               ) [DesignatorSingle]
+     [java]                               ExprTermList(
+     [java]                                 TermSinglePos(
+     [java]                                   FactorSingle(
+     [java]                                     FactorNum(
+     [java]                                      0
+     [java]                                     ) [FactorNum]
+     [java]                                   ) [FactorSingle]
+     [java]                                 ) [TermSinglePos]
+     [java]                               ) [ExprTermList]
+     [java]                             ) [DesArr]
+     [java]                           ) [FactVar]
+     [java]                         ) [FactorSingle]
+     [java]                       ) [TermSinglePos]
+     [java]                     ) [ExprTermList]
+     [java]                   ) [ActParsSingle]
+     [java]                 ) [DesStmActPar]
+     [java]               ) [StatementDesignator]
+     [java]             ) [MultStatement]
+     [java]             StatementDesignator(
+     [java]               DesStmAssign(
+     [java]                 DesignatorSingle(
+     [java]                  aClass
+     [java]                 ) [DesignatorSingle]
+     [java]                 Assignop(
+     [java]                 ) [Assignop]
+     [java]                 DesAssignNoErr(
+     [java]                   ExprTermList(
+     [java]                     TermSinglePos(
+     [java]                       FactorSingle(
+     [java]                         FactorNew(
+     [java]                           Type(
+     [java]                            A
+     [java]                           ) [Type]
+     [java]                         ) [FactorNew]
+     [java]                       ) [FactorSingle]
+     [java]                     ) [TermSinglePos]
+     [java]                   ) [ExprTermList]
+     [java]                 ) [DesAssignNoErr]
+     [java]               ) [DesStmAssign]
+     [java]             ) [StatementDesignator]
+     [java]           ) [MultStatement]
+     [java]           StatementDesignator(
+     [java]             DesStmAssign(
+     [java]               DesMember(
+     [java]                 DesignatorSingle(
+     [java]                  aClass
+     [java]                 ) [DesignatorSingle]
+     [java]                x_field
+     [java]               ) [DesMember]
+     [java]               Assignop(
+     [java]               ) [Assignop]
+     [java]               DesAssignNoErr(
+     [java]                 ExprTermList(
+     [java]                   TermSinglePos(
+     [java]                     FactorSingle(
+     [java]                       FactorNum(
+     [java]                        6
+     [java]                       ) [FactorNum]
+     [java]                     ) [FactorSingle]
+     [java]                   ) [TermSinglePos]
+     [java]                 ) [ExprTermList]
+     [java]               ) [DesAssignNoErr]
+     [java]             ) [DesStmAssign]
+     [java]           ) [StatementDesignator]
+     [java]         ) [MultStatement]
+     [java]         StatementDesignator(
+     [java]           DesStmNoActPar(
+     [java]             DesMember(
+     [java]               DesignatorSingle(
+     [java]                aClass
+     [java]               ) [DesignatorSingle]
+     [java]              isp
+     [java]             ) [DesMember]
+     [java]           ) [DesStmNoActPar]
+     [java]         ) [StatementDesignator]
+     [java]       ) [MultStatement]
+     [java]     ) [MethodDecPar]
+     [java]   ) [MethodDeclUse]
+     [java] ) [Program]
+     [java] INFO  18:24:04,413 - ===================================
+     [java] INFO  18:24:04,424 - Pristup polju (x_field) | Fld x_field: int, 1, 1  na liniji 11
+     [java] INFO  18:24:04,425 - Koristi se promenljiva (x_field) | Fld x_field: int, 1, 1  na liniji 11
+     [java] INFO  18:24:04,426 - Pristupa se (x) koji je po redu  (1) formalni argument funkcije (ispis) | Var x: int, 0, 1  na liniji 19
+     [java] INFO  18:24:04,426 - Koristi se promenljiva (x) | Var x: int, 0, 1  na liniji 19
+     [java] INFO  18:24:04,426 - Pristup lokalnoj promenljivi (x) | Var x: int, 0, 1  na liniji 25
+     [java] INFO  18:24:04,426 - Pristup konstanti (con) | Con con: int, 2, 0  na liniji 25
+     [java] INFO  18:24:04,426 - Koristi se promenljiva (con) | Con con: int, 2, 0  na liniji 25
+     [java] INFO  18:24:04,427 - Pristup globalnoj promenljivi (global) | Var global: int, 0, 0  na liniji 26
+     [java] INFO  18:24:04,427 - Pristup lokalnoj promenljivi (x_arr) | Var x_arr: Arr of int, 1, 1  na liniji 27
+     [java] INFO  18:24:04,427 - Alocira se memorija za niz tipa (int) | Type int: int, -1, -1  na liniji 27
+     [java] INFO  18:24:04,427 - Pristup lokalnoj promenljivi (x_arr) | Var x_arr: Arr of int, 1, 1  na liniji 28
+     [java] INFO  18:24:04,427 - Pristupa se clanu niza (x_arr) | Var x_arr: Arr of int, 1, 1  na liniji 28
+     [java] INFO  18:24:04,427 - Pristup globalnoj promenljivi (global) | Var global: int, 0, 0  na liniji 28
+     [java] INFO  18:24:04,427 - Koristi se promenljiva (global) | Var global: int, 0, 0  na liniji 28
+     [java] INFO  18:24:04,428 - Pristup globalnoj funkciji (ispis) | Meth ispis: notype, 0, 1  na liniji 29
+     [java] INFO  18:24:04,428 - Pristup lokalnoj promenljivi (x_arr) | Var x_arr: Arr of int, 1, 1  na liniji 29
+     [java] INFO  18:24:04,428 - Pristupa se clanu niza (x_arr) | Var x_arr: Arr of int, 1, 1  na liniji 29
+     [java] INFO  18:24:04,428 - Koristi se promenljiva (Elem:x_arr) | Elem:x_arr: int, -1, -1  na liniji 29
+     [java] INFO  18:24:04,431 - Pristup lokalnoj promenljivi (aClass) | Var aClass: Class A , 2, 1  na liniji 30
+     [java] INFO  18:24:04,431 - Alocira se memorija za objekat klase (A) | Type A: Class A , 0, 0  na liniji 30
+     [java] INFO  18:24:04,431 - Pristup lokalnoj promenljivi (aClass) | Var aClass: Class A , 2, 1  na liniji 31
+     [java] INFO  18:24:04,432 - Pristup polju (x_field) | Fld x_field: int, 1, 1  na liniji 31
+     [java] INFO  18:24:04,432 - Pristup lokalnoj promenljivi (aClass) | Var aClass: Class A , 2, 1  na liniji 32
+     [java] INFO  18:24:04,432 - Pristup metodi  (isp) | Meth isp: notype, 0, 0  na liniji 32
+     [java] INFO  18:24:04,432 - ===================================
+     [java] =====================SYMBOL TABLE DUMP=========================
+     [java] Type int: int, -1, -1 
+     [java] Type char: char, -1, -1 
+     [java] Con eol: char, 10, 0 
+     [java] Con null: Class [], 0, 0 
+     [java] Meth chr: char, 0, 1 
+     [java]    Var i: int, 0, 1 
+     [java] 
+     [java] Meth ord: int, 0, 1 
+     [java]    Var ch: char, 0, 1 
+     [java] 
+     [java] Meth len: int, 0, 1 
+     [java]    Var arr: Arr of notype, 0, 1 
+     [java] 
+     [java] Type bool: bool, -1, -1 
+     [java] Prog SemDet: notype, 0, 1 
+     [java]    Con con: int, 2, 0 
+     [java]    Var global: int, 0, 0 
+     [java]    Type A: Class [Fld : int, 0, 1 Fld x_field: int, 1, 1 Meth isp: notype, 0, 0 
+     [java]       Var this: , 0, 1 
+     [java] ], 0, 0 
+     [java]    Meth ispis: notype, 0, 1 
+     [java]       Var x: int, 0, 1 
+     [java] 
+     [java]    Meth main: notype, 0, 0 
+     [java]       Var x: int, 0, 1 
+     [java]       Var x_arr: Arr of int, 1, 1 
+     [java]       Var aClass: Class [Fld : int, 0, 1 Fld x_field: int, 1, 1 Meth isp: notype, 0, 0 
+     [java]          Var this: , 0, 1 
+     [java] ], 2, 1 
+     [java] 
+     [java] 
+     [java] 
+     [java] INFO  18:24:04,459 - Parsiranje uspesno zavrseno!
+
+BUILD SUCCESSFUL
+Total time: 0 seconds

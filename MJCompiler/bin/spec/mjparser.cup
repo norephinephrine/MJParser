@@ -167,7 +167,7 @@ GlobalVarList	::=(GlobalMultVar)GlobalVarComma GlobalVarList
 GlobalVarParamSemi ::=(GlobalVarSemi) VarParam SEMI
 			|
 			(GlobalErrorVarSemi)error SEMI:l 
-		    {: parser.report_error("Greska kod definicije VAR globalnih promenljivi.Izvrsen oporavak do ; u liniji " + lleft, null);  :}
+		    {: parser.report_error("Greska kod deklaracije VAR globalnih promenljivi.Izvrsen oporavak do ; u liniji " + lleft, null);  :}
 		    ;
 			
 
@@ -175,7 +175,7 @@ GlobalVarParamSemi ::=(GlobalVarSemi) VarParam SEMI
 GlobalVarComma ::=(GlobalCommaVar)VarParam COMMA		
 			|
 			(GlobalErrorVarComma)error COMMA:l 
-		    {: parser.report_error("Greska kod definicije VAR globalnih promenljivi.Izvrsen oporavak do , u liniji " + lleft, null);  :}
+		    {: parser.report_error("Greska kod deklaracije VAR globalnih promenljivi.Izvrsen oporavak do , u liniji " + lleft, null);  :}
 		    ;
 /* #METHOD VAR */	
 	    	

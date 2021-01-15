@@ -1,0 +1,163 @@
+INFO  15:10:33,139 - Compiling source file: C:\Users\jovan\OneDrive\Desktop\ETF HELL\77777 SEMESTAR\prevodioci\projekat\workspace\MJCompiler\test\syn_test\syntax_error1.mj
+INFO  15:10:33,480 - #2 program
+INFO  15:10:33,481 - #49 SyntaxErr
+INFO  15:10:33,481 - #5 const
+INFO  15:10:33,487 - #49 int
+INFO  15:10:33,487 - #49 a
+INFO  15:10:33,490 - #6 =
+INFO  15:10:33,493 - #47 true
+INFO  15:10:33,493 - #8 ,
+INFO  15:10:33,493 - #49 b
+INFO  15:10:33,494 - #6 =
+INFO  15:10:33,494 - #48 c
+INFO  15:10:33,495 - #7 ;
+INFO  15:10:33,495 - #5 const
+INFO  15:10:33,499 - #49 bool
+INFO  15:10:33,500 - #49 c
+INFO  15:10:33,500 - #6 =
+INFO  15:10:33,501 - #46 1
+INFO  15:10:33,501 - #8 ,
+INFO  15:10:33,502 - #49 d
+INFO  15:10:33,502 - #6 =
+INFO  15:10:33,503 - #48 d
+INFO  15:10:33,503 - #7 ;
+INFO  15:10:33,504 - #5 const
+INFO  15:10:33,504 - #49 char
+INFO  15:10:33,505 - #49 e
+INFO  15:10:33,505 - #6 =
+INFO  15:10:33,506 - #46 1
+INFO  15:10:33,506 - #8 ,
+INFO  15:10:33,507 - #49 f
+INFO  15:10:33,507 - #6 =
+INFO  15:10:33,507 - #47 false
+INFO  15:10:33,508 - #7 ;
+INFO  15:10:33,508 - #3 {
+INFO  15:10:33,511 - #44 void
+INFO  15:10:33,517 - #49 main
+INFO  15:10:33,520 - #12 (
+INFO  15:10:33,523 - #13 )
+INFO  15:10:33,524 - #3 {
+INFO  15:10:33,532 - #4 }
+INFO  15:10:33,535 - #4 }
+INFO  15:10:33,550 - Program(
+  ProgName(
+   SyntaxErr
+  ) [ProgName]
+  MultDecl(
+    MultDecl(
+      MultDecl(
+        NoDecl(
+        ) [NoDecl]
+        DecConst(
+          ConstDecl(
+            Type(
+             int
+            ) [Type]
+            MultConst(
+              ConstCommaEnd(
+                ConstName(
+                 a
+                ) [ConstName]
+                ConstBool(
+                 true
+                ) [ConstBool]
+              ) [ConstCommaEnd]
+              SingleConst(
+                ConstSemi(
+                  ConstName(
+                   b
+                  ) [ConstName]
+                  ConstChar(
+                   c
+                  ) [ConstChar]
+                ) [ConstSemi]
+              ) [SingleConst]
+            ) [MultConst]
+          ) [ConstDecl]
+        ) [DecConst]
+      ) [MultDecl]
+      DecConst(
+        ConstDecl(
+          Type(
+           bool
+          ) [Type]
+          MultConst(
+            ConstCommaEnd(
+              ConstName(
+               c
+              ) [ConstName]
+              ConstNum(
+               1
+              ) [ConstNum]
+            ) [ConstCommaEnd]
+            SingleConst(
+              ConstSemi(
+                ConstName(
+                 d
+                ) [ConstName]
+                ConstChar(
+                 d
+                ) [ConstChar]
+              ) [ConstSemi]
+            ) [SingleConst]
+          ) [MultConst]
+        ) [ConstDecl]
+      ) [DecConst]
+    ) [MultDecl]
+    DecConst(
+      ConstDecl(
+        Type(
+         char
+        ) [Type]
+        MultConst(
+          ConstCommaEnd(
+            ConstName(
+             e
+            ) [ConstName]
+            ConstNum(
+             1
+            ) [ConstNum]
+          ) [ConstCommaEnd]
+          SingleConst(
+            ConstSemi(
+              ConstName(
+               f
+              ) [ConstName]
+              ConstBool(
+               false
+              ) [ConstBool]
+            ) [ConstSemi]
+          ) [SingleConst]
+        ) [MultConst]
+      ) [ConstDecl]
+    ) [DecConst]
+  ) [MultDecl]
+  MethodDeclUse(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecPar(
+      MethodTypeName(
+        MethVoid(
+        ) [MethVoid]
+       main
+      ) [MethodTypeName]
+      NoFormParList(
+      ) [NoFormParList]
+      MethodLocal(
+        NoVarDecl(
+        ) [NoVarDecl]
+      ) [MethodLocal]
+      NoStatementList(
+      ) [NoStatementList]
+    ) [MethodDecPar]
+  ) [MethodDeclUse]
+) [Program]
+INFO  15:10:33,623 - ===================================
+ERROR 15:10:33,631 - Greska:  konstanta a i vrednost:true se ne poklapaju po tipu na liniji 3
+ERROR 15:10:33,632 - Greska:  konstanta b i vrednost:c se ne poklapaju po tipu na liniji 3
+ERROR 15:10:33,633 - Greska:  konstanta c i vrednost:1 se ne poklapaju po tipu na liniji 4
+ERROR 15:10:33,633 - Greska:  konstanta d i vrednost:d se ne poklapaju po tipu na liniji 4
+ERROR 15:10:33,634 - Greska:  konstanta e i vrednost:1 se ne poklapaju po tipu na liniji 5
+ERROR 15:10:33,634 - Greska:  konstanta f i vrednost:false se ne poklapaju po tipu na liniji 5
+INFO  15:10:33,635 - ===================================
+ERROR 15:10:33,649 - Parsiranje NIJE uspesno zavrseno!

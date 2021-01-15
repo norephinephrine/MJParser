@@ -1,0 +1,147 @@
+INFO  16:10:28,656 - Compiling source file: C:\Users\jovan\OneDrive\Desktop\ETF HELL\77777 SEMESTAR\prevodioci\projekat\workspace\MJCompiler\test\syn_test\syntax_error3.mj
+INFO  16:10:28,991 - #2 program
+INFO  16:10:28,992 - #49 SyntaxErr
+INFO  16:10:28,992 - #49 int
+INFO  16:10:28,998 - #49 a
+INFO  16:10:29,001 - #7 ;
+INFO  16:10:29,002 - #49 char
+INFO  16:10:29,005 - #49 ch
+INFO  16:10:29,005 - #7 ;
+INFO  16:10:29,006 - #49 bool
+INFO  16:10:29,006 - #49 b
+INFO  16:10:29,007 - #7 ;
+INFO  16:10:29,007 - #3 {
+INFO  16:10:29,007 - #49 int
+INFO  16:10:29,010 - #49 main
+INFO  16:10:29,011 - #12 (
+INFO  16:10:29,014 - #49 int
+INFO  16:10:29,015 - #49 a
+INFO  16:10:29,015 - #13 )
+INFO  16:10:29,015 - #3 {
+INFO  16:10:29,022 - #49 a
+INFO  16:10:29,025 - #6 =
+INFO  16:10:29,025 - #39 -
+INFO  16:10:29,028 - #49 b
+INFO  16:10:29,029 - #7 ;
+INFO  16:10:29,030 - #4 }
+INFO  16:10:29,031 - #4 }
+INFO  16:10:29,046 - Program(
+  ProgName(
+   SyntaxErr
+  ) [ProgName]
+  MultDecl(
+    MultDecl(
+      MultDecl(
+        NoDecl(
+        ) [NoDecl]
+        DecVar(
+          GlobalVarDecl(
+            Type(
+             int
+            ) [Type]
+            GlobalSingleVar(
+              GlobalVarSemi(
+                VarParamNoBrack(
+                 a
+                ) [VarParamNoBrack]
+              ) [GlobalVarSemi]
+            ) [GlobalSingleVar]
+          ) [GlobalVarDecl]
+        ) [DecVar]
+      ) [MultDecl]
+      DecVar(
+        GlobalVarDecl(
+          Type(
+           char
+          ) [Type]
+          GlobalSingleVar(
+            GlobalVarSemi(
+              VarParamNoBrack(
+               ch
+              ) [VarParamNoBrack]
+            ) [GlobalVarSemi]
+          ) [GlobalSingleVar]
+        ) [GlobalVarDecl]
+      ) [DecVar]
+    ) [MultDecl]
+    DecVar(
+      GlobalVarDecl(
+        Type(
+         bool
+        ) [Type]
+        GlobalSingleVar(
+          GlobalVarSemi(
+            VarParamNoBrack(
+             b
+            ) [VarParamNoBrack]
+          ) [GlobalVarSemi]
+        ) [GlobalSingleVar]
+      ) [GlobalVarDecl]
+    ) [DecVar]
+  ) [MultDecl]
+  MethodDeclUse(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecPar(
+      MethodTypeName(
+        MethType(
+          Type(
+           int
+          ) [Type]
+        ) [MethType]
+       main
+      ) [MethodTypeName]
+      FormParListUse(
+        FormParSingle(
+          FormParamNoError(
+            FormParNoBrack(
+              Type(
+               int
+              ) [Type]
+             a
+            ) [FormParNoBrack]
+          ) [FormParamNoError]
+        ) [FormParSingle]
+      ) [FormParListUse]
+      MethodLocal(
+        NoVarDecl(
+        ) [NoVarDecl]
+      ) [MethodLocal]
+      MultStatement(
+        NoStatementList(
+        ) [NoStatementList]
+        StatementDesignator(
+          DesStmAssign(
+            DesignatorSingle(
+             a
+            ) [DesignatorSingle]
+            Assignop(
+            ) [Assignop]
+            DesAssignNoErr(
+              ExprTermList(
+                TermSingleNeg(
+                  FactorSingle(
+                    FactVar(
+                      DesignatorSingle(
+                       b
+                      ) [DesignatorSingle]
+                    ) [FactVar]
+                  ) [FactorSingle]
+                ) [TermSingleNeg]
+              ) [ExprTermList]
+            ) [DesAssignNoErr]
+          ) [DesStmAssign]
+        ) [StatementDesignator]
+      ) [MultStatement]
+    ) [MethodDecPar]
+  ) [MethodDeclUse]
+) [Program]
+INFO  16:10:29,079 - ===================================
+INFO  16:10:29,091 - Pristupa se (a) koji je po redu  (1) formalni argument funkcije (main) | Var a: int, 0, 1  na liniji 12
+INFO  16:10:29,091 - Pristup globalnoj promenljivi (b) | Var b: bool, 2, 0  na liniji 12
+INFO  16:10:29,092 - Koristi se promenljiva (b) | Var b: bool, 2, 0  na liniji 12
+ERROR 16:10:29,092 - Greska da bi clan mogao biti negativan mora biti tipa (int)  na liniji 12
+ERROR 16:10:29,093 - Greska izraz nije kompatibilan sa simbolom na liniji 12
+ERROR 16:10:29,093 - Greska main mora da bude void tipa i ne sme da ima formalne argumente na liniji 9
+INFO  16:10:29,094 - ===================================
+ERROR 16:10:29,098 - Parsiranje NIJE uspesno zavrseno!

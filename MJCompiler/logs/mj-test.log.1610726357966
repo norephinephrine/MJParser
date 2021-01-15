@@ -1,0 +1,4 @@
+INFO  16:56:49,338 - Compiling source file: C:\Users\jovan\OneDrive\Desktop\ETF HELL\77777 SEMESTAR\prevodioci\projekat\workspace\MJCompiler\test\syn_test\syntax_err1.mj
+ERROR 16:56:49,694 - 
+Sintaksna greska na liniji 1
+ERROR 16:56:49,694 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 1

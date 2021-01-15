@@ -1,0 +1,457 @@
+INFO  18:20:36,451 - Compiling source file: C:\Users\jovan\OneDrive\Desktop\ETF HELL\77777 SEMESTAR\prevodioci\projekat\workspace\MJCompiler\test\syn_test\syntax_recovery.mj
+INFO  18:20:36,791 - #2 program
+INFO  18:20:36,792 - #49 Syntax
+INFO  18:20:36,793 - #5 const
+INFO  18:20:36,798 - #49 int1
+INFO  18:20:36,798 - #7 ;
+ERROR 18:20:36,801 - 
+Sintaksna greska na liniji 3
+INFO  18:20:36,802 - #5 const
+INFO  18:20:36,802 - #49 int
+INFO  18:20:36,803 - #49 a
+ERROR 18:20:36,804 - Greska kod definicije CONST globalnih konstanti.Izvrsen oporavak do ; u liniji 3
+INFO  18:20:36,810 - #6 =
+INFO  18:20:36,813 - #46 2
+INFO  18:20:36,814 - #8 ,
+INFO  18:20:36,814 - #49 a
+INFO  18:20:36,814 - #49 a
+ERROR 18:20:36,815 - 
+Sintaksna greska na liniji 5
+INFO  18:20:36,815 - #8 ,
+INFO  18:20:36,816 - #49 b
+INFO  18:20:36,816 - #6 =
+INFO  18:20:36,816 - #46 2
+ERROR 18:20:36,817 - Greska kod definicije CONST globalnih konstanti.Izvrsen oporavak do , u liniji 5
+INFO  18:20:36,820 - #8 ,
+INFO  18:20:36,820 - #49 c
+INFO  18:20:36,820 - #6 =
+INFO  18:20:36,820 - #46 1
+INFO  18:20:36,822 - #8 ,
+INFO  18:20:36,822 - #49 e
+INFO  18:20:36,823 - #6 =
+INFO  18:20:36,823 - #46 4
+INFO  18:20:36,823 - #7 ;
+INFO  18:20:36,823 - #49 int
+INFO  18:20:36,824 - #49 a
+INFO  18:20:36,824 - #49 b
+ERROR 18:20:36,825 - 
+Sintaksna greska na liniji 7
+INFO  18:20:36,825 - #8 ,
+INFO  18:20:36,825 - #49 b
+INFO  18:20:36,826 - #8 ,
+INFO  18:20:36,826 - #49 c
+ERROR 18:20:36,826 - Greska kod deklaracije VAR globalnih promenljivi.Izvrsen oporavak do , u liniji 7
+INFO  18:20:36,829 - #8 ,
+INFO  18:20:36,830 - #49 d
+INFO  18:20:36,830 - #7 ;
+INFO  18:20:36,830 - #49 int
+INFO  18:20:36,834 - #49 a
+INFO  18:20:36,834 - #49 b
+ERROR 18:20:36,834 - 
+Sintaksna greska na liniji 8
+INFO  18:20:36,835 - #7 ;
+INFO  18:20:36,835 - #43 class
+INFO  18:20:36,835 - #49 A
+INFO  18:20:36,836 - #11 extends
+ERROR 18:20:36,836 - Greska kod deklaracije VAR globalnih promenljivi.Izvrsen oporavak do ; u liniji 8
+INFO  18:20:36,842 - #49 B
+INFO  18:20:36,843 - #49 C
+ERROR 18:20:36,843 - 
+Sintaksna greska na liniji 11
+INFO  18:20:36,844 - #3 {
+INFO  18:20:36,844 - #49 int
+INFO  18:20:36,845 - #49 a
+INFO  18:20:36,845 - #8 ,
+ERROR 18:20:36,846 - Pogresna dekleracija prosirenja klase.Izvrsen oporavak do { u liniji 11
+INFO  18:20:36,849 - #49 b
+INFO  18:20:36,849 - #49 b
+ERROR 18:20:36,850 - 
+Sintaksna greska na liniji 12
+INFO  18:20:36,850 - #8 ,
+INFO  18:20:36,850 - #49 c
+INFO  18:20:36,852 - #8 ,
+INFO  18:20:36,853 - #49 d
+INFO  18:20:36,853 - #7 ;
+INFO  18:20:36,853 - #4 }
+INFO  18:20:36,853 - #3 {
+INFO  18:20:36,854 - #49 int
+ERROR 18:20:36,854 - Greska kod deklaracije privatnih polja klase.Izvrsen oporavak do ; u liniji 12
+INFO  18:20:36,861 - #49 test1
+INFO  18:20:36,862 - #12 (
+INFO  18:20:36,866 - #49 int
+INFO  18:20:36,866 - #49 a
+INFO  18:20:36,866 - #8 ,
+INFO  18:20:36,867 - #49 int
+INFO  18:20:36,867 - #49 b
+INFO  18:20:36,868 - #49 c
+ERROR 18:20:36,868 - 
+Sintaksna greska na liniji 16
+INFO  18:20:36,868 - #8 ,
+INFO  18:20:36,869 - #49 int
+INFO  18:20:36,869 - #49 c
+INFO  18:20:36,869 - #13 )
+ERROR 18:20:36,869 - Greska kod deklaracije formalnih parametara funkcije.Izvrsen oporavak do , u liniji 16
+INFO  18:20:36,873 - #3 {
+INFO  18:20:36,888 - #4 }
+INFO  18:20:36,891 - #49 int
+INFO  18:20:36,894 - #49 test2
+INFO  18:20:36,894 - #12 (
+INFO  18:20:36,894 - #49 int
+INFO  18:20:36,895 - #49 a
+INFO  18:20:36,895 - #8 ,
+INFO  18:20:36,895 - #49 int
+INFO  18:20:36,895 - #49 b
+INFO  18:20:36,896 - #8 ,
+INFO  18:20:36,896 - #49 int
+INFO  18:20:36,896 - #49 c
+INFO  18:20:36,896 - #49 c
+ERROR 18:20:36,897 - 
+Sintaksna greska na liniji 19
+INFO  18:20:36,897 - #13 )
+INFO  18:20:36,897 - #3 {
+INFO  18:20:36,897 - #4 }
+INFO  18:20:36,897 - #44 void
+ERROR 18:20:36,898 - Greska kod deklaracije formalnih parametara funkcije.Izvrsen oporavak do ) u liniji 19
+INFO  18:20:36,901 - #49 main
+INFO  18:20:36,903 - #12 (
+INFO  18:20:36,903 - #13 )
+INFO  18:20:36,904 - #3 {
+INFO  18:20:36,906 - #14 if
+INFO  18:20:36,907 - #12 (
+INFO  18:20:36,907 - #49 test1
+INFO  18:20:36,907 - #36 <
+INFO  18:20:36,908 - #49 test2
+INFO  18:20:36,913 - #49 test
+ERROR 18:20:36,914 - 
+Sintaksna greska na liniji 23
+INFO  18:20:36,914 - #46 3
+INFO  18:20:36,914 - #13 )
+INFO  18:20:36,915 - #3 {
+INFO  18:20:36,915 - #4 }
+INFO  18:20:36,915 - #49 f
+ERROR 18:20:36,915 - Greska kod logickog izrada za IF.Izvrsen oporavak do ) u liniji 23
+INFO  18:20:36,921 - #6 =
+INFO  18:20:36,921 - #46 2
+INFO  18:20:36,924 - #7 ;
+INFO  18:20:36,925 - #49 f
+INFO  18:20:36,926 - #6 =
+INFO  18:20:36,926 - #49 asdfasd
+INFO  18:20:36,926 - #49 sad
+ERROR 18:20:36,926 - 
+Sintaksna greska na liniji 26
+INFO  18:20:36,927 - #7 ;
+INFO  18:20:36,927 - #4 }
+INFO  18:20:36,927 - #4 }
+ERROR 18:20:36,927 - Greska kod konstrukcija iskaza dodele.Izvrsen oporavak do ; u liniji 26
+INFO  18:20:36,941 - Program(
+  ProgName(
+   Syntax
+  ) [ProgName]
+  MultDecl(
+    MultDecl(
+      MultDecl(
+        MultDecl(
+          MultDecl(
+            NoDecl(
+            ) [NoDecl]
+            DecConst(
+              ConstDecl(
+                Type(
+                 int1
+                ) [Type]
+                SingleConst(
+                  ConstErrorSemi(
+                  ) [ConstErrorSemi]
+                ) [SingleConst]
+              ) [ConstDecl]
+            ) [DecConst]
+          ) [MultDecl]
+          DecConst(
+            ConstDecl(
+              Type(
+               int
+              ) [Type]
+              MultConst(
+                ConstCommaEnd(
+                  ConstName(
+                   a
+                  ) [ConstName]
+                  ConstNum(
+                   2
+                  ) [ConstNum]
+                ) [ConstCommaEnd]
+                MultConst(
+                  ConstErrorComma(
+                  ) [ConstErrorComma]
+                  MultConst(
+                    ConstCommaEnd(
+                      ConstName(
+                       b
+                      ) [ConstName]
+                      ConstNum(
+                       2
+                      ) [ConstNum]
+                    ) [ConstCommaEnd]
+                    MultConst(
+                      ConstCommaEnd(
+                        ConstName(
+                         c
+                        ) [ConstName]
+                        ConstNum(
+                         1
+                        ) [ConstNum]
+                      ) [ConstCommaEnd]
+                      SingleConst(
+                        ConstSemi(
+                          ConstName(
+                           e
+                          ) [ConstName]
+                          ConstNum(
+                           4
+                          ) [ConstNum]
+                        ) [ConstSemi]
+                      ) [SingleConst]
+                    ) [MultConst]
+                  ) [MultConst]
+                ) [MultConst]
+              ) [MultConst]
+            ) [ConstDecl]
+          ) [DecConst]
+        ) [MultDecl]
+        DecVar(
+          GlobalVarDecl(
+            Type(
+             int
+            ) [Type]
+            GlobalMultVar(
+              GlobalErrorVarComma(
+              ) [GlobalErrorVarComma]
+              GlobalMultVar(
+                GlobalCommaVar(
+                  VarParamNoBrack(
+                   b
+                  ) [VarParamNoBrack]
+                ) [GlobalCommaVar]
+                GlobalMultVar(
+                  GlobalCommaVar(
+                    VarParamNoBrack(
+                     c
+                    ) [VarParamNoBrack]
+                  ) [GlobalCommaVar]
+                  GlobalSingleVar(
+                    GlobalVarSemi(
+                      VarParamNoBrack(
+                       d
+                      ) [VarParamNoBrack]
+                    ) [GlobalVarSemi]
+                  ) [GlobalSingleVar]
+                ) [GlobalMultVar]
+              ) [GlobalMultVar]
+            ) [GlobalMultVar]
+          ) [GlobalVarDecl]
+        ) [DecVar]
+      ) [MultDecl]
+      DecVar(
+        GlobalVarDecl(
+          Type(
+           int
+          ) [Type]
+          GlobalSingleVar(
+            GlobalErrorVarSemi(
+            ) [GlobalErrorVarSemi]
+          ) [GlobalSingleVar]
+        ) [GlobalVarDecl]
+      ) [DecVar]
+    ) [MultDecl]
+    DecClass(
+      ClassDeclNoMeth(
+        ClassName(
+         A
+        ) [ClassName]
+        ExtendTypeExist(
+          ExtendErr(
+          ) [ExtendErr]
+        ) [ExtendTypeExist]
+        ClassVarDeclUse(
+          NoClassVarDecl(
+          ) [NoClassVarDecl]
+          ClassErrorVarSemi(
+          ) [ClassErrorVarSemi]
+        ) [ClassVarDeclUse]
+      ) [ClassDeclNoMeth]
+    ) [DecClass]
+  ) [MultDecl]
+  MethodDeclUse(
+    MethodDeclUse(
+      MethodDeclUse(
+        NoMethodDecl(
+        ) [NoMethodDecl]
+        MethodDecPar(
+          MethodTypeName(
+            MethType(
+              Type(
+               int
+              ) [Type]
+            ) [MethType]
+           test1
+          ) [MethodTypeName]
+          FormParListUse(
+            FormParMult(
+              FormParametarComma(
+                FormParNoBrack(
+                  Type(
+                   int
+                  ) [Type]
+                 a
+                ) [FormParNoBrack]
+              ) [FormParametarComma]
+              FormParMult(
+                ErrorFormComma(
+                ) [ErrorFormComma]
+                FormParSingle(
+                  FormParamNoError(
+                    FormParNoBrack(
+                      Type(
+                       int
+                      ) [Type]
+                     c
+                    ) [FormParNoBrack]
+                  ) [FormParamNoError]
+                ) [FormParSingle]
+              ) [FormParMult]
+            ) [FormParMult]
+          ) [FormParListUse]
+          MethodLocal(
+            NoVarDecl(
+            ) [NoVarDecl]
+          ) [MethodLocal]
+          NoStatementList(
+          ) [NoStatementList]
+        ) [MethodDecPar]
+      ) [MethodDeclUse]
+      MethodDecPar(
+        MethodTypeName(
+          MethType(
+            Type(
+             int
+            ) [Type]
+          ) [MethType]
+         test2
+        ) [MethodTypeName]
+        FormParListUse(
+          FormParMult(
+            FormParametarComma(
+              FormParNoBrack(
+                Type(
+                 int
+                ) [Type]
+               a
+              ) [FormParNoBrack]
+            ) [FormParametarComma]
+            FormParMult(
+              FormParametarComma(
+                FormParNoBrack(
+                  Type(
+                   int
+                  ) [Type]
+                 b
+                ) [FormParNoBrack]
+              ) [FormParametarComma]
+              FormParSingle(
+                ErrorFormParen(
+                ) [ErrorFormParen]
+              ) [FormParSingle]
+            ) [FormParMult]
+          ) [FormParMult]
+        ) [FormParListUse]
+        MethodLocal(
+          NoVarDecl(
+          ) [NoVarDecl]
+        ) [MethodLocal]
+        NoStatementList(
+        ) [NoStatementList]
+      ) [MethodDecPar]
+    ) [MethodDeclUse]
+    MethodDecPar(
+      MethodTypeName(
+        MethVoid(
+        ) [MethVoid]
+       main
+      ) [MethodTypeName]
+      NoFormParList(
+      ) [NoFormParList]
+      MethodLocal(
+        NoVarDecl(
+        ) [NoVarDecl]
+      ) [MethodLocal]
+      MultStatement(
+        MultStatement(
+          MultStatement(
+            NoStatementList(
+            ) [NoStatementList]
+            StatementIf(
+              ErrorCondition(
+              ) [ErrorCondition]
+              IfOnlyStm(
+                StatementMult(
+                  NoStatementList(
+                  ) [NoStatementList]
+                ) [StatementMult]
+              ) [IfOnlyStm]
+            ) [StatementIf]
+          ) [MultStatement]
+          StatementDesignator(
+            DesStmAssign(
+              DesignatorSingle(
+               f
+              ) [DesignatorSingle]
+              Assignop(
+              ) [Assignop]
+              DesAssignNoErr(
+                ExprTermList(
+                  TermSinglePos(
+                    FactorSingle(
+                      FactorNum(
+                       2
+                      ) [FactorNum]
+                    ) [FactorSingle]
+                  ) [TermSinglePos]
+                ) [ExprTermList]
+              ) [DesAssignNoErr]
+            ) [DesStmAssign]
+          ) [StatementDesignator]
+        ) [MultStatement]
+        StatementDesignator(
+          DesStmAssign(
+            DesignatorSingle(
+             f
+            ) [DesignatorSingle]
+            Assignop(
+            ) [Assignop]
+            ErrorDesignator(
+            ) [ErrorDesignator]
+          ) [DesStmAssign]
+        ) [StatementDesignator]
+      ) [MultStatement]
+    ) [MethodDecPar]
+  ) [MethodDeclUse]
+) [Program]
+INFO  18:20:36,992 - ===================================
+ERROR 18:20:37,000 - Nije pronadjen tip int1 u tabeli simbola!  na liniji 3
+ERROR 18:20:37,000 - Greska kod deklaracije konstante . Bio je izvrsen oporavak do (;).
+ERROR 18:20:37,001 - Greska kod deklaracije konstante . Bio je izvrsen oporavak do (,).
+ERROR 18:20:37,001 - Greska kod deklaracije globalne promenljive . Bio je izvrsen oporavak do (,).
+ERROR 18:20:37,001 - Greska b je vec deklarisano na liniji 7
+ERROR 18:20:37,001 - Greska c je vec deklarisano na liniji 7
+ERROR 18:20:37,002 - Greska kod deklaracije globalne promenljive . Bio je izvrsen oporavak do (;).
+ERROR 18:20:37,002 - Greska. Klasa (A)  pokusava da prosiri gresku. Bio je izvrsen oporavak do ( '{' ).
+ERROR 18:20:37,002 - Greska kod deklaracija polja klase(A). Bio je izvrsen oporavak do (;).
+ERROR 18:20:37,003 - Greska kod deklaracija formalnih parametara funkcije (test1) . Bio je izvrsen oporavak do ( ,).
+ERROR 18:20:37,003 - Greska kod deklaracija formalnih parametara funkcije (test2) . Bio je izvrsen oporavak do ( ')' ).
+ERROR 18:20:37,003 - Greska kod logickog izraza kod if-a . Bio je izvrsen oporavak do ( ')' ).
+ERROR 18:20:37,004 - Greska na liniji 25 : ime f nije deklarisano!  na liniji 25
+ERROR 18:20:37,004 - Greska izraz nije kompatibilan sa simbolom na liniji 25
+ERROR 18:20:37,004 - Greska na liniji 26 : ime f nije deklarisano!  na liniji 26
+ERROR 18:20:37,004 - Greska kod izraza dodele . Bio je izvrsen oporavak do ( ; ).
+INFO  18:20:37,004 - ===================================
+ERROR 18:20:37,011 - Parsiranje NIJE uspesno zavrseno!
