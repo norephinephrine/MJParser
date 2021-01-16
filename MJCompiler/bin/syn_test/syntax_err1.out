@@ -1,0 +1,146 @@
+Buildfile: C:\Users\jovan\OneDrive\Desktop\ETF HELL\77777 SEMESTAR\prevodioci\projekat\workspace\MJCompiler\build.xml
+
+test:
+
+testRun:
+     [java] file:/C:/Program%20Files/apache-ant-1.10.9/lib/ant-launcher.jar
+     [java] file:/C:/Users/jovan/OneDrive/Desktop/ETF%20HELL/77777%20SEMESTAR/prevodioci/projekat/workspace/MJCompiler/config/log4j.xml
+     [java] INFO  18:26:25,509 - Compiling source file: C:\Users\jovan\OneDrive\Desktop\ETF HELL\77777 SEMESTAR\prevodioci\projekat\workspace\MJCompiler\test\syn_test\syntax_err1.mj
+     [java] INFO  18:26:25,843 - #2 program
+     [java] INFO  18:26:25,843 - #49 SyntaxErr
+     [java] INFO  18:26:25,844 - #49 int
+     [java] INFO  18:26:25,849 - #49 a
+     [java] INFO  18:26:25,852 - #7 ;
+     [java] INFO  18:26:25,852 - #49 char
+     [java] INFO  18:26:25,855 - #49 ch
+     [java] INFO  18:26:25,855 - #7 ;
+     [java] INFO  18:26:25,856 - #49 bool
+     [java] INFO  18:26:25,856 - #49 b
+     [java] INFO  18:26:25,856 - #7 ;
+     [java] INFO  18:26:25,856 - #43 class
+     [java] INFO  18:26:25,857 - #49 A
+     [java] INFO  18:26:25,857 - #3 {
+     [java] INFO  18:26:25,860 - #49 int
+     [java] INFO  18:26:25,865 - #49 x
+     [java] INFO  18:26:25,865 - #7 ;
+     [java] INFO  18:26:25,865 - #4 }
+     [java] INFO  18:26:25,866 - #49 A
+     [java] INFO  18:26:25,866 - #49 aClass
+     [java] INFO  18:26:25,866 - #7 ;
+     [java] INFO  18:26:25,867 - #49 int
+     [java] INFO  18:26:25,867 - #49 niz
+     [java] INFO  18:26:25,867 - #9 [
+     [java] INFO  18:26:25,867 - #10 ]
+     [java] INFO  18:26:25,867 - #7 ;
+     [java] INFO  18:26:25,867 - #3 {
+     [java] INFO  18:26:25,868 - #49 int
+     [java] INFO  18:26:25,870 - #49 main
+     [java] INFO  18:26:25,871 - #12 (
+     [java] INFO  18:26:25,873 - #49 int
+     [java] INFO  18:26:25,873 - #49 a
+     [java] INFO  18:26:25,873 - #13 )
+     [java] INFO  18:26:25,874 - #3 {
+     [java] Leksicka greska (!) u liniji 19 u koloni 3
+     [java] INFO  18:26:25,879 - #49 asdasd
+     [java] INFO  18:26:25,882 - #49 a
+     [java] ERROR 18:26:25,882 - 
+     [java] Sintaksna greska na liniji 21
+     [java] INFO  18:26:25,882 - #6 =
+     [java] INFO  18:26:25,883 - #39 -
+     [java] INFO  18:26:25,883 - #49 b
+     [java] INFO  18:26:25,883 - #7 ;
+     [java] INFO  18:26:25,884 - #49 a
+     [java] INFO  18:26:25,884 - #6 =
+     [java] INFO  18:26:25,884 - #39 -
+     [java] INFO  18:26:25,884 - #49 ch
+     [java] INFO  18:26:25,884 - #7 ;
+     [java] INFO  18:26:25,885 - #49 a
+     [java] INFO  18:26:25,885 - #6 =
+     [java] INFO  18:26:25,885 - #39 -
+     [java] INFO  18:26:25,885 - #49 niz
+     [java] INFO  18:26:25,886 - #7 ;
+     [java] INFO  18:26:25,886 - #49 a
+     [java] INFO  18:26:25,886 - #6 =
+     [java] INFO  18:26:25,886 - #39 -
+     [java] INFO  18:26:25,886 - #49 aClass
+     [java] INFO  18:26:25,886 - #7 ;
+     [java] INFO  18:26:25,887 - #49 a
+     [java] INFO  18:26:25,887 - #6 =
+     [java] INFO  18:26:25,887 - #49 b
+     [java] INFO  18:26:25,887 - #38 +
+     [java] INFO  18:26:25,887 - #49 a
+     [java] INFO  18:26:25,887 - #7 ;
+     [java] INFO  18:26:25,888 - #49 a
+     [java] INFO  18:26:25,888 - #6 =
+     [java] INFO  18:26:25,888 - #49 b
+     [java] INFO  18:26:25,888 - #41 *
+     [java] INFO  18:26:25,888 - #46 2
+     [java] INFO  18:26:25,888 - #7 ;
+     [java] INFO  18:26:25,888 - #49 a
+     [java] INFO  18:26:25,888 - #6 =
+     [java] INFO  18:26:25,889 - #49 a
+     [java] INFO  18:26:25,889 - #29 ?
+     [java] INFO  18:26:25,889 - #49 a
+     [java] INFO  18:26:25,889 - #45 :
+     [java] INFO  18:26:25,889 - #49 a
+     [java] INFO  18:26:25,889 - #7 ;
+     [java] INFO  18:26:25,889 - #49 a
+     [java] INFO  18:26:25,889 - #6 =
+     [java] INFO  18:26:25,890 - #49 b
+     [java] INFO  18:26:25,890 - #29 ?
+     [java] INFO  18:26:25,890 - #49 ch
+     [java] INFO  18:26:25,890 - #45 :
+     [java] INFO  18:26:25,890 - #49 a
+     [java] INFO  18:26:25,890 - #7 ;
+     [java] INFO  18:26:25,890 - #49 niz
+     [java] INFO  18:26:25,891 - #6 =
+     [java] INFO  18:26:25,891 - #30 new
+     [java] INFO  18:26:25,891 - #49 int
+     [java] INFO  18:26:25,891 - #9 [
+     [java] INFO  18:26:25,891 - #49 ch
+     [java] INFO  18:26:25,891 - #10 ]
+     [java] INFO  18:26:25,891 - #7 ;
+     [java] INFO  18:26:25,891 - #49 niz
+     [java] INFO  18:26:25,892 - #6 =
+     [java] INFO  18:26:25,892 - #30 new
+     [java] INFO  18:26:25,892 - #49 int
+     [java] INFO  18:26:25,892 - #9 [
+     [java] INFO  18:26:25,892 - #49 b
+     [java] INFO  18:26:25,892 - #10 ]
+     [java] INFO  18:26:25,892 - #7 ;
+     [java] INFO  18:26:25,892 - #49 aClass
+     [java] INFO  18:26:25,893 - #6 =
+     [java] INFO  18:26:25,893 - #30 new
+     [java] INFO  18:26:25,893 - #49 A
+     [java] INFO  18:26:25,893 - #7 ;
+     [java] INFO  18:26:25,893 - #49 aClass
+     [java] INFO  18:26:25,893 - #6 =
+     [java] INFO  18:26:25,893 - #30 new
+     [java] INFO  18:26:25,893 - #49 a
+     [java] INFO  18:26:25,894 - #7 ;
+     [java] INFO  18:26:25,894 - #49 a
+     [java] INFO  18:26:25,894 - #31 .
+     [java] INFO  18:26:25,894 - #49 x
+     [java] INFO  18:26:25,900 - #6 =
+     [java] INFO  18:26:25,900 - #46 2
+     [java] INFO  18:26:25,900 - #7 ;
+     [java] INFO  18:26:25,900 - #49 a
+     [java] INFO  18:26:25,900 - #9 [
+     [java] INFO  18:26:25,901 - #46 2
+     [java] INFO  18:26:25,901 - #10 ]
+     [java] INFO  18:26:25,901 - #6 =
+     [java] INFO  18:26:25,901 - #46 2
+     [java] INFO  18:26:25,901 - #7 ;
+     [java] INFO  18:26:25,901 - #49 niz
+     [java] INFO  18:26:25,901 - #9 [
+     [java] INFO  18:26:25,901 - #49 b
+     [java] INFO  18:26:25,901 - #10 ]
+     [java] INFO  18:26:25,902 - #6 =
+     [java] INFO  18:26:25,902 - #46 3
+     [java] INFO  18:26:25,902 - #7 ;
+     [java] INFO  18:26:25,902 - #4 }
+     [java] INFO  18:26:25,902 - #4 }
+     [java] ERROR 18:26:25,902 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 53
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
