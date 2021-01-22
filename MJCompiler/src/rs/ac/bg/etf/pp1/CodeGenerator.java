@@ -9,7 +9,9 @@ import rs.ac.bg.etf.pp1.ast.AddPlus;
 import rs.ac.bg.etf.pp1.ast.Addop;
 import rs.ac.bg.etf.pp1.ast.Assignop;
 import rs.ac.bg.etf.pp1.ast.CaseColon;
+import rs.ac.bg.etf.pp1.ast.CaseColonDef;
 import rs.ac.bg.etf.pp1.ast.CaseParam;
+import rs.ac.bg.etf.pp1.ast.CaseParamNum;
 import rs.ac.bg.etf.pp1.ast.ClassDecl;
 import rs.ac.bg.etf.pp1.ast.ClassDeclMeth;
 import rs.ac.bg.etf.pp1.ast.ClassDeclNoMeth;
@@ -829,18 +831,29 @@ public class CodeGenerator extends VisitorAdaptor {
 			list.addAdr(Code.pc-2);
 		}
 		Code.put(Code.pop);
-		Code.putJump(0);
-		list.addAdr(Code.pc-2);	
+		Code.putJump(0);		
+		if(list.isDefFlag()) {
+			list.setDef(Code.pc-2);	
+		}
+		else {
+
+			list.addAdr(Code.pc-2);				
+		}
+
 		
 		caseNamesStack.add(list);
 		//System.out.println(list.getList());
 	}
     public void visit(CaseColon caseParam) {
-    	int num=((CaseParam)caseParam.getParent()).getNum();
+    	int num=((CaseParamNum)caseParam.getParent()).getNum();
     	
 
     	int adr=caseNamesStack.peek().getAdr(num);
     	Code.fixup(adr);
+    }
+    public void visit(CaseColonDef def) {
+       	int adr=caseNamesStack.peek().getDef();
+    	Code.fixup(adr);    	
     }
 	public void visit(StatementSwitch stm) {
 		ArrayList<Integer> adrList=breakStackAdr.pop();
@@ -848,8 +861,11 @@ public class CodeGenerator extends VisitorAdaptor {
 		for(int i=0;i<adrList.size();i++) {
 			Code.fixup(adrList.get(i));
 		}
-		int adr=caseNamesStack.peek().getFinal();
-		Code.fixup(adr);
+		if(caseNamesStack.peek().isDefFlag()==false)
+		{
+			int adr=caseNamesStack.peek().getFinal();
+			Code.fixup(adr);
+		}
 		caseNamesStack.pop();
 		adrList.clear();		
 	}

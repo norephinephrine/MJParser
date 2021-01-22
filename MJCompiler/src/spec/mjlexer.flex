@@ -35,6 +35,7 @@ import java_cup.runtime.Symbol;
 "\f" 	{ }
 
 "program"   { return new_symbol(sym.PROG, yytext()); }
+"default"   { return new_symbol(sym.DEFAULT,yytext());}
 "break"   { return new_symbol(sym.BREAK, yytext()); }
 "class"   { return new_symbol(sym.CLASS, yytext()); }
 "else" 	  { return new_symbol(sym.ELSE, yytext()); }

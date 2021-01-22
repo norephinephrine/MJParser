@@ -45,6 +45,7 @@ terminal EXTENDS,LPAREN,RPAREN,IF,ELSE,AND;
 terminal OR,DO,WHILE,SWITCH,CASE,BREAK,CONTINUE,RETURN,READ,PRINT,INC,DEC;
 terminal TERN,NEW,DOT,EQUAL,DIFF,BG,BGE,LS,LSE,PLUS,SUB,DIV,MUL,MOD,CLASS,VOID;
 terminal COLON;
+terminal DEFAULT;
 
 terminal Integer NUM_C;
 terminal String BOOL_C;
@@ -112,6 +113,7 @@ nonterminal WhileCondStart WhileCondStart;
 nonterminal SwitchExpr SwitchExpr;
 nonterminal CaseColon CaseColon;
 
+nonterminal CaseColonDef CaseColonDef;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, MethodTypeName, ClassName;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, MethodType, ExtendErr, Expr, TermList, Term, Factor, CondFact, CondTerm, Condition, DesAssignIFErr;
@@ -365,9 +367,13 @@ CaseList ::=(CaseListParam) CaseList:C1 CaseParam:C2 {: RESULT=new CaseListParam
 			(CaseListEmpty) {: RESULT=new CaseListEmpty(); :}/* epsilon */
 			;	
 
-CaseParam ::=(CaseParam) CASE NUM_C:num CaseColon:C1 StatementList:S2 {: RESULT=new CaseParam(num, C1, S2); RESULT.setLine(numleft); :};		
+CaseParam ::=(CaseParamNum) CASE NUM_C:num CaseColon:C1 StatementList:S2 {: RESULT=new CaseParamNum(num, C1, S2); RESULT.setLine(numleft); :}
+			|
+			(CaseDefault) CASE DEFAULT  CaseColonDef:C1 StatementList:S2 {: RESULT=new CaseDefault(C1, S2); RESULT.setLine(C1left); :}
+			;	
 				
 CaseColon::=(CaseColon)COLON {: RESULT=new CaseColon(); :};
+CaseColonDef::=(CaseColonDef)COLON {: RESULT=new CaseColonDef(); :};
 
 DesignatorStatement ::= (DesStmAssign) Designator:D1 Assignop:A2 DesAssignIFErr:D3 {: RESULT=new DesStmAssign(D1, A2, D3); RESULT.setLine(D1left); :}
 						|

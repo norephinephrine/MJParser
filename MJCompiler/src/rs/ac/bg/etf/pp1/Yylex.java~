@@ -756,84 +756,84 @@ class Yylex implements java_cup.runtime.Scanner {
           { return new_symbol(sym.DOT, yytext());
           }
         case 64: break;
-        case 37: 
-          { return new_symbol(sym.CHAR_C, new Character (yytext().charAt(1);));
-          }
-        case 65: break;
         case 9: 
           { return new_symbol(sym.ASSIGN, yytext());
           }
-        case 66: break;
+        case 65: break;
         case 7: 
           { return new_symbol(sym.DIV, yytext());
           }
-        case 67: break;
+        case 66: break;
         case 3: 
           { return new_symbol (sym.IDENT, yytext());
           }
-        case 68: break;
+        case 67: break;
         case 49: 
           { return new_symbol(sym.SWITCH, yytext());
           }
-        case 69: break;
+        case 68: break;
         case 42: 
           { return new_symbol(sym.VOID, yytext());
           }
-        case 70: break;
+        case 69: break;
         case 20: 
           { return new_symbol(sym.RBRACK, yytext());
           }
-        case 71: break;
+        case 70: break;
         case 35: 
           { yybegin(YYINITIAL);
           }
-        case 72: break;
+        case 71: break;
         case 45: 
           { return new_symbol(sym.CONST, yytext());
           }
-        case 73: break;
+        case 72: break;
         case 33: 
           { return new_symbol(sym.AND, yytext());
           }
-        case 74: break;
+        case 73: break;
         case 15: 
           { return new_symbol(sym.LPAREN, yytext());
           }
-        case 75: break;
+        case 74: break;
         case 29: 
           { return new_symbol(sym.EQUAL, yytext());
           }
-        case 76: break;
+        case 75: break;
         case 1: 
           { System.err.println("Leksicka greska ("+yytext()+") u liniji "+(yyline+1)+" u koloni "+(yycolumn+1));
           }
-        case 77: break;
+        case 76: break;
         case 24: 
           { yybegin(COMMENT);
           }
-        case 78: break;
+        case 77: break;
         case 8: 
           { return new_symbol(sym.MOD, yytext());
           }
-        case 79: break;
+        case 78: break;
         case 6: 
           { return new_symbol(sym.MUL, yytext());
           }
-        case 80: break;
+        case 79: break;
         case 11: 
           { return new_symbol(sym.LS, yytext());
           }
-        case 81: break;
+        case 80: break;
         case 32: 
           { return new_symbol(sym.LSE, yytext());
           }
-        case 82: break;
+        case 81: break;
         case 44: 
           { return new_symbol(sym.BREAK, yytext());
           }
-        case 83: break;
+        case 82: break;
         case 40: 
           { return new_symbol(sym.CASE, yytext());
+          }
+        case 83: break;
+        case 37: 
+          { return new_symbol(sym.CHAR_C, new Character (yytext().charAt(1)));
           }
         case 84: break;
         case 17: 

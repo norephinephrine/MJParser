@@ -792,23 +792,33 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     }
     public void visit(CaseListParam caseList) {
     	CaseNameList list=caseList.getCaseList().casenamelist;
-    	int num=caseList.getCaseParam().casenamelist.getInt(0);
     	
-    	if(list.contains(num)) {
-    		report_error("Greska grana sa celobrojnom konstantom ("+num+") vec postoji",caseList);
+    	if(caseList.getCaseParam().getClass()==CaseParamNum.class) {
+        	int num=caseList.getCaseParam().casenamelist.getInt(0);
+        	
+        	if(list.contains(num)) {
+        		report_error("Greska grana sa celobrojnom konstantom ("+num+") vec postoji",caseList);
+        	}
+        	else {
+        		list.add(num);
+        	}   		
     	}
     	else {
-    		list.add(num);
+    		if(list.addDefault()) {
+    			report_error("Greska  default grana je vec definisana",caseList);
+    		}
     	}
+
     	caseList.casenamelist=list;
     	
     }
-    public void visit(CaseParam caseParam) {
+    public void visit(CaseParamNum caseParam) {
     	CaseNameList param=new CaseNameList();
     	param.add(caseParam.getNum());
     	
     	caseParam.casenamelist=param;
     }
+    
     public void visit(StatementBreak stm) {
     	if(whileLevel>0 || switchLevel>0) {
     		//TO DO 

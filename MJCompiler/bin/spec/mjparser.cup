@@ -45,6 +45,7 @@ terminal EXTENDS,LPAREN,RPAREN,IF,ELSE,AND;
 terminal OR,DO,WHILE,SWITCH,CASE,BREAK,CONTINUE,RETURN,READ,PRINT,INC,DEC;
 terminal TERN,NEW,DOT,EQUAL,DIFF,BG,BGE,LS,LSE,PLUS,SUB,DIV,MUL,MOD,CLASS,VOID;
 terminal COLON;
+terminal DEFAULT;
 
 terminal Integer NUM_C;
 terminal String BOOL_C;
@@ -79,6 +80,7 @@ nonterminal ClassVarDeclIf, ClassVarDecl;
 
 nonterminal TernCond, TernDoTrue, WhileCondStart, SwitchExpr, CaseColon;
 
+nonterminal CaseColonDef;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, MethodTypeName, ClassName;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, MethodType, ExtendErr, Expr, TermList, Term, Factor, CondFact, CondTerm, Condition, DesAssignIFErr;
@@ -332,9 +334,13 @@ CaseList ::=(CaseListParam) CaseList CaseParam
 			(CaseListEmpty)/* epsilon */
 			;	
 
-CaseParam ::=(CaseParam) CASE NUM_C:num CaseColon StatementList;		
+CaseParam ::=(CaseParamNum) CASE NUM_C:num CaseColon StatementList
+			|
+			(CaseDefault) CASE DEFAULT  CaseColonDef StatementList
+			;	
 				
 CaseColon::=(CaseColon)COLON;
+CaseColonDef::=(CaseColonDef)COLON;
 
 DesignatorStatement ::= (DesStmAssign) Designator Assignop DesAssignIFErr
 						|

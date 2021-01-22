@@ -1,0 +1,1564 @@
+INFO  14:13:38,259 - Compiling source file: C:\Users\jovan\OneDrive\Desktop\ETF HELL\77777 SEMESTAR\prevodioci\projekat\workspace\MJCompiler\test\test_zadatak3.mj
+INFO  14:13:38,874 - #2 program
+INFO  14:13:38,875 - #50 Mj
+INFO  14:13:38,876 - #3 {
+INFO  14:13:38,884 - #44 void
+INFO  14:13:38,890 - #50 main
+INFO  14:13:38,895 - #12 (
+INFO  14:13:38,901 - #13 )
+INFO  14:13:38,902 - #50 int
+INFO  14:13:38,913 - #50 x
+INFO  14:13:38,919 - #8 ,
+INFO  14:13:38,920 - #50 y
+INFO  14:13:38,920 - #7 ;
+INFO  14:13:38,921 - #50 char
+INFO  14:13:38,927 - #50 t
+INFO  14:13:38,927 - #7 ;
+INFO  14:13:38,927 - #3 {
+INFO  14:13:38,933 - #50 x
+INFO  14:13:38,940 - #6 =
+INFO  14:13:38,940 - #47 1
+INFO  14:13:38,945 - #7 ;
+INFO  14:13:38,947 - #50 y
+INFO  14:13:38,947 - #6 =
+INFO  14:13:38,949 - #47 3
+INFO  14:13:38,949 - #7 ;
+INFO  14:13:38,950 - #14 if
+INFO  14:13:38,950 - #12 (
+INFO  14:13:38,950 - #50 x
+INFO  14:13:38,951 - #32 ==
+INFO  14:13:38,951 - #47 1
+INFO  14:13:38,964 - #13 )
+INFO  14:13:38,965 - #50 y
+INFO  14:13:38,965 - #6 =
+INFO  14:13:38,966 - #47 2
+INFO  14:13:38,966 - #7 ;
+INFO  14:13:38,966 - #15 else
+INFO  14:13:38,967 - #50 y
+INFO  14:13:38,973 - #6 =
+INFO  14:13:38,973 - #47 3
+INFO  14:13:38,974 - #7 ;
+INFO  14:13:38,974 - #50 y
+INFO  14:13:38,980 - #6 =
+INFO  14:13:38,980 - #47 0
+INFO  14:13:38,981 - #7 ;
+INFO  14:13:38,981 - #50 x
+INFO  14:13:38,982 - #6 =
+INFO  14:13:38,982 - #47 6
+INFO  14:13:38,982 - #7 ;
+INFO  14:13:38,983 - #50 t
+INFO  14:13:38,983 - #6 =
+INFO  14:13:38,983 - #49 H
+INFO  14:13:38,984 - #7 ;
+INFO  14:13:38,984 - #26 print
+INFO  14:13:38,984 - #12 (
+INFO  14:13:38,984 - #48 false
+INFO  14:13:38,985 - #29 ?
+INFO  14:13:38,985 - #47 2
+INFO  14:13:38,991 - #45 :
+INFO  14:13:38,991 - #47 5
+INFO  14:13:38,996 - #42 %
+INFO  14:13:38,998 - #47 2
+INFO  14:13:39,008 - #13 )
+INFO  14:13:39,009 - #7 ;
+INFO  14:13:39,009 - #26 print
+INFO  14:13:39,009 - #12 (
+INFO  14:13:39,010 - #50 x
+INFO  14:13:39,010 - #13 )
+INFO  14:13:39,010 - #7 ;
+INFO  14:13:39,011 - #25 read
+INFO  14:13:39,011 - #12 (
+INFO  14:13:39,011 - #50 x
+INFO  14:13:39,011 - #13 )
+INFO  14:13:39,011 - #7 ;
+INFO  14:13:39,020 - #26 print
+INFO  14:13:39,020 - #12 (
+INFO  14:13:39,020 - #50 x
+INFO  14:13:39,021 - #13 )
+INFO  14:13:39,021 - #7 ;
+INFO  14:13:39,021 - #14 if
+INFO  14:13:39,021 - #12 (
+INFO  14:13:39,022 - #50 x
+INFO  14:13:39,022 - #34 >
+INFO  14:13:39,022 - #47 0
+INFO  14:13:39,028 - #16 &&
+INFO  14:13:39,029 - #50 y
+INFO  14:13:39,029 - #36 <
+INFO  14:13:39,030 - #47 2
+INFO  14:13:39,035 - #13 )
+INFO  14:13:39,036 - #3 {
+INFO  14:13:39,036 - #14 if
+INFO  14:13:39,036 - #12 (
+INFO  14:13:39,037 - #50 x
+INFO  14:13:39,037 - #34 >
+INFO  14:13:39,037 - #47 5
+INFO  14:13:39,037 - #13 )
+INFO  14:13:39,038 - #3 {
+INFO  14:13:39,038 - #18 do
+INFO  14:13:39,038 - #3 {
+INFO  14:13:39,043 - #14 if
+INFO  14:13:39,045 - #12 (
+INFO  14:13:39,045 - #50 x
+INFO  14:13:39,045 - #32 ==
+INFO  14:13:39,045 - #47 9
+INFO  14:13:39,046 - #13 )
+INFO  14:13:39,046 - #3 {
+INFO  14:13:39,046 - #22 break
+INFO  14:13:39,046 - #7 ;
+INFO  14:13:39,047 - #4 }
+INFO  14:13:39,052 - #20 switch
+INFO  14:13:39,060 - #12 (
+INFO  14:13:39,065 - #50 x
+INFO  14:13:39,066 - #13 )
+INFO  14:13:39,066 - #3 {
+INFO  14:13:39,071 - #21 case
+INFO  14:13:39,075 - #49 D
+INFO  14:13:39,076 - #45 :
+INFO  14:13:39,076 - #26 print
+INFO  14:13:39,082 - #12 (
+INFO  14:13:39,083 - #49 D
+INFO  14:13:39,083 - #13 )
+INFO  14:13:39,083 - #7 ;
+INFO  14:13:39,083 - #21 case
+INFO  14:13:39,084 - #47 8
+INFO  14:13:39,084 - #45 :
+INFO  14:13:39,085 - #26 print
+INFO  14:13:39,090 - #12 (
+INFO  14:13:39,091 - #47 8
+INFO  14:13:39,092 - #13 )
+INFO  14:13:39,092 - #7 ;
+INFO  14:13:39,093 - #22 break
+INFO  14:13:39,093 - #7 ;
+INFO  14:13:39,093 - #21 case
+INFO  14:13:39,094 - #47 6
+INFO  14:13:39,094 - #45 :
+INFO  14:13:39,094 - #26 print
+INFO  14:13:39,094 - #12 (
+INFO  14:13:39,094 - #47 6
+INFO  14:13:39,095 - #13 )
+INFO  14:13:39,095 - #7 ;
+INFO  14:13:39,095 - #21 case
+INFO  14:13:39,095 - #47 7
+INFO  14:13:39,095 - #45 :
+INFO  14:13:39,096 - #26 print
+INFO  14:13:39,096 - #12 (
+INFO  14:13:39,096 - #47 7
+INFO  14:13:39,096 - #13 )
+INFO  14:13:39,097 - #7 ;
+INFO  14:13:39,097 - #22 break
+INFO  14:13:39,097 - #7 ;
+INFO  14:13:39,097 - #4 }
+INFO  14:13:39,098 - #50 x
+INFO  14:13:39,098 - #27 ++
+INFO  14:13:39,098 - #7 ;
+INFO  14:13:39,099 - #14 if
+INFO  14:13:39,099 - #12 (
+INFO  14:13:39,099 - #50 x
+INFO  14:13:39,099 - #34 >
+INFO  14:13:39,099 - #47 15
+INFO  14:13:39,100 - #13 )
+INFO  14:13:39,100 - #50 y
+INFO  14:13:39,100 - #6 =
+INFO  14:13:39,100 - #47 1
+INFO  14:13:39,100 - #7 ;
+INFO  14:13:39,103 - #4 }
+INFO  14:13:39,103 - #19 while
+INFO  14:13:39,104 - #12 (
+INFO  14:13:39,109 - #50 x
+INFO  14:13:39,109 - #36 <
+INFO  14:13:39,110 - #47 15
+INFO  14:13:39,110 - #17 ||
+INFO  14:13:39,110 - #50 y
+INFO  14:13:39,110 - #32 ==
+INFO  14:13:39,110 - #47 0
+INFO  14:13:39,110 - #13 )
+INFO  14:13:39,111 - #7 ;
+INFO  14:13:39,111 - #26 print
+INFO  14:13:39,111 - #12 (
+INFO  14:13:39,111 - #49 a
+INFO  14:13:39,113 - #13 )
+INFO  14:13:39,113 - #7 ;
+INFO  14:13:39,113 - #4 }
+INFO  14:13:39,114 - #26 print
+INFO  14:13:39,114 - #12 (
+INFO  14:13:39,114 - #49 A
+INFO  14:13:39,114 - #13 )
+INFO  14:13:39,115 - #7 ;
+INFO  14:13:39,115 - #26 print
+INFO  14:13:39,115 - #12 (
+INFO  14:13:39,115 - #50 x
+INFO  14:13:39,116 - #13 )
+INFO  14:13:39,116 - #7 ;
+INFO  14:13:39,116 - #26 print
+INFO  14:13:39,116 - #12 (
+INFO  14:13:39,117 - #50 y
+INFO  14:13:39,117 - #13 )
+INFO  14:13:39,117 - #7 ;
+INFO  14:13:39,117 - #26 print
+INFO  14:13:39,118 - #12 (
+INFO  14:13:39,118 - #50 eol
+INFO  14:13:39,118 - #13 )
+INFO  14:13:39,118 - #7 ;
+INFO  14:13:39,118 - #50 x
+INFO  14:13:39,118 - #6 =
+INFO  14:13:39,119 - #47 2
+INFO  14:13:39,119 - #7 ;
+INFO  14:13:39,119 - #4 }
+INFO  14:13:39,119 - #15 else
+INFO  14:13:39,119 - #3 {
+INFO  14:13:39,119 - #26 print
+INFO  14:13:39,119 - #12 (
+INFO  14:13:39,120 - #49 G
+INFO  14:13:39,120 - #13 )
+INFO  14:13:39,120 - #7 ;
+INFO  14:13:39,120 - #4 }
+INFO  14:13:39,120 - #14 if
+INFO  14:13:39,121 - #12 (
+INFO  14:13:39,121 - #50 x
+INFO  14:13:39,121 - #35 >=
+INFO  14:13:39,121 - #47 0
+INFO  14:13:39,127 - #17 ||
+INFO  14:13:39,127 - #50 y
+INFO  14:13:39,127 - #37 <=
+INFO  14:13:39,128 - #47 2
+INFO  14:13:39,134 - #13 )
+INFO  14:13:39,134 - #3 {
+INFO  14:13:39,134 - #26 print
+INFO  14:13:39,135 - #12 (
+INFO  14:13:39,135 - #49 B
+INFO  14:13:39,135 - #13 )
+INFO  14:13:39,135 - #7 ;
+INFO  14:13:39,136 - #26 print
+INFO  14:13:39,136 - #12 (
+INFO  14:13:39,136 - #50 x
+INFO  14:13:39,136 - #13 )
+INFO  14:13:39,136 - #7 ;
+INFO  14:13:39,137 - #26 print
+INFO  14:13:39,137 - #12 (
+INFO  14:13:39,137 - #50 y
+INFO  14:13:39,137 - #13 )
+INFO  14:13:39,138 - #7 ;
+INFO  14:13:39,138 - #26 print
+INFO  14:13:39,138 - #12 (
+INFO  14:13:39,138 - #50 eol
+INFO  14:13:39,138 - #13 )
+INFO  14:13:39,139 - #7 ;
+INFO  14:13:39,139 - #50 x
+INFO  14:13:39,139 - #6 =
+INFO  14:13:39,139 - #47 3
+INFO  14:13:39,139 - #7 ;
+INFO  14:13:39,140 - #4 }
+INFO  14:13:39,140 - #15 else
+INFO  14:13:39,140 - #3 {
+INFO  14:13:39,140 - #26 print
+INFO  14:13:39,140 - #12 (
+INFO  14:13:39,141 - #49 H
+INFO  14:13:39,141 - #13 )
+INFO  14:13:39,141 - #7 ;
+INFO  14:13:39,141 - #4 }
+INFO  14:13:39,141 - #14 if
+INFO  14:13:39,142 - #12 (
+INFO  14:13:39,142 - #50 x
+INFO  14:13:39,142 - #33 !=
+INFO  14:13:39,142 - #47 0
+INFO  14:13:39,148 - #16 &&
+INFO  14:13:39,148 - #50 y
+INFO  14:13:39,149 - #34 >
+INFO  14:13:39,149 - #47 2
+INFO  14:13:39,149 - #17 ||
+INFO  14:13:39,149 - #50 x
+INFO  14:13:39,150 - #32 ==
+INFO  14:13:39,150 - #47 1
+INFO  14:13:39,150 - #13 )
+INFO  14:13:39,150 - #3 {
+INFO  14:13:39,150 - #26 print
+INFO  14:13:39,150 - #12 (
+INFO  14:13:39,151 - #49 C
+INFO  14:13:39,151 - #13 )
+INFO  14:13:39,151 - #7 ;
+INFO  14:13:39,151 - #26 print
+INFO  14:13:39,151 - #12 (
+INFO  14:13:39,151 - #50 x
+INFO  14:13:39,152 - #13 )
+INFO  14:13:39,152 - #7 ;
+INFO  14:13:39,152 - #26 print
+INFO  14:13:39,152 - #12 (
+INFO  14:13:39,152 - #50 y
+INFO  14:13:39,152 - #13 )
+INFO  14:13:39,153 - #7 ;
+INFO  14:13:39,153 - #26 print
+INFO  14:13:39,153 - #12 (
+INFO  14:13:39,153 - #50 eol
+INFO  14:13:39,153 - #13 )
+INFO  14:13:39,153 - #7 ;
+INFO  14:13:39,154 - #50 x
+INFO  14:13:39,156 - #6 =
+INFO  14:13:39,156 - #47 4
+INFO  14:13:39,156 - #7 ;
+INFO  14:13:39,156 - #4 }
+INFO  14:13:39,156 - #15 else
+INFO  14:13:39,156 - #3 {
+INFO  14:13:39,157 - #26 print
+INFO  14:13:39,157 - #12 (
+INFO  14:13:39,157 - #49 I
+INFO  14:13:39,157 - #13 )
+INFO  14:13:39,157 - #7 ;
+INFO  14:13:39,157 - #4 }
+INFO  14:13:39,157 - #4 }
+INFO  14:13:39,158 - #4 }
+INFO  14:13:39,184 - Program(
+  ProgName(
+   Mj
+  ) [ProgName]
+  NoDecl(
+  ) [NoDecl]
+  MethodDeclUse(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecPar(
+      MethodTypeName(
+        MethVoid(
+        ) [MethVoid]
+       main
+      ) [MethodTypeName]
+      NoFormParList(
+      ) [NoFormParList]
+      MethodLocal(
+        VarDeclUse(
+          VarDeclUse(
+            NoVarDecl(
+            ) [NoVarDecl]
+            VarDecl(
+              Type(
+               int
+              ) [Type]
+              MultVar(
+                SingleVar(
+                  VarParamNoBrack(
+                   x
+                  ) [VarParamNoBrack]
+                ) [SingleVar]
+                VarParamNoBrack(
+                 y
+                ) [VarParamNoBrack]
+              ) [MultVar]
+            ) [VarDecl]
+          ) [VarDeclUse]
+          VarDecl(
+            Type(
+             char
+            ) [Type]
+            SingleVar(
+              VarParamNoBrack(
+               t
+              ) [VarParamNoBrack]
+            ) [SingleVar]
+          ) [VarDecl]
+        ) [VarDeclUse]
+      ) [MethodLocal]
+      MultStatement(
+        MultStatement(
+          MultStatement(
+            MultStatement(
+              MultStatement(
+                MultStatement(
+                  MultStatement(
+                    MultStatement(
+                      MultStatement(
+                        MultStatement(
+                          MultStatement(
+                            MultStatement(
+                              MultStatement(
+                                NoStatementList(
+                                ) [NoStatementList]
+                                StatementDesignator(
+                                  DesStmAssign(
+                                    DesignatorSingle(
+                                     x
+                                    ) [DesignatorSingle]
+                                    Assignop(
+                                    ) [Assignop]
+                                    DesAssignNoErr(
+                                      ExprTermList(
+                                        TermSinglePos(
+                                          FactorSingle(
+                                            FactorNum(
+                                             1
+                                            ) [FactorNum]
+                                          ) [FactorSingle]
+                                        ) [TermSinglePos]
+                                      ) [ExprTermList]
+                                    ) [DesAssignNoErr]
+                                  ) [DesStmAssign]
+                                ) [StatementDesignator]
+                              ) [MultStatement]
+                              StatementDesignator(
+                                DesStmAssign(
+                                  DesignatorSingle(
+                                   y
+                                  ) [DesignatorSingle]
+                                  Assignop(
+                                  ) [Assignop]
+                                  DesAssignNoErr(
+                                    ExprTermList(
+                                      TermSinglePos(
+                                        FactorSingle(
+                                          FactorNum(
+                                           3
+                                          ) [FactorNum]
+                                        ) [FactorSingle]
+                                      ) [TermSinglePos]
+                                    ) [ExprTermList]
+                                  ) [DesAssignNoErr]
+                                ) [DesStmAssign]
+                              ) [StatementDesignator]
+                            ) [MultStatement]
+                            StatementIfElse(
+                              ConditionPar(
+                                ConditionSingle(
+                                  CondTermSingle(
+                                    CondFactOp(
+                                      ExprTermList(
+                                        TermSinglePos(
+                                          FactorSingle(
+                                            FactVar(
+                                              DesignatorSingle(
+                                               x
+                                              ) [DesignatorSingle]
+                                            ) [FactVar]
+                                          ) [FactorSingle]
+                                        ) [TermSinglePos]
+                                      ) [ExprTermList]
+                                      RelEqual(
+                                      ) [RelEqual]
+                                      ExprTermList(
+                                        TermSinglePos(
+                                          FactorSingle(
+                                            FactorNum(
+                                             1
+                                            ) [FactorNum]
+                                          ) [FactorSingle]
+                                        ) [TermSinglePos]
+                                      ) [ExprTermList]
+                                    ) [CondFactOp]
+                                  ) [CondTermSingle]
+                                ) [ConditionSingle]
+                              ) [ConditionPar]
+                              StatementDesignator(
+                                DesStmAssign(
+                                  DesignatorSingle(
+                                   y
+                                  ) [DesignatorSingle]
+                                  Assignop(
+                                  ) [Assignop]
+                                  DesAssignNoErr(
+                                    ExprTermList(
+                                      TermSinglePos(
+                                        FactorSingle(
+                                          FactorNum(
+                                           2
+                                          ) [FactorNum]
+                                        ) [FactorSingle]
+                                      ) [TermSinglePos]
+                                    ) [ExprTermList]
+                                  ) [DesAssignNoErr]
+                                ) [DesStmAssign]
+                              ) [StatementDesignator]
+                              ElseStart(
+                              ) [ElseStart]
+                              ElseStm(
+                                StatementDesignator(
+                                  DesStmAssign(
+                                    DesignatorSingle(
+                                     y
+                                    ) [DesignatorSingle]
+                                    Assignop(
+                                    ) [Assignop]
+                                    DesAssignNoErr(
+                                      ExprTermList(
+                                        TermSinglePos(
+                                          FactorSingle(
+                                            FactorNum(
+                                             3
+                                            ) [FactorNum]
+                                          ) [FactorSingle]
+                                        ) [TermSinglePos]
+                                      ) [ExprTermList]
+                                    ) [DesAssignNoErr]
+                                  ) [DesStmAssign]
+                                ) [StatementDesignator]
+                              ) [ElseStm]
+                            ) [StatementIfElse]
+                          ) [MultStatement]
+                          StatementDesignator(
+                            DesStmAssign(
+                              DesignatorSingle(
+                               y
+                              ) [DesignatorSingle]
+                              Assignop(
+                              ) [Assignop]
+                              DesAssignNoErr(
+                                ExprTermList(
+                                  TermSinglePos(
+                                    FactorSingle(
+                                      FactorNum(
+                                       0
+                                      ) [FactorNum]
+                                    ) [FactorSingle]
+                                  ) [TermSinglePos]
+                                ) [ExprTermList]
+                              ) [DesAssignNoErr]
+                            ) [DesStmAssign]
+                          ) [StatementDesignator]
+                        ) [MultStatement]
+                        StatementDesignator(
+                          DesStmAssign(
+                            DesignatorSingle(
+                             x
+                            ) [DesignatorSingle]
+                            Assignop(
+                            ) [Assignop]
+                            DesAssignNoErr(
+                              ExprTermList(
+                                TermSinglePos(
+                                  FactorSingle(
+                                    FactorNum(
+                                     6
+                                    ) [FactorNum]
+                                  ) [FactorSingle]
+                                ) [TermSinglePos]
+                              ) [ExprTermList]
+                            ) [DesAssignNoErr]
+                          ) [DesStmAssign]
+                        ) [StatementDesignator]
+                      ) [MultStatement]
+                      StatementDesignator(
+                        DesStmAssign(
+                          DesignatorSingle(
+                           t
+                          ) [DesignatorSingle]
+                          Assignop(
+                          ) [Assignop]
+                          DesAssignNoErr(
+                            ExprTermList(
+                              TermSinglePos(
+                                FactorSingle(
+                                  FactorChar(
+                                   H
+                                  ) [FactorChar]
+                                ) [FactorSingle]
+                              ) [TermSinglePos]
+                            ) [ExprTermList]
+                          ) [DesAssignNoErr]
+                        ) [DesStmAssign]
+                      ) [StatementDesignator]
+                    ) [MultStatement]
+                    StatementPrint(
+                      ExprTern(
+                        TermSinglePos(
+                          FactorSingle(
+                            FactorBool(
+                             false
+                            ) [FactorBool]
+                          ) [FactorSingle]
+                        ) [TermSinglePos]
+                        TernCond(
+                        ) [TernCond]
+                        TermSinglePos(
+                          FactorSingle(
+                            FactorNum(
+                             2
+                            ) [FactorNum]
+                          ) [FactorSingle]
+                        ) [TermSinglePos]
+                        TernDoTrue(
+                        ) [TernDoTrue]
+                        TermSinglePos(
+                          FactorExpr(
+                            FactorSingle(
+                              FactorNum(
+                               5
+                              ) [FactorNum]
+                            ) [FactorSingle]
+                            MulMod(
+                            ) [MulMod]
+                            FactorNum(
+                             2
+                            ) [FactorNum]
+                          ) [FactorExpr]
+                        ) [TermSinglePos]
+                      ) [ExprTern]
+                    ) [StatementPrint]
+                  ) [MultStatement]
+                  StatementPrint(
+                    ExprTermList(
+                      TermSinglePos(
+                        FactorSingle(
+                          FactVar(
+                            DesignatorSingle(
+                             x
+                            ) [DesignatorSingle]
+                          ) [FactVar]
+                        ) [FactorSingle]
+                      ) [TermSinglePos]
+                    ) [ExprTermList]
+                  ) [StatementPrint]
+                ) [MultStatement]
+                StatementRead(
+                  DesignatorSingle(
+                   x
+                  ) [DesignatorSingle]
+                ) [StatementRead]
+              ) [MultStatement]
+              StatementPrint(
+                ExprTermList(
+                  TermSinglePos(
+                    FactorSingle(
+                      FactVar(
+                        DesignatorSingle(
+                         x
+                        ) [DesignatorSingle]
+                      ) [FactVar]
+                    ) [FactorSingle]
+                  ) [TermSinglePos]
+                ) [ExprTermList]
+              ) [StatementPrint]
+            ) [MultStatement]
+            StatementIfElse(
+              ConditionPar(
+                ConditionSingle(
+                  CondTermList(
+                    CondTermSingle(
+                      CondFactOp(
+                        ExprTermList(
+                          TermSinglePos(
+                            FactorSingle(
+                              FactVar(
+                                DesignatorSingle(
+                                 x
+                                ) [DesignatorSingle]
+                              ) [FactVar]
+                            ) [FactorSingle]
+                          ) [TermSinglePos]
+                        ) [ExprTermList]
+                        RelBG(
+                        ) [RelBG]
+                        ExprTermList(
+                          TermSinglePos(
+                            FactorSingle(
+                              FactorNum(
+                               0
+                              ) [FactorNum]
+                            ) [FactorSingle]
+                          ) [TermSinglePos]
+                        ) [ExprTermList]
+                      ) [CondFactOp]
+                    ) [CondTermSingle]
+                    CondFactOp(
+                      ExprTermList(
+                        TermSinglePos(
+                          FactorSingle(
+                            FactVar(
+                              DesignatorSingle(
+                               y
+                              ) [DesignatorSingle]
+                            ) [FactVar]
+                          ) [FactorSingle]
+                        ) [TermSinglePos]
+                      ) [ExprTermList]
+                      RelLS(
+                      ) [RelLS]
+                      ExprTermList(
+                        TermSinglePos(
+                          FactorSingle(
+                            FactorNum(
+                             2
+                            ) [FactorNum]
+                          ) [FactorSingle]
+                        ) [TermSinglePos]
+                      ) [ExprTermList]
+                    ) [CondFactOp]
+                  ) [CondTermList]
+                ) [ConditionSingle]
+              ) [ConditionPar]
+              StatementMult(
+                MultStatement(
+                  MultStatement(
+                    MultStatement(
+                      MultStatement(
+                        MultStatement(
+                          MultStatement(
+                            NoStatementList(
+                            ) [NoStatementList]
+                            StatementIf(
+                              ConditionPar(
+                                ConditionSingle(
+                                  CondTermSingle(
+                                    CondFactOp(
+                                      ExprTermList(
+                                        TermSinglePos(
+                                          FactorSingle(
+                                            FactVar(
+                                              DesignatorSingle(
+                                               x
+                                              ) [DesignatorSingle]
+                                            ) [FactVar]
+                                          ) [FactorSingle]
+                                        ) [TermSinglePos]
+                                      ) [ExprTermList]
+                                      RelBG(
+                                      ) [RelBG]
+                                      ExprTermList(
+                                        TermSinglePos(
+                                          FactorSingle(
+                                            FactorNum(
+                                             5
+                                            ) [FactorNum]
+                                          ) [FactorSingle]
+                                        ) [TermSinglePos]
+                                      ) [ExprTermList]
+                                    ) [CondFactOp]
+                                  ) [CondTermSingle]
+                                ) [ConditionSingle]
+                              ) [ConditionPar]
+                              IfOnlyStm(
+                                StatementMult(
+                                  MultStatement(
+                                    MultStatement(
+                                      NoStatementList(
+                                      ) [NoStatementList]
+                                      StatementWhile(
+                                        DoStart(
+                                        ) [DoStart]
+                                        StatementMult(
+                                          MultStatement(
+                                            MultStatement(
+                                              MultStatement(
+                                                MultStatement(
+                                                  NoStatementList(
+                                                  ) [NoStatementList]
+                                                  StatementIf(
+                                                    ConditionPar(
+                                                      ConditionSingle(
+                                                        CondTermSingle(
+                                                          CondFactOp(
+                                                            ExprTermList(
+                                                              TermSinglePos(
+                                                                FactorSingle(
+                                                                  FactVar(
+                                                                    DesignatorSingle(
+                                                                     x
+                                                                    ) [DesignatorSingle]
+                                                                  ) [FactVar]
+                                                                ) [FactorSingle]
+                                                              ) [TermSinglePos]
+                                                            ) [ExprTermList]
+                                                            RelEqual(
+                                                            ) [RelEqual]
+                                                            ExprTermList(
+                                                              TermSinglePos(
+                                                                FactorSingle(
+                                                                  FactorNum(
+                                                                   9
+                                                                  ) [FactorNum]
+                                                                ) [FactorSingle]
+                                                              ) [TermSinglePos]
+                                                            ) [ExprTermList]
+                                                          ) [CondFactOp]
+                                                        ) [CondTermSingle]
+                                                      ) [ConditionSingle]
+                                                    ) [ConditionPar]
+                                                    IfOnlyStm(
+                                                      StatementMult(
+                                                        MultStatement(
+                                                          NoStatementList(
+                                                          ) [NoStatementList]
+                                                          StatementBreak(
+                                                          ) [StatementBreak]
+                                                        ) [MultStatement]
+                                                      ) [StatementMult]
+                                                    ) [IfOnlyStm]
+                                                  ) [StatementIf]
+                                                ) [MultStatement]
+                                                StatementSwitch(
+                                                  SwitchStart(
+                                                  ) [SwitchStart]
+                                                  ExprTermList(
+                                                    TermSinglePos(
+                                                      FactorSingle(
+                                                        FactVar(
+                                                          DesignatorSingle(
+                                                           x
+                                                          ) [DesignatorSingle]
+                                                        ) [FactVar]
+                                                      ) [FactorSingle]
+                                                    ) [TermSinglePos]
+                                                  ) [ExprTermList]
+                                                  SwitchExpr(
+                                                  ) [SwitchExpr]
+                                                  CaseListParam(
+                                                    CaseListParam(
+                                                      CaseListParam(
+                                                        CaseListParam(
+                                                          CaseListEmpty(
+                                                          ) [CaseListEmpty]
+                                                          CaseDefault(
+                                                           D
+                                                            CaseColonDef(
+                                                            ) [CaseColonDef]
+                                                            MultStatement(
+                                                              NoStatementList(
+                                                              ) [NoStatementList]
+                                                              StatementPrint(
+                                                                ExprTermList(
+                                                                  TermSinglePos(
+                                                                    FactorSingle(
+                                                                      FactorChar(
+                                                                       D
+                                                                      ) [FactorChar]
+                                                                    ) [FactorSingle]
+                                                                  ) [TermSinglePos]
+                                                                ) [ExprTermList]
+                                                              ) [StatementPrint]
+                                                            ) [MultStatement]
+                                                          ) [CaseDefault]
+                                                        ) [CaseListParam]
+                                                        CaseParamNum(
+                                                         8
+                                                          CaseColon(
+                                                          ) [CaseColon]
+                                                          MultStatement(
+                                                            MultStatement(
+                                                              NoStatementList(
+                                                              ) [NoStatementList]
+                                                              StatementPrint(
+                                                                ExprTermList(
+                                                                  TermSinglePos(
+                                                                    FactorSingle(
+                                                                      FactorNum(
+                                                                       8
+                                                                      ) [FactorNum]
+                                                                    ) [FactorSingle]
+                                                                  ) [TermSinglePos]
+                                                                ) [ExprTermList]
+                                                              ) [StatementPrint]
+                                                            ) [MultStatement]
+                                                            StatementBreak(
+                                                            ) [StatementBreak]
+                                                          ) [MultStatement]
+                                                        ) [CaseParamNum]
+                                                      ) [CaseListParam]
+                                                      CaseParamNum(
+                                                       6
+                                                        CaseColon(
+                                                        ) [CaseColon]
+                                                        MultStatement(
+                                                          NoStatementList(
+                                                          ) [NoStatementList]
+                                                          StatementPrint(
+                                                            ExprTermList(
+                                                              TermSinglePos(
+                                                                FactorSingle(
+                                                                  FactorNum(
+                                                                   6
+                                                                  ) [FactorNum]
+                                                                ) [FactorSingle]
+                                                              ) [TermSinglePos]
+                                                            ) [ExprTermList]
+                                                          ) [StatementPrint]
+                                                        ) [MultStatement]
+                                                      ) [CaseParamNum]
+                                                    ) [CaseListParam]
+                                                    CaseParamNum(
+                                                     7
+                                                      CaseColon(
+                                                      ) [CaseColon]
+                                                      MultStatement(
+                                                        MultStatement(
+                                                          NoStatementList(
+                                                          ) [NoStatementList]
+                                                          StatementPrint(
+                                                            ExprTermList(
+                                                              TermSinglePos(
+                                                                FactorSingle(
+                                                                  FactorNum(
+                                                                   7
+                                                                  ) [FactorNum]
+                                                                ) [FactorSingle]
+                                                              ) [TermSinglePos]
+                                                            ) [ExprTermList]
+                                                          ) [StatementPrint]
+                                                        ) [MultStatement]
+                                                        StatementBreak(
+                                                        ) [StatementBreak]
+                                                      ) [MultStatement]
+                                                    ) [CaseParamNum]
+                                                  ) [CaseListParam]
+                                                ) [StatementSwitch]
+                                              ) [MultStatement]
+                                              StatementDesignator(
+                                                DesStmInc(
+                                                  DesignatorSingle(
+                                                   x
+                                                  ) [DesignatorSingle]
+                                                ) [DesStmInc]
+                                              ) [StatementDesignator]
+                                            ) [MultStatement]
+                                            StatementIf(
+                                              ConditionPar(
+                                                ConditionSingle(
+                                                  CondTermSingle(
+                                                    CondFactOp(
+                                                      ExprTermList(
+                                                        TermSinglePos(
+                                                          FactorSingle(
+                                                            FactVar(
+                                                              DesignatorSingle(
+                                                               x
+                                                              ) [DesignatorSingle]
+                                                            ) [FactVar]
+                                                          ) [FactorSingle]
+                                                        ) [TermSinglePos]
+                                                      ) [ExprTermList]
+                                                      RelBG(
+                                                      ) [RelBG]
+                                                      ExprTermList(
+                                                        TermSinglePos(
+                                                          FactorSingle(
+                                                            FactorNum(
+                                                             15
+                                                            ) [FactorNum]
+                                                          ) [FactorSingle]
+                                                        ) [TermSinglePos]
+                                                      ) [ExprTermList]
+                                                    ) [CondFactOp]
+                                                  ) [CondTermSingle]
+                                                ) [ConditionSingle]
+                                              ) [ConditionPar]
+                                              IfOnlyStm(
+                                                StatementDesignator(
+                                                  DesStmAssign(
+                                                    DesignatorSingle(
+                                                     y
+                                                    ) [DesignatorSingle]
+                                                    Assignop(
+                                                    ) [Assignop]
+                                                    DesAssignNoErr(
+                                                      ExprTermList(
+                                                        TermSinglePos(
+                                                          FactorSingle(
+                                                            FactorNum(
+                                                             1
+                                                            ) [FactorNum]
+                                                          ) [FactorSingle]
+                                                        ) [TermSinglePos]
+                                                      ) [ExprTermList]
+                                                    ) [DesAssignNoErr]
+                                                  ) [DesStmAssign]
+                                                ) [StatementDesignator]
+                                              ) [IfOnlyStm]
+                                            ) [StatementIf]
+                                          ) [MultStatement]
+                                        ) [StatementMult]
+                                        WhileCondStart(
+                                        ) [WhileCondStart]
+                                        ConditionList(
+                                          ConditionSingle(
+                                            CondTermSingle(
+                                              CondFactOp(
+                                                ExprTermList(
+                                                  TermSinglePos(
+                                                    FactorSingle(
+                                                      FactVar(
+                                                        DesignatorSingle(
+                                                         x
+                                                        ) [DesignatorSingle]
+                                                      ) [FactVar]
+                                                    ) [FactorSingle]
+                                                  ) [TermSinglePos]
+                                                ) [ExprTermList]
+                                                RelLS(
+                                                ) [RelLS]
+                                                ExprTermList(
+                                                  TermSinglePos(
+                                                    FactorSingle(
+                                                      FactorNum(
+                                                       15
+                                                      ) [FactorNum]
+                                                    ) [FactorSingle]
+                                                  ) [TermSinglePos]
+                                                ) [ExprTermList]
+                                              ) [CondFactOp]
+                                            ) [CondTermSingle]
+                                          ) [ConditionSingle]
+                                          CondTermSingle(
+                                            CondFactOp(
+                                              ExprTermList(
+                                                TermSinglePos(
+                                                  FactorSingle(
+                                                    FactVar(
+                                                      DesignatorSingle(
+                                                       y
+                                                      ) [DesignatorSingle]
+                                                    ) [FactVar]
+                                                  ) [FactorSingle]
+                                                ) [TermSinglePos]
+                                              ) [ExprTermList]
+                                              RelEqual(
+                                              ) [RelEqual]
+                                              ExprTermList(
+                                                TermSinglePos(
+                                                  FactorSingle(
+                                                    FactorNum(
+                                                     0
+                                                    ) [FactorNum]
+                                                  ) [FactorSingle]
+                                                ) [TermSinglePos]
+                                              ) [ExprTermList]
+                                            ) [CondFactOp]
+                                          ) [CondTermSingle]
+                                        ) [ConditionList]
+                                      ) [StatementWhile]
+                                    ) [MultStatement]
+                                    StatementPrint(
+                                      ExprTermList(
+                                        TermSinglePos(
+                                          FactorSingle(
+                                            FactorChar(
+                                             a
+                                            ) [FactorChar]
+                                          ) [FactorSingle]
+                                        ) [TermSinglePos]
+                                      ) [ExprTermList]
+                                    ) [StatementPrint]
+                                  ) [MultStatement]
+                                ) [StatementMult]
+                              ) [IfOnlyStm]
+                            ) [StatementIf]
+                          ) [MultStatement]
+                          StatementPrint(
+                            ExprTermList(
+                              TermSinglePos(
+                                FactorSingle(
+                                  FactorChar(
+                                   A
+                                  ) [FactorChar]
+                                ) [FactorSingle]
+                              ) [TermSinglePos]
+                            ) [ExprTermList]
+                          ) [StatementPrint]
+                        ) [MultStatement]
+                        StatementPrint(
+                          ExprTermList(
+                            TermSinglePos(
+                              FactorSingle(
+                                FactVar(
+                                  DesignatorSingle(
+                                   x
+                                  ) [DesignatorSingle]
+                                ) [FactVar]
+                              ) [FactorSingle]
+                            ) [TermSinglePos]
+                          ) [ExprTermList]
+                        ) [StatementPrint]
+                      ) [MultStatement]
+                      StatementPrint(
+                        ExprTermList(
+                          TermSinglePos(
+                            FactorSingle(
+                              FactVar(
+                                DesignatorSingle(
+                                 y
+                                ) [DesignatorSingle]
+                              ) [FactVar]
+                            ) [FactorSingle]
+                          ) [TermSinglePos]
+                        ) [ExprTermList]
+                      ) [StatementPrint]
+                    ) [MultStatement]
+                    StatementPrint(
+                      ExprTermList(
+                        TermSinglePos(
+                          FactorSingle(
+                            FactVar(
+                              DesignatorSingle(
+                               eol
+                              ) [DesignatorSingle]
+                            ) [FactVar]
+                          ) [FactorSingle]
+                        ) [TermSinglePos]
+                      ) [ExprTermList]
+                    ) [StatementPrint]
+                  ) [MultStatement]
+                  StatementDesignator(
+                    DesStmAssign(
+                      DesignatorSingle(
+                       x
+                      ) [DesignatorSingle]
+                      Assignop(
+                      ) [Assignop]
+                      DesAssignNoErr(
+                        ExprTermList(
+                          TermSinglePos(
+                            FactorSingle(
+                              FactorNum(
+                               2
+                              ) [FactorNum]
+                            ) [FactorSingle]
+                          ) [TermSinglePos]
+                        ) [ExprTermList]
+                      ) [DesAssignNoErr]
+                    ) [DesStmAssign]
+                  ) [StatementDesignator]
+                ) [MultStatement]
+              ) [StatementMult]
+              ElseStart(
+              ) [ElseStart]
+              ElseStm(
+                StatementMult(
+                  MultStatement(
+                    NoStatementList(
+                    ) [NoStatementList]
+                    StatementPrint(
+                      ExprTermList(
+                        TermSinglePos(
+                          FactorSingle(
+                            FactorChar(
+                             G
+                            ) [FactorChar]
+                          ) [FactorSingle]
+                        ) [TermSinglePos]
+                      ) [ExprTermList]
+                    ) [StatementPrint]
+                  ) [MultStatement]
+                ) [StatementMult]
+              ) [ElseStm]
+            ) [StatementIfElse]
+          ) [MultStatement]
+          StatementIfElse(
+            ConditionPar(
+              ConditionList(
+                ConditionSingle(
+                  CondTermSingle(
+                    CondFactOp(
+                      ExprTermList(
+                        TermSinglePos(
+                          FactorSingle(
+                            FactVar(
+                              DesignatorSingle(
+                               x
+                              ) [DesignatorSingle]
+                            ) [FactVar]
+                          ) [FactorSingle]
+                        ) [TermSinglePos]
+                      ) [ExprTermList]
+                      RelBGE(
+                      ) [RelBGE]
+                      ExprTermList(
+                        TermSinglePos(
+                          FactorSingle(
+                            FactorNum(
+                             0
+                            ) [FactorNum]
+                          ) [FactorSingle]
+                        ) [TermSinglePos]
+                      ) [ExprTermList]
+                    ) [CondFactOp]
+                  ) [CondTermSingle]
+                ) [ConditionSingle]
+                CondTermSingle(
+                  CondFactOp(
+                    ExprTermList(
+                      TermSinglePos(
+                        FactorSingle(
+                          FactVar(
+                            DesignatorSingle(
+                             y
+                            ) [DesignatorSingle]
+                          ) [FactVar]
+                        ) [FactorSingle]
+                      ) [TermSinglePos]
+                    ) [ExprTermList]
+                    ReLSE(
+                    ) [ReLSE]
+                    ExprTermList(
+                      TermSinglePos(
+                        FactorSingle(
+                          FactorNum(
+                           2
+                          ) [FactorNum]
+                        ) [FactorSingle]
+                      ) [TermSinglePos]
+                    ) [ExprTermList]
+                  ) [CondFactOp]
+                ) [CondTermSingle]
+              ) [ConditionList]
+            ) [ConditionPar]
+            StatementMult(
+              MultStatement(
+                MultStatement(
+                  MultStatement(
+                    MultStatement(
+                      MultStatement(
+                        NoStatementList(
+                        ) [NoStatementList]
+                        StatementPrint(
+                          ExprTermList(
+                            TermSinglePos(
+                              FactorSingle(
+                                FactorChar(
+                                 B
+                                ) [FactorChar]
+                              ) [FactorSingle]
+                            ) [TermSinglePos]
+                          ) [ExprTermList]
+                        ) [StatementPrint]
+                      ) [MultStatement]
+                      StatementPrint(
+                        ExprTermList(
+                          TermSinglePos(
+                            FactorSingle(
+                              FactVar(
+                                DesignatorSingle(
+                                 x
+                                ) [DesignatorSingle]
+                              ) [FactVar]
+                            ) [FactorSingle]
+                          ) [TermSinglePos]
+                        ) [ExprTermList]
+                      ) [StatementPrint]
+                    ) [MultStatement]
+                    StatementPrint(
+                      ExprTermList(
+                        TermSinglePos(
+                          FactorSingle(
+                            FactVar(
+                              DesignatorSingle(
+                               y
+                              ) [DesignatorSingle]
+                            ) [FactVar]
+                          ) [FactorSingle]
+                        ) [TermSinglePos]
+                      ) [ExprTermList]
+                    ) [StatementPrint]
+                  ) [MultStatement]
+                  StatementPrint(
+                    ExprTermList(
+                      TermSinglePos(
+                        FactorSingle(
+                          FactVar(
+                            DesignatorSingle(
+                             eol
+                            ) [DesignatorSingle]
+                          ) [FactVar]
+                        ) [FactorSingle]
+                      ) [TermSinglePos]
+                    ) [ExprTermList]
+                  ) [StatementPrint]
+                ) [MultStatement]
+                StatementDesignator(
+                  DesStmAssign(
+                    DesignatorSingle(
+                     x
+                    ) [DesignatorSingle]
+                    Assignop(
+                    ) [Assignop]
+                    DesAssignNoErr(
+                      ExprTermList(
+                        TermSinglePos(
+                          FactorSingle(
+                            FactorNum(
+                             3
+                            ) [FactorNum]
+                          ) [FactorSingle]
+                        ) [TermSinglePos]
+                      ) [ExprTermList]
+                    ) [DesAssignNoErr]
+                  ) [DesStmAssign]
+                ) [StatementDesignator]
+              ) [MultStatement]
+            ) [StatementMult]
+            ElseStart(
+            ) [ElseStart]
+            ElseStm(
+              StatementMult(
+                MultStatement(
+                  NoStatementList(
+                  ) [NoStatementList]
+                  StatementPrint(
+                    ExprTermList(
+                      TermSinglePos(
+                        FactorSingle(
+                          FactorChar(
+                           H
+                          ) [FactorChar]
+                        ) [FactorSingle]
+                      ) [TermSinglePos]
+                    ) [ExprTermList]
+                  ) [StatementPrint]
+                ) [MultStatement]
+              ) [StatementMult]
+            ) [ElseStm]
+          ) [StatementIfElse]
+        ) [MultStatement]
+        StatementIfElse(
+          ConditionPar(
+            ConditionList(
+              ConditionSingle(
+                CondTermList(
+                  CondTermSingle(
+                    CondFactOp(
+                      ExprTermList(
+                        TermSinglePos(
+                          FactorSingle(
+                            FactVar(
+                              DesignatorSingle(
+                               x
+                              ) [DesignatorSingle]
+                            ) [FactVar]
+                          ) [FactorSingle]
+                        ) [TermSinglePos]
+                      ) [ExprTermList]
+                      RelDiff(
+                      ) [RelDiff]
+                      ExprTermList(
+                        TermSinglePos(
+                          FactorSingle(
+                            FactorNum(
+                             0
+                            ) [FactorNum]
+                          ) [FactorSingle]
+                        ) [TermSinglePos]
+                      ) [ExprTermList]
+                    ) [CondFactOp]
+                  ) [CondTermSingle]
+                  CondFactOp(
+                    ExprTermList(
+                      TermSinglePos(
+                        FactorSingle(
+                          FactVar(
+                            DesignatorSingle(
+                             y
+                            ) [DesignatorSingle]
+                          ) [FactVar]
+                        ) [FactorSingle]
+                      ) [TermSinglePos]
+                    ) [ExprTermList]
+                    RelBG(
+                    ) [RelBG]
+                    ExprTermList(
+                      TermSinglePos(
+                        FactorSingle(
+                          FactorNum(
+                           2
+                          ) [FactorNum]
+                        ) [FactorSingle]
+                      ) [TermSinglePos]
+                    ) [ExprTermList]
+                  ) [CondFactOp]
+                ) [CondTermList]
+              ) [ConditionSingle]
+              CondTermSingle(
+                CondFactOp(
+                  ExprTermList(
+                    TermSinglePos(
+                      FactorSingle(
+                        FactVar(
+                          DesignatorSingle(
+                           x
+                          ) [DesignatorSingle]
+                        ) [FactVar]
+                      ) [FactorSingle]
+                    ) [TermSinglePos]
+                  ) [ExprTermList]
+                  RelEqual(
+                  ) [RelEqual]
+                  ExprTermList(
+                    TermSinglePos(
+                      FactorSingle(
+                        FactorNum(
+                         1
+                        ) [FactorNum]
+                      ) [FactorSingle]
+                    ) [TermSinglePos]
+                  ) [ExprTermList]
+                ) [CondFactOp]
+              ) [CondTermSingle]
+            ) [ConditionList]
+          ) [ConditionPar]
+          StatementMult(
+            MultStatement(
+              MultStatement(
+                MultStatement(
+                  MultStatement(
+                    MultStatement(
+                      NoStatementList(
+                      ) [NoStatementList]
+                      StatementPrint(
+                        ExprTermList(
+                          TermSinglePos(
+                            FactorSingle(
+                              FactorChar(
+                               C
+                              ) [FactorChar]
+                            ) [FactorSingle]
+                          ) [TermSinglePos]
+                        ) [ExprTermList]
+                      ) [StatementPrint]
+                    ) [MultStatement]
+                    StatementPrint(
+                      ExprTermList(
+                        TermSinglePos(
+                          FactorSingle(
+                            FactVar(
+                              DesignatorSingle(
+                               x
+                              ) [DesignatorSingle]
+                            ) [FactVar]
+                          ) [FactorSingle]
+                        ) [TermSinglePos]
+                      ) [ExprTermList]
+                    ) [StatementPrint]
+                  ) [MultStatement]
+                  StatementPrint(
+                    ExprTermList(
+                      TermSinglePos(
+                        FactorSingle(
+                          FactVar(
+                            DesignatorSingle(
+                             y
+                            ) [DesignatorSingle]
+                          ) [FactVar]
+                        ) [FactorSingle]
+                      ) [TermSinglePos]
+                    ) [ExprTermList]
+                  ) [StatementPrint]
+                ) [MultStatement]
+                StatementPrint(
+                  ExprTermList(
+                    TermSinglePos(
+                      FactorSingle(
+                        FactVar(
+                          DesignatorSingle(
+                           eol
+                          ) [DesignatorSingle]
+                        ) [FactVar]
+                      ) [FactorSingle]
+                    ) [TermSinglePos]
+                  ) [ExprTermList]
+                ) [StatementPrint]
+              ) [MultStatement]
+              StatementDesignator(
+                DesStmAssign(
+                  DesignatorSingle(
+                   x
+                  ) [DesignatorSingle]
+                  Assignop(
+                  ) [Assignop]
+                  DesAssignNoErr(
+                    ExprTermList(
+                      TermSinglePos(
+                        FactorSingle(
+                          FactorNum(
+                           4
+                          ) [FactorNum]
+                        ) [FactorSingle]
+                      ) [TermSinglePos]
+                    ) [ExprTermList]
+                  ) [DesAssignNoErr]
+                ) [DesStmAssign]
+              ) [StatementDesignator]
+            ) [MultStatement]
+          ) [StatementMult]
+          ElseStart(
+          ) [ElseStart]
+          ElseStm(
+            StatementMult(
+              MultStatement(
+                NoStatementList(
+                ) [NoStatementList]
+                StatementPrint(
+                  ExprTermList(
+                    TermSinglePos(
+                      FactorSingle(
+                        FactorChar(
+                         I
+                        ) [FactorChar]
+                      ) [FactorSingle]
+                    ) [TermSinglePos]
+                  ) [ExprTermList]
+                ) [StatementPrint]
+              ) [MultStatement]
+            ) [StatementMult]
+          ) [ElseStm]
+        ) [StatementIfElse]
+      ) [MultStatement]
+    ) [MethodDecPar]
+  ) [MethodDeclUse]
+) [Program]
+INFO  14:13:39,360 - ===================================
+INFO  14:13:39,375 - Pristup lokalnoj promenljivi (x) | Var x: int, 0, 1  na liniji 8
+INFO  14:13:39,375 - Pristup lokalnoj promenljivi (y) | Var y: int, 1, 1  na liniji 9
+INFO  14:13:39,375 - Pristup lokalnoj promenljivi (x) | Var x: int, 0, 1  na liniji 10
+INFO  14:13:39,376 - Koristi se promenljiva (x) | Var x: int, 0, 1  na liniji 10
+INFO  14:13:39,376 - Pristup lokalnoj promenljivi (y) | Var y: int, 1, 1  na liniji 10
+INFO  14:13:39,376 - Pristup lokalnoj promenljivi (y) | Var y: int, 1, 1  na liniji 11
+INFO  14:13:39,376 - Pristup lokalnoj promenljivi (y) | Var y: int, 1, 1  na liniji 12
+INFO  14:13:39,377 - Pristup lokalnoj promenljivi (x) | Var x: int, 0, 1  na liniji 13
+INFO  14:13:39,377 - Pristup lokalnoj promenljivi (t) | Var t: char, 2, 1  na liniji 14
+INFO  14:13:39,377 - Pristup lokalnoj promenljivi (x) | Var x: int, 0, 1  na liniji 16
+INFO  14:13:39,377 - Koristi se promenljiva (x) | Var x: int, 0, 1  na liniji 16
+INFO  14:13:39,378 - Pristup lokalnoj promenljivi (x) | Var x: int, 0, 1  na liniji 17
+INFO  14:13:39,378 - Pristup lokalnoj promenljivi (x) | Var x: int, 0, 1  na liniji 18
+INFO  14:13:39,378 - Koristi se promenljiva (x) | Var x: int, 0, 1  na liniji 18
+INFO  14:13:39,378 - Pristup lokalnoj promenljivi (x) | Var x: int, 0, 1  na liniji 19
+INFO  14:13:39,378 - Koristi se promenljiva (x) | Var x: int, 0, 1  na liniji 19
+INFO  14:13:39,378 - Pristup lokalnoj promenljivi (y) | Var y: int, 1, 1  na liniji 19
+INFO  14:13:39,379 - Koristi se promenljiva (y) | Var y: int, 1, 1  na liniji 19
+INFO  14:13:39,379 - Pristup lokalnoj promenljivi (x) | Var x: int, 0, 1  na liniji 21
+INFO  14:13:39,379 - Koristi se promenljiva (x) | Var x: int, 0, 1  na liniji 21
+INFO  14:13:39,379 - Pristup lokalnoj promenljivi (x) | Var x: int, 0, 1  na liniji 23
+INFO  14:13:39,379 - Koristi se promenljiva (x) | Var x: int, 0, 1  na liniji 23
+INFO  14:13:39,380 - Pristup lokalnoj promenljivi (x) | Var x: int, 0, 1  na liniji 26
+INFO  14:13:39,380 - Koristi se promenljiva (x) | Var x: int, 0, 1  na liniji 26
+INFO  14:13:39,386 - Pristup lokalnoj promenljivi (x) | Var x: int, 0, 1  na liniji 38
+INFO  14:13:39,386 - Pristup lokalnoj promenljivi (x) | Var x: int, 0, 1  na liniji 39
+INFO  14:13:39,387 - Koristi se promenljiva (x) | Var x: int, 0, 1  na liniji 39
+INFO  14:13:39,387 - Pristup lokalnoj promenljivi (y) | Var y: int, 1, 1  na liniji 39
+INFO  14:13:39,387 - Pristup lokalnoj promenljivi (x) | Var x: int, 0, 1  na liniji 40
+INFO  14:13:39,387 - Koristi se promenljiva (x) | Var x: int, 0, 1  na liniji 40
+INFO  14:13:39,387 - Pristup lokalnoj promenljivi (y) | Var y: int, 1, 1  na liniji 40
+INFO  14:13:39,387 - Koristi se promenljiva (y) | Var y: int, 1, 1  na liniji 40
+INFO  14:13:39,388 - Pristup lokalnoj promenljivi (x) | Var x: int, 0, 1  na liniji 45
+INFO  14:13:39,388 - Koristi se promenljiva (x) | Var x: int, 0, 1  na liniji 45
+INFO  14:13:39,388 - Pristup lokalnoj promenljivi (y) | Var y: int, 1, 1  na liniji 46
+INFO  14:13:39,388 - Koristi se promenljiva (y) | Var y: int, 1, 1  na liniji 46
+INFO  14:13:39,388 - Pristup konstanti (eol) | Con eol: char, 10, 0  na liniji 47
+INFO  14:13:39,389 - Koristi se promenljiva (eol) | Con eol: char, 10, 0  na liniji 47
+INFO  14:13:39,389 - Pristup lokalnoj promenljivi (x) | Var x: int, 0, 1  na liniji 48
+INFO  14:13:39,389 - Pristup lokalnoj promenljivi (x) | Var x: int, 0, 1  na liniji 53
+INFO  14:13:39,389 - Koristi se promenljiva (x) | Var x: int, 0, 1  na liniji 53
+INFO  14:13:39,389 - Pristup lokalnoj promenljivi (y) | Var y: int, 1, 1  na liniji 53
+INFO  14:13:39,389 - Koristi se promenljiva (y) | Var y: int, 1, 1  na liniji 53
+INFO  14:13:39,389 - Pristup lokalnoj promenljivi (x) | Var x: int, 0, 1  na liniji 55
+INFO  14:13:39,390 - Koristi se promenljiva (x) | Var x: int, 0, 1  na liniji 55
+INFO  14:13:39,390 - Pristup lokalnoj promenljivi (y) | Var y: int, 1, 1  na liniji 56
+INFO  14:13:39,390 - Koristi se promenljiva (y) | Var y: int, 1, 1  na liniji 56
+INFO  14:13:39,390 - Pristup konstanti (eol) | Con eol: char, 10, 0  na liniji 57
+INFO  14:13:39,390 - Koristi se promenljiva (eol) | Con eol: char, 10, 0  na liniji 57
+INFO  14:13:39,390 - Pristup lokalnoj promenljivi (x) | Var x: int, 0, 1  na liniji 58
+INFO  14:13:39,390 - Pristup lokalnoj promenljivi (x) | Var x: int, 0, 1  na liniji 63
+INFO  14:13:39,390 - Koristi se promenljiva (x) | Var x: int, 0, 1  na liniji 63
+INFO  14:13:39,391 - Pristup lokalnoj promenljivi (y) | Var y: int, 1, 1  na liniji 63
+INFO  14:13:39,391 - Koristi se promenljiva (y) | Var y: int, 1, 1  na liniji 63
+INFO  14:13:39,391 - Pristup lokalnoj promenljivi (x) | Var x: int, 0, 1  na liniji 63
+INFO  14:13:39,391 - Koristi se promenljiva (x) | Var x: int, 0, 1  na liniji 63
+INFO  14:13:39,391 - Pristup lokalnoj promenljivi (x) | Var x: int, 0, 1  na liniji 65
+INFO  14:13:39,391 - Koristi se promenljiva (x) | Var x: int, 0, 1  na liniji 65
+INFO  14:13:39,391 - Pristup lokalnoj promenljivi (y) | Var y: int, 1, 1  na liniji 66
+INFO  14:13:39,391 - Koristi se promenljiva (y) | Var y: int, 1, 1  na liniji 66
+INFO  14:13:39,392 - Pristup konstanti (eol) | Con eol: char, 10, 0  na liniji 67
+INFO  14:13:39,392 - Koristi se promenljiva (eol) | Con eol: char, 10, 0  na liniji 67
+INFO  14:13:39,392 - Pristup lokalnoj promenljivi (x) | Var x: int, 0, 1  na liniji 68
+INFO  14:13:39,392 - ===================================
+INFO  14:13:39,445 - Parsiranje uspesno zavrseno!

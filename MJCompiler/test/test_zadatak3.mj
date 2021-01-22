@@ -18,23 +18,28 @@ program Mj
 		print(x);
 		if(x>0 && y<2){
 			
-			if(x>5){
+			if(x>1){
 			do{
 				if(x==9){
 					break;
 				}
 				switch(x){
+
 					case 8:
 						print(8);
 						break;
 					case 6:
 						print(6);
+					case default :
+						print(x);
+						print('D');
+						print(' ');						
 					case 7:
 						print(7);
 						break;
 				}
 				x++;
-				if(x==15)y=1;
+				if(x>15)y=1;
 			}while(x<15 || y==0);			
 				print('a');
 			}

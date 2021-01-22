@@ -1,0 +1,61 @@
+INFO  00:20:30,087 - Compiling source file: C:\Users\jovan\OneDrive\Desktop\ETF HELL\77777 SEMESTAR\prevodioci\projekat\workspace\MJCompiler\test\syn_test\syntax_err1.mj
+INFO  00:20:30,473 - #2 program
+INFO  00:20:30,474 - #49 SyntaxErr
+INFO  00:20:30,474 - #49 int
+INFO  00:20:30,480 - #49 niz
+INFO  00:20:30,483 - #9 [
+INFO  00:20:30,484 - #10 ]
+INFO  00:20:30,484 - #7 ;
+INFO  00:20:30,485 - #3 {
+INFO  00:20:30,488 - #44 void
+INFO  00:20:30,491 - #49 main
+INFO  00:20:30,495 - #12 (
+INFO  00:20:30,499 - #13 )
+INFO  00:20:30,500 - #3 {
+INFO  00:20:30,510 - #4 }
+INFO  00:20:30,513 - #4 }
+INFO  00:20:30,529 - Program(
+  ProgName(
+   SyntaxErr
+  ) [ProgName]
+  MultDecl(
+    NoDecl(
+    ) [NoDecl]
+    DecVar(
+      GlobalVarDecl(
+        Type(
+         int
+        ) [Type]
+        GlobalSingleVar(
+          GlobalVarSemi(
+            VarParamBrack(
+             niz
+            ) [VarParamBrack]
+          ) [GlobalVarSemi]
+        ) [GlobalSingleVar]
+      ) [GlobalVarDecl]
+    ) [DecVar]
+  ) [MultDecl]
+  MethodDeclUse(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecPar(
+      MethodTypeName(
+        MethVoid(
+        ) [MethVoid]
+       main
+      ) [MethodTypeName]
+      NoFormParList(
+      ) [NoFormParList]
+      MethodLocal(
+        NoVarDecl(
+        ) [NoVarDecl]
+      ) [MethodLocal]
+      NoStatementList(
+      ) [NoStatementList]
+    ) [MethodDecPar]
+  ) [MethodDeclUse]
+) [Program]
+INFO  00:20:30,543 - ===================================
+INFO  00:20:30,559 - ===================================
+INFO  00:20:30,591 - Parsiranje uspesno zavrseno!

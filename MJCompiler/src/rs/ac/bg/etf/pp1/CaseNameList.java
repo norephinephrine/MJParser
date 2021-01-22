@@ -7,6 +7,8 @@ public class CaseNameList {
 	ArrayList<Integer> caseList=new ArrayList<Integer>();
 	ArrayList<Integer> caseAdr=new ArrayList<Integer>();
 	
+	boolean defFlag=false;
+	int defAddr=0;
 	
 	public int getAdr(int a) {
 		for(int i=0;i<caseList.size();i++) {
@@ -32,5 +34,20 @@ public class CaseNameList {
 	}
 	public int getInt(int num) {
 		return caseList.get(num);
+	}
+	public boolean addDefault() {
+		boolean b=defFlag;
+		defFlag=true;
+		return b;
+	}
+	public void setDef(int adr) {
+		defAddr=adr;
+	}
+	public boolean isDefFlag() {
+		return defFlag;
+	}
+
+	public int getDef() {
+		return defAddr;
 	}
 }
